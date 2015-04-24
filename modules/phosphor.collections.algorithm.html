@@ -114,7 +114,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L484">src/collections/algorithm.ts:484</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L504">src/collections/algorithm.ts:504</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -330,6 +330,9 @@ algo.findIndex(data, isEven, <span class="hljs-number">6</span>, <span class="hl
 								</li>
 								<li>
 									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The predicate function to apply to the values.</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromIndex: <span class="tsd-signature-type">number</span></h5>
@@ -406,6 +409,9 @@ algo.findLast(data, isEven, <span class="hljs-number">0</span>, <span class="hlj
 								</li>
 								<li>
 									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The predicate function to apply to the values.</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
@@ -458,7 +464,7 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L459">src/collections/algorithm.ts:459</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L479">src/collections/algorithm.ts:479</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -504,7 +510,7 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L417">src/collections/algorithm.ts:417</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L437">src/collections/algorithm.ts:437</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,7 +556,7 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L474">src/collections/algorithm.ts:474</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L494">src/collections/algorithm.ts:494</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -596,7 +602,7 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L438">src/collections/algorithm.ts:438</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L458">src/collections/algorithm.ts:458</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -716,7 +722,7 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L505">src/collections/algorithm.ts:505</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L525">src/collections/algorithm.ts:525</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -835,16 +841,14 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L361">src/collections/algorithm.ts:361</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L371">src/collections/algorithm.ts:371</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the index of the first element which is not less than <code>value</code>.</p>
+									<p>Binary search for the first element which compares <code>&lt;=</code> to <code>value</code>.</p>
 								</div>
-								<p>This function uses a binary search. It must be applied to a sorted
-								array in order for the results to be correct.</p>
-								<p>Returns <code>array.length</code> if all elements are less than <code>value</code>.</p>
+								<p>The <code>array</code> must be sorted in ascending order.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -859,15 +863,30 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The array of values to be searched.</p>
+									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">U</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to locate in the array.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cmp: <a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The comparator function to apply to the values.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index of the matching element or <code>array.length</code> if
+							there is no match.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-comment">// TODO</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#upperbound">upperBound</a>, <a href="phosphor.collections.algorithm.html#findlowerindex">findLowerIndex</a>, and <a href="phosphor.collections.algorithm.html#findlower">findLower</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -881,7 +900,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L536">src/collections/algorithm.ts:536</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L556">src/collections/algorithm.ts:556</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -926,7 +945,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L604">src/collections/algorithm.ts:604</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L624">src/collections/algorithm.ts:624</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -964,7 +983,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L580">src/collections/algorithm.ts:580</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L600">src/collections/algorithm.ts:600</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1003,16 +1022,14 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L389">src/collections/algorithm.ts:389</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L409">src/collections/algorithm.ts:409</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the index of the first element which is greater than <code>value</code>.</p>
+									<p>Binary search for the first element which compares <code>&gt;</code> than <code>value</code>.</p>
 								</div>
-								<p>This function uses a binary search. It must be applied to a sorted
-								array in order for the results to be correct.</p>
-								<p>Returns <code>array.length</code> if no element is greater than <code>value</code>.</p>
+								<p>The <code>array</code> must be sorted in ascending order.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -1027,15 +1044,30 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The array of values to be searched.</p>
+									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">U</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to locate in the array.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cmp: <a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The comparator function to apply to the values.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index of the matching element or <code>array.length</code> if
+							there is no match.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-comment">// TODO</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#lowerbound">lowerBound</a>, <a href="phosphor.collections.algorithm.html#findupperindex">findUpperIndex</a>, and <a href="phosphor.collections.algorithm.html#findupper">findUpper</a>.</p>
 						</li>
 					</ul>
 				</section>
