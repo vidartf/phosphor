@@ -80,15 +80,15 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#binaryfind" class="tsd-kind-icon">binary<wbr>Find</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#binaryfindindex" class="tsd-kind-icon">binary<wbr>Find<wbr>Index</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#binaryfindlast" class="tsd-kind-icon">binary<wbr>Find<wbr>Last</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#binaryfindlastindex" class="tsd-kind-icon">binary<wbr>Find<wbr>Last<wbr>Index</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#copy" class="tsd-kind-icon">copy</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#find" class="tsd-kind-icon">find</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#findindex" class="tsd-kind-icon">find<wbr>Index</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#findlast" class="tsd-kind-icon">find<wbr>Last</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#findlastindex" class="tsd-kind-icon">find<wbr>Last<wbr>Index</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#findlower" class="tsd-kind-icon">find<wbr>Lower</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#findlowerindex" class="tsd-kind-icon">find<wbr>Lower<wbr>Index</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#findupper" class="tsd-kind-icon">find<wbr>Upper</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#findupperindex" class="tsd-kind-icon">find<wbr>Upper<wbr>Index</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.collections.algorithm.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a></li>
@@ -105,366 +105,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="copy" class="tsd-anchor"></a>
-					<h3>copy</h3>
+					<a name="binaryfind" class="tsd-anchor"></a>
+					<h3>binary<wbr>Find</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">copy&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">binary<wbr>Find&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, cmp<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L504">src/collections/algorithm.ts:504</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a shallow copy of the given array.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>array: <span class="tsd-signature-type">T</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="find" class="tsd-anchor"></a>
-					<h3>find</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">find&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, pred<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, wrap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L303">src/collections/algorithm.ts:303</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Find the first value in an array which matches a predicate.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>array: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The array of values to be searched.</p>
-									</div>
-								</li>
-								<li>
-									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The predicate function to apply to the values.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromIndex: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The starting index of the search. If this value is
-											negative, it is taken as an offset from the end of the array. If
-										the adjusted value is still negative, it is clamped to <code>0</code>.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> wrap: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Whether the search wraps around at the end of the array.
-											If <code>true</code> and the end of the array is reached without finding the
-											value, the search will wrap to the front of the array and continue
-										until <code>fromIndex - 1</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-							<p>The matching value or <code>undefined</code> if there is no match.</p>
-							<h4 id="notes">Notes</h4>
-							<p>The range of visited indices is set before the first invocation of
-							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
-							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
-  <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
-}
-
-<span class="hljs-keyword">var</span> data = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>];
-algo.find(data, isEven);           <span class="hljs-comment">// 2</span>
-algo.find(data, isEven, <span class="hljs-number">4</span>);        <span class="hljs-comment">// 2</span>
-algo.find(data, isEven, -<span class="hljs-number">5</span>);       <span class="hljs-comment">// 4</span>
-algo.find(data, isEven, <span class="hljs-number">6</span>);        <span class="hljs-comment">// undefined</span>
-algo.find(data, isEven, <span class="hljs-number">6</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 2</span>
-</code></pre>
-							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#findlast">findLast</a>, <a href="phosphor.collections.algorithm.html#findindex">findIndex</a>, and <a href="phosphor.collections.algorithm.html#indexof">indexOf</a>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="findindex" class="tsd-anchor"></a>
-					<h3>find<wbr>Index</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Index&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, pred<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, wrap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L170">src/collections/algorithm.ts:170</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Find the index of the first value which matches a predicate.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>array: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The array of values to be searched.</p>
-									</div>
-								</li>
-								<li>
-									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The predicate function to apply to the values.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The starting index of the search. If this value is
-											negative, it is taken as an offset from the end of the array. If
-										the adjusted value is still negative, it is clamped to <code>0</code>.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> wrap: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Whether the search wraps around at the end of the array.
-											If <code>true</code> and the end of the array is reached without finding the
-											value, the search will wrap to the front of the array and continue
-										until <code>fromIndex - 1</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the matching value or <code>-1</code> if there is no match.</p>
-							<h4 id="notes">Notes</h4>
-							<p>The range of visited indices is set before the first invocation of
-							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
-							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
-  <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
-}
-
-<span class="hljs-keyword">var</span> data = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>];
-algo.findIndex(data, isEven);           <span class="hljs-comment">// 1</span>
-algo.findIndex(data, isEven, <span class="hljs-number">4</span>);        <span class="hljs-comment">// 5</span>
-algo.findIndex(data, isEven, -<span class="hljs-number">4</span>);       <span class="hljs-comment">// 3</span>
-algo.findIndex(data, isEven, <span class="hljs-number">6</span>);        <span class="hljs-comment">// -1</span>
-algo.findIndex(data, isEven, <span class="hljs-number">6</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 1</span>
-</code></pre>
-							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#findlastindex">findLastIndex</a>, <a href="phosphor.collections.algorithm.html#find">find</a>, and <a href="phosphor.collections.algorithm.html#indexof">indexOf</a>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="findlast" class="tsd-anchor"></a>
-					<h3>find<wbr>Last</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Last&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, pred<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, wrap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L346">src/collections/algorithm.ts:346</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Find the last value in an array which matches a predicate.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>array: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The array of values to be searched.</p>
-									</div>
-								</li>
-								<li>
-									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The predicate function to apply to the values.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromIndex: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The starting index of the search. If this value is
-											negative, it is taken as an offset from the end of the array. If
-										this value is positive, it is clamped to <code>array.length - 1</code>.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> wrap: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Whether the search wraps around at the front of the array.
-											If <code>true</code> and the front of the array is reached without finding the
-											value, the search will wrap to the end of the array and continue
-										until <code>fromIndex + 1</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-							<p>The matching value or <code>undefined</code> if there is no match.</p>
-							<h4 id="notes">Notes</h4>
-							<p>The range of visited indices is set before the first invocation of
-							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
-							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
-  <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
-}
-
-<span class="hljs-keyword">var</span> data = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>];
-algo.findLast(data, isEven);           <span class="hljs-comment">// 2</span>
-algo.findLast(data, isEven, <span class="hljs-number">4</span>);        <span class="hljs-comment">// 4</span>
-algo.findLast(data, isEven, -<span class="hljs-number">1</span>);       <span class="hljs-comment">// 2</span>
-algo.findLast(data, isEven, <span class="hljs-number">0</span>);        <span class="hljs-comment">// undefined</span>
-algo.findLast(data, isEven, <span class="hljs-number">0</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 2</span>
-</code></pre>
-							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#find">find</a>, <a href="phosphor.collections.algorithm.html#findlastindex">findLastIndex</a>, and <a href="phosphor.collections.algorithm.html#lastindexof">lastIndexOf</a>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="findlastindex" class="tsd-anchor"></a>
-					<h3>find<wbr>Last<wbr>Index</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Last<wbr>Index&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, pred<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, wrap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L237">src/collections/algorithm.ts:237</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Find the index of the last value which matches a predicate.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>array: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The array of values to be searched.</p>
-									</div>
-								</li>
-								<li>
-									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The predicate function to apply to the values.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The starting index of the search. If this value is
-											negative, it is taken as an offset from the end of the array. If
-										this value is positive, it is clamped to <code>array.length - 1</code>.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> wrap: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Whether the search wraps around at the front of the array.
-											If <code>true</code> and the front of the array is reached without finding the
-											value, the search will wrap to the end of the array and continue
-										until <code>fromIndex + 1</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the matching value or <code>-1</code> if there is no match.</p>
-							<h4 id="notes">Notes</h4>
-							<p>The range of visited indices is set before the first invocation of
-							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
-							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
-  <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
-}
-
-<span class="hljs-keyword">var</span> data = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>];
-algo.findLastIndex(data, isEven);           <span class="hljs-comment">// 5</span>
-algo.findLastIndex(data, isEven, <span class="hljs-number">4</span>);        <span class="hljs-comment">// 3</span>
-algo.findLastIndex(data, isEven, -<span class="hljs-number">5</span>);       <span class="hljs-comment">// 1</span>
-algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>);        <span class="hljs-comment">// -1</span>
-algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 5</span>
-</code></pre>
-							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#findindex">findIndex</a>, <a href="phosphor.collections.algorithm.html#findlast">findLast</a>, and <a href="phosphor.collections.algorithm.html#lastindexof">lastIndexOf</a>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="findlower" class="tsd-anchor"></a>
-					<h3>find<wbr>Lower</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Lower&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, cmp<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L479">src/collections/algorithm.ts:479</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L549">src/collections/algorithm.ts:549</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -501,25 +151,23 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="findlowerindex" class="tsd-anchor"></a>
-					<h3>find<wbr>Lower<wbr>Index</h3>
+					<a name="binaryfindindex" class="tsd-anchor"></a>
+					<h3>binary<wbr>Find<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Lower<wbr>Index&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, cmp<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">binary<wbr>Find<wbr>Index&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, cmp<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L437">src/collections/algorithm.ts:437</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L507">src/collections/algorithm.ts:507</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the index of the first element which is equal to <code>value</code>.</p>
+									<p>Binary search for the first element which compares <code>==</code> to <code>value</code>.</p>
 								</div>
-								<p>This function uses a binary search. It must be applied to a sorted
-								array in order for the results to be correct.</p>
-								<p>Returns <code>-1</code> if no matching value is found.</p>
+								<p>The <code>array</code> must be sorted in ascending order.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -534,29 +182,57 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">U</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The value to locate in the array.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>cmp: <a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The comparator function to apply to the values.</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The match index or <code>-1</code> if no match is found.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span><span class="hljs-params">(a: number, b: number)</span>: <span class="hljs-title">number</span> </span>{
+  <span class="hljs-keyword">return</span> a - b;
+}
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>];
+algo.binaryFindIndex(data, <span class="hljs-number">7</span>, numberCmp);  <span class="hljs-comment">// 3</span>
+algo.binaryFindIndex(data, <span class="hljs-number">6</span>, numberCmp);  <span class="hljs-comment">// -1</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#binaryfindlastindex">binaryFindLastIndex</a> and <a href="phosphor.collections.algorithm.html#lowerbound">lowerBound</a>.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="findupper" class="tsd-anchor"></a>
-					<h3>find<wbr>Upper</h3>
+					<a name="binaryfindlast" class="tsd-anchor"></a>
+					<h3>binary<wbr>Find<wbr>Last</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Upper&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, cmp<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">binary<wbr>Find<wbr>Last&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, cmp<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L494">src/collections/algorithm.ts:494</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L564">src/collections/algorithm.ts:564</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -593,16 +269,16 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="findupperindex" class="tsd-anchor"></a>
-					<h3>find<wbr>Upper<wbr>Index</h3>
+					<a name="binaryfindlastindex" class="tsd-anchor"></a>
+					<h3>binary<wbr>Find<wbr>Last<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Upper<wbr>Index&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, cmp<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">binary<wbr>Find<wbr>Last<wbr>Index&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, cmp<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L458">src/collections/algorithm.ts:458</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L528">src/collections/algorithm.ts:528</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -639,6 +315,388 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="copy" class="tsd-anchor"></a>
+					<h3>copy</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">copy&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L574">src/collections/algorithm.ts:574</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a shallow copy of the given array.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="find" class="tsd-anchor"></a>
+					<h3>find</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">find&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, pred<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, wrap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L323">src/collections/algorithm.ts:323</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the first value in an array which matches a predicate.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The predicate function to apply to the values.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The starting index of the search. If this value
+												is negative, it is taken as an offset from the end of the array.
+											If the adjusted value is still negative, it is clamped to <code>0</code>.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> wrap: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>Whether the search wraps around at the end of the array.
+												If <code>true</code> and the end of the array is reached without finding the
+												value, the search will wrap to the front of the array and continue
+											until <code>fromIndex - 1</code>.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>The match value or <code>undefined</code> if no match is found.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The range of visited indices is set before the first invocation of
+							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
+  <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>];
+algo.find(data, isEven);           <span class="hljs-comment">// 2</span>
+algo.find(data, isEven, <span class="hljs-number">4</span>);        <span class="hljs-comment">// 2</span>
+algo.find(data, isEven, -<span class="hljs-number">5</span>);       <span class="hljs-comment">// 4</span>
+algo.find(data, isEven, <span class="hljs-number">6</span>);        <span class="hljs-comment">// undefined</span>
+algo.find(data, isEven, <span class="hljs-number">6</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 2</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#findlast">findLast</a>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="findindex" class="tsd-anchor"></a>
+					<h3>find<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Index&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, pred<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, wrap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L182">src/collections/algorithm.ts:182</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the index of the first value which matches a predicate.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The predicate function to apply to the values.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The starting index of the search. If this value
+												is negative, it is taken as an offset from the end of the array.
+											If the adjusted value is still negative, it is clamped to <code>0</code>.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> wrap: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>Whether the search wraps around at the end of the array.
+												If <code>true</code> and the end of the array is reached without finding the
+												value, the search will wrap to the front of the array and continue
+											until <code>fromIndex - 1</code>.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The match index or <code>-1</code> if no match is found.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The range of visited indices is set before the first invocation of
+							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
+  <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>];
+algo.findIndex(data, isEven);           <span class="hljs-comment">// 1</span>
+algo.findIndex(data, isEven, <span class="hljs-number">4</span>);        <span class="hljs-comment">// 5</span>
+algo.findIndex(data, isEven, -<span class="hljs-number">4</span>);       <span class="hljs-comment">// 3</span>
+algo.findIndex(data, isEven, <span class="hljs-number">6</span>);        <span class="hljs-comment">// -1</span>
+algo.findIndex(data, isEven, <span class="hljs-number">6</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 1</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#findlastindex">findLastIndex</a> and <a href="phosphor.collections.algorithm.html#indexof">indexOf</a>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="findlast" class="tsd-anchor"></a>
+					<h3>find<wbr>Last</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Last&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, pred<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, wrap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L370">src/collections/algorithm.ts:370</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the last value in an array which matches a predicate.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The predicate function to apply to the values.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The starting index of the search. If this value
+												is negative, it is taken as an offset from the end of the array.
+											If this value is positive, it is clamped to <code>array.length - 1</code>.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> wrap: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>Whether the search wraps around at the front of the
+												array. If <code>true</code> and the front of the array is reached without
+												finding the value, the search will wrap to the end of the array
+											and continue until <code>fromIndex + 1</code>.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>The match value or <code>undefined</code> if no match is found.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The range of visited indices is set before the first invocation of
+							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
+  <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>];
+algo.findLast(data, isEven);           <span class="hljs-comment">// 2</span>
+algo.findLast(data, isEven, <span class="hljs-number">4</span>);        <span class="hljs-comment">// 4</span>
+algo.findLast(data, isEven, -<span class="hljs-number">1</span>);       <span class="hljs-comment">// 2</span>
+algo.findLast(data, isEven, <span class="hljs-number">0</span>);        <span class="hljs-comment">// undefined</span>
+algo.findLast(data, isEven, <span class="hljs-number">0</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 2</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#find">find</a>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="findlastindex" class="tsd-anchor"></a>
+					<h3>find<wbr>Last<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Last<wbr>Index&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, pred<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fromIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, wrap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L253">src/collections/algorithm.ts:253</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the index of the last value which matches a predicate.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>pred: <a href="../interfaces/phosphor.collections.ipredicate.html" class="tsd-signature-type">IPredicate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The predicate function to apply to the values.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The starting index of the search. If this value
+												is negative, it is taken as an offset from the end of the array.
+											If this value is positive, it is clamped to <code>array.length - 1</code>.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> wrap: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>Whether the search wraps around at the front of the
+												array. If <code>true</code> and the front of the array is reached without
+												finding the value, the search will wrap to the end of the array
+											and continue until <code>fromIndex + 1</code>.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The match index or <code>-1</code> if no match is found.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The range of visited indices is set before the first invocation of
+							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
+  <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>];
+algo.findLastIndex(data, isEven);           <span class="hljs-comment">// 5</span>
+algo.findLastIndex(data, isEven, <span class="hljs-number">4</span>);        <span class="hljs-comment">// 3</span>
+algo.findLastIndex(data, isEven, -<span class="hljs-number">5</span>);       <span class="hljs-comment">// 1</span>
+algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>);        <span class="hljs-comment">// -1</span>
+algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 5</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#findindex">findIndex</a> and <a href="phosphor.collections.algorithm.html#lastindexof">lastIndexOf</a>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="indexof" class="tsd-anchor"></a>
 					<h3>index<wbr>Of</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
@@ -648,7 +706,7 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L42">src/collections/algorithm.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L46">src/collections/algorithm.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -667,30 +725,38 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The array of values to be searched.</p>
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The value to locate in the array.</p>
+										<ul>
+											<li>The value to locate in the array.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The starting index of the search. If this value is
-											negative, it is taken as an offset from the end of the array. If
-										the adjusted value is still negative, it is clamped to <code>0</code>.</p>
+										<ul>
+											<li>The starting index of the search. If this value
+												is negative, it is taken as an offset from the end of the array.
+											If the adjusted value is still negative, it is clamped to <code>0</code>.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> wrap: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Whether the search wraps around at the end of the array.
-											If <code>true</code> and the end of the array is reached without finding the
-											value, the search will wrap to the front of the array and continue
-										until <code>fromIndex - 1</code>.</p>
+										<ul>
+											<li>Whether the search wraps around at the end of the array.
+												If <code>true</code> and the end of the array is reached without finding the
+												value, the search will wrap to the front of the array and continue
+											until <code>fromIndex - 1</code>.</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
@@ -708,7 +774,7 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, -<span class="hljs-nu
 algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-number">5</span>);        <span class="hljs-comment">// -1</span>
 algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-number">5</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 2</span>
 </code></pre>
-							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#lastindexof">lastIndexOf</a>, <a href="phosphor.collections.algorithm.html#findindex">findIndex</a>, and <a href="phosphor.collections.algorithm.html#find">find</a>.</p>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#lastindexof">lastIndexOf</a> and <a href="phosphor.collections.algorithm.html#findindex">findIndex</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -722,7 +788,7 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L525">src/collections/algorithm.ts:525</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L595">src/collections/algorithm.ts:595</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -767,7 +833,7 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L104">src/collections/algorithm.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L112">src/collections/algorithm.ts:112</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -786,30 +852,38 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The array of values to be searched.</p>
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The value to locate in the array.</p>
+										<ul>
+											<li>The value to locate in the array.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The starting index of the search. If this value is
-											negative, it is taken as an offset from the end of the array. If
-										this value is positive, it is clamped to <code>array.length - 1</code>.</p>
+										<ul>
+											<li>The starting index of the search. If this value
+												is negative, it is taken as an offset from the end of the array.
+											If this value is positive, it is clamped to <code>array.length - 1</code>.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> wrap: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Whether the search wraps around at the front of the array.
-											If <code>true</code> and the front of the array is reached without finding the
-											value, the search will wrap to the end of the array and continue
-										until <code>fromIndex + 1</code>.</p>
+										<ul>
+											<li>Whether the search wraps around at the front of the
+												array. If <code>true</code> and the front of the array is reached without
+												finding the value, the search will wrap to the end of the array
+											and continue until <code>fromIndex + 1</code>.</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
@@ -827,7 +901,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, -<span class="hlj
 algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-number">1</span>);        <span class="hljs-comment">// -1</span>
 algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">true</span>);  <span class="hljs-comment">// 4</span>
 </code></pre>
-							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#indexof">indexOf</a>, <a href="phosphor.collections.algorithm.html#findlastindex">findLastIndex</a>, and <a href="phosphor.collections.algorithm.html#findlast">findLast</a>.</p>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#indexof">indexOf</a> and <a href="phosphor.collections.algorithm.html#findlastindex">findLastIndex</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -841,7 +915,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L371">src/collections/algorithm.ts:371</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L408">src/collections/algorithm.ts:408</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -864,29 +938,45 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The array of values to be searched.</p>
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">U</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The value to locate in the array.</p>
+										<ul>
+											<li>The value to locate in the array.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5>cmp: <a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The comparator function to apply to the values.</p>
+										<ul>
+											<li>The comparator function to apply to the values.</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the matching element or <code>array.length</code> if
-							there is no match.</p>
+							<p>The match index or <code>array.length</code> if no match is found.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-comment">// TODO</span>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span><span class="hljs-params">(a: number, b: number)</span>: <span class="hljs-title">number</span> </span>{
+  <span class="hljs-keyword">return</span> a - b;
+}
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>];
+algo.lowerBound(data, <span class="hljs-number">0</span>, numberCmp);   <span class="hljs-comment">// 0</span>
+algo.lowerBound(data, <span class="hljs-number">6</span>, numberCmp);   <span class="hljs-comment">// 3</span>
+algo.lowerBound(data, <span class="hljs-number">7</span>, numberCmp);   <span class="hljs-comment">// 3</span>
+algo.lowerBound(data, -<span class="hljs-number">1</span>, numberCmp);  <span class="hljs-comment">// 0</span>
+algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span class="hljs-comment">// 6</span>
 </code></pre>
-							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#upperbound">upperBound</a>, <a href="phosphor.collections.algorithm.html#findlowerindex">findLowerIndex</a>, and <a href="phosphor.collections.algorithm.html#findlower">findLower</a>.</p>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#upperbound">upperBound</a> and <a href="phosphor.collections.algorithm.html#binaryfindindex">binaryFindIndex</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -900,7 +990,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L556">src/collections/algorithm.ts:556</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L626">src/collections/algorithm.ts:626</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -945,7 +1035,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L624">src/collections/algorithm.ts:624</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L694">src/collections/algorithm.ts:694</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -983,7 +1073,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L600">src/collections/algorithm.ts:600</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L670">src/collections/algorithm.ts:670</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1022,7 +1112,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L409">src/collections/algorithm.ts:409</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L459">src/collections/algorithm.ts:459</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1045,29 +1135,45 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The array of values to be searched.</p>
+										<ul>
+											<li>The array of values to be searched.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">U</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The value to locate in the array.</p>
+										<ul>
+											<li>The value to locate in the array.</li>
+										</ul>
 									</div>
 								</li>
 								<li>
 									<h5>cmp: <a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The comparator function to apply to the values.</p>
+										<ul>
+											<li>The comparator function to apply to the values.</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the matching element or <code>array.length</code> if
-							there is no match.</p>
+							<p>The match index or <code>array.length</code> if no match is found.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-comment">// TODO</span>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span><span class="hljs-params">(a: number, b: number)</span>: <span class="hljs-title">number</span> </span>{
+  <span class="hljs-keyword">return</span> a - b;
+}
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>];
+algo.upperBound(data, <span class="hljs-number">0</span>, numberCmp);   <span class="hljs-comment">// 1</span>
+algo.upperBound(data, <span class="hljs-number">6</span>, numberCmp);   <span class="hljs-comment">// 3</span>
+algo.upperBound(data, <span class="hljs-number">7</span>, numberCmp);   <span class="hljs-comment">// 5</span>
+algo.upperBound(data, -<span class="hljs-number">1</span>, numberCmp);  <span class="hljs-comment">// 0</span>
+algo.upperBound(data, <span class="hljs-number">10</span>, numberCmp);  <span class="hljs-comment">// 6</span>
 </code></pre>
-							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#lowerbound">lowerBound</a>, <a href="phosphor.collections.algorithm.html#findupperindex">findUpperIndex</a>, and <a href="phosphor.collections.algorithm.html#findupper">findUpper</a>.</p>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#lowerbound">lowerBound</a> and <a href="phosphor.collections.algorithm.html#binaryfindlastindex">binaryFindLastIndex</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -1130,6 +1236,18 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.collections.algorithm.html#binaryfind" class="tsd-kind-icon">binary<wbr>Find</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.collections.algorithm.html#binaryfindindex" class="tsd-kind-icon">binary<wbr>Find<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.collections.algorithm.html#binaryfindlast" class="tsd-kind-icon">binary<wbr>Find<wbr>Last</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.collections.algorithm.html#binaryfindlastindex" class="tsd-kind-icon">binary<wbr>Find<wbr>Last<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="phosphor.collections.algorithm.html#copy" class="tsd-kind-icon">copy</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
@@ -1143,18 +1261,6 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="phosphor.collections.algorithm.html#findlastindex" class="tsd-kind-icon">find<wbr>Last<wbr>Index</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="phosphor.collections.algorithm.html#findlower" class="tsd-kind-icon">find<wbr>Lower</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="phosphor.collections.algorithm.html#findlowerindex" class="tsd-kind-icon">find<wbr>Lower<wbr>Index</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="phosphor.collections.algorithm.html#findupper" class="tsd-kind-icon">find<wbr>Upper</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="phosphor.collections.algorithm.html#findupperindex" class="tsd-kind-icon">find<wbr>Upper<wbr>Index</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="phosphor.collections.algorithm.html#indexof" class="tsd-kind-icon">index<wbr>Of</a>
