@@ -71,8 +71,9 @@
 				<ul>
 					<li><a href="http://bower.io/">bower</a> <code>npm install -g bower</code></li>
 				</ul>
-				<pre><code>bower <span class="hljs-keyword">install</span> phosphor
-</code></pre><h2 id="source-build">Source Build</h2>
+				<pre><code class="lang-bash">bower install phosphor
+</code></pre>
+				<h2 id="source-build">Source Build</h2>
 				<p><strong>Prerequisites</strong></p>
 				<ul>
 					<li><a href="http://git-scm.com/">git</a></li>
@@ -80,16 +81,18 @@
 					<li><a href="http://gulpjs.com/">gulp</a> <code>npm install -g gulp</code></li>
 					<li><a href="https://github.com/DefinitelyTyped/tsd">tsd</a> <code>npm install -g tsd@next</code></li>
 				</ul>
-				<pre><code>git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/phosphorjs/phosphor.git
-<span class="hljs-keyword">cd</span> phosphor
+				<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/phosphorjs/phosphor.git
+<span class="hljs-built_in">cd</span> phosphor
 npm install
-tsd reinstall -<span class="hljs-keyword">so</span>
+tsd reinstall -so
 gulp
-</code></pre><p>Output will be placed in the <code>/dist</code> directory.</p>
+</code></pre>
+				<p>Output will be placed in the <code>/dist</code> directory.</p>
 				<h2 id="build-examples">Build Examples</h2>
 				<p>Follow the source build instructions first.</p>
-				<pre><code><span class="hljs-title">gulp</span> examples
-</code></pre><p>Navigate to <code>index.html</code> of the example of interest.</p>
+				<pre><code class="lang-bash">gulp examples
+</code></pre>
+				<p>Navigate to <code>index.html</code> of the example of interest.</p>
 				<h2 id="supported-browsers">Supported Browsers</h2>
 				<p>The browser versions which are currently <em>known to work</em> are listed below.
 				Earlier versions may also work, but come with no guarantees.</p>

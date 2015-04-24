@@ -63,10 +63,7 @@
 					<a href="../modules/phosphor.collections.html">collections</a>
 				</li>
 				<li>
-					<a href="../modules/phosphor.collections.algorithm.html">algorithm</a>
-				</li>
-				<li>
-					<a href="phosphor.collections.algorithm.icallback.html">ICallback</a>
+					<a href="phosphor.collections.icallback.html">ICallback</a>
 				</li>
 			</ul>
 			<h1>Interface ICallback&lt;T, U&gt;</h1>
@@ -79,7 +76,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A generic index callback function.</p>
+						<p>A sequence callback function.</p>
 					</div>
 				</div>
 			</section>
@@ -111,24 +108,31 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L14">src/collections/algorithm.ts:14</a></li>
+								<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/common.ts#L14">src/collections/common.ts:14</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>A generic index callback function.</p>
+								<p>A sequence callback function.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>value: <span class="tsd-signature-type">T</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The current value in the sequence.</p>
+								</div>
 							</li>
 							<li>
 								<h5>index: <span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The index of the value in the sequence.</p>
+								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
+						<p>The result of the callback for the value.</p>
 					</li>
 				</ul>
 			</section>
@@ -148,7 +152,7 @@
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/phosphor.collections.html">collections</a>
 								<ul>
-									<li class="current tsd-kind-module tsd-parent-kind-module">
+									<li class=" tsd-kind-module tsd-parent-kind-module">
 										<a href="../modules/phosphor.collections.algorithm.html">algorithm</a>
 									</li>
 								</ul>
@@ -189,69 +193,27 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/phosphor.collections.circularbuffer.html" class="tsd-kind-icon">Circular<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/phosphor.collections.queue.html" class="tsd-kind-icon">Queue</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="phosphor.collections.algorithm.icallback.html" class="tsd-kind-icon">ICallback</a>
+						<a href="phosphor.collections.icallback.html" class="tsd-kind-icon">ICallback</a>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="phosphor.collections.algorithm.icomparator.html" class="tsd-kind-icon">IComparator</a>
+						<a href="phosphor.collections.icomparator.html" class="tsd-kind-icon">IComparator</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="phosphor.collections.algorithm.ipredicate.html" class="tsd-kind-icon">IPredicate</a>
+						<a href="phosphor.collections.ipredicate.html" class="tsd-kind-icon">IPredicate</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#copy" class="tsd-kind-icon">copy</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#find" class="tsd-kind-icon">find</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#findindex" class="tsd-kind-icon">find<wbr>Index</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#findlast" class="tsd-kind-icon">find<wbr>Last</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#findlastindex" class="tsd-kind-icon">find<wbr>Last<wbr>Index</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#findlower" class="tsd-kind-icon">find<wbr>Lower</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#findlowerindex" class="tsd-kind-icon">find<wbr>Lower<wbr>Index</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#findupper" class="tsd-kind-icon">find<wbr>Upper</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#findupperindex" class="tsd-kind-icon">find<wbr>Upper<wbr>Index</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#indexof" class="tsd-kind-icon">index<wbr>Of</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#insert" class="tsd-kind-icon">insert</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#lowerbound" class="tsd-kind-icon">lower<wbr>Bound</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#move" class="tsd-kind-icon">move</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#remove" class="tsd-kind-icon">remove</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#removeat" class="tsd-kind-icon">remove<wbr>At</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/phosphor.collections.algorithm.html#upperbound" class="tsd-kind-icon">upper<wbr>Bound</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.collections.iqueuelink.html" class="tsd-kind-icon">IQueue<wbr>Link</a>
 					</li>
 				</ul>
 			</nav>
