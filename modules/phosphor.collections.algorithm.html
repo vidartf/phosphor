@@ -114,16 +114,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L565">src/collections/algorithm.ts:565</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L612">src/collections/algorithm.ts:612</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the first element which is equal to <code>value</code>.</p>
+									<p>Using a binary search, find the first element in an array which
+									compares <code>==</code> to a value.</p>
 								</div>
-								<p>This function uses a binary search. It must be applied to a sorted
-								array in order for the results to be correct.</p>
-								<p>Returns <code>undefined</code> if no matching value is found.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -138,15 +136,57 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to be searched. It must be sorted
+											in ascending order.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">U</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The value to locate in the array.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>cmp: <a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The comparator function to apply to the values.</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>The first element which compares <code>==</code> to <code>value</code>, or
+							<code>undefined</code> if <code>array</code> has no such element.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-interface"><span class="hljs-keyword">interface</span> IPair </span>{
+  rank: <span class="hljs-built_in">number</span>;
+  value: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">var</span> data: IPair[] = [
+  { rank: <span class="hljs-number">0</span>, value: <span class="hljs-string">'zero'</span> },
+  { rank: <span class="hljs-number">3</span>, value: <span class="hljs-string">'three'</span> },
+  { rank: <span class="hljs-number">7</span>, value: <span class="hljs-string">'seven-A'</span> },
+  { rank: <span class="hljs-number">7</span>, value: <span class="hljs-string">'seven-B'</span> },
+  { rank: <span class="hljs-number">9</span>, value: <span class="hljs-string">'nine'</span> },
+];
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rankCmp</span><span class="hljs-params">(pair: IPair, rank: number)</span>: <span class="hljs-title">number</span> </span>{
+  <span class="hljs-keyword">return</span> pair.rank - rank;
+}
+
+algo.binaryFind(data, <span class="hljs-number">7</span>, rankCmp);  <span class="hljs-comment">// { rank: 7, value: 'seven-A' }</span>
+algo.binaryFind(data, <span class="hljs-number">8</span>, rankCmp);  <span class="hljs-comment">// undefined</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#binaryfindlast">binaryFindLast</a> and <a href="phosphor.collections.algorithm.html#find">find</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -160,12 +200,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L504">src/collections/algorithm.ts:504</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L516">src/collections/algorithm.ts:516</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Binary find the index of the first element which is <code>==</code> to <code>value</code>.</p>
+									<p>Using a binary search, find the index of the first element in an
+									array which compares <code>==</code> to a value.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -206,7 +247,8 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The element index or <code>-1</code> if no element is found.</p>
+							<p>The index of the first element which compares <code>==</code> to
+							<code>value</code>, or <code>array.length</code> if <code>array</code> has no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -232,16 +274,14 @@ algo.binaryFindIndex(data, <span class="hljs-number">6</span>, numberCmp);  <spa
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L580">src/collections/algorithm.ts:580</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L660">src/collections/algorithm.ts:660</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the index of the last element which is equal to <code>value</code>.</p>
+									<p>Using a binary search, find the last element in an array which
+									compares <code>==</code> to a value.</p>
 								</div>
-								<p>This uses a binary search algorithm which must be applied to a
-								sorted array in order for the results to be correct.</p>
-								<p>Returns <code>-1</code> if no matching value is found.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -256,15 +296,57 @@ algo.binaryFindIndex(data, <span class="hljs-number">6</span>, numberCmp);  <spa
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to be searched. It must be sorted
+											in ascending order.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">U</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The value to locate in the array.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>cmp: <a href="../interfaces/phosphor.collections.icomparator.html" class="tsd-signature-type">IComparator</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The comparator function to apply to the values.</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>The last element which compares <code>==</code> to <code>value</code>, or
+							<code>undefined</code> if <code>array</code> has no such element.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-interface"><span class="hljs-keyword">interface</span> IPair </span>{
+  rank: <span class="hljs-built_in">number</span>;
+  value: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">var</span> data: IPair[] = [
+  { rank: <span class="hljs-number">0</span>, value: <span class="hljs-string">'zero'</span> },
+  { rank: <span class="hljs-number">3</span>, value: <span class="hljs-string">'three'</span> },
+  { rank: <span class="hljs-number">7</span>, value: <span class="hljs-string">'seven-A'</span> },
+  { rank: <span class="hljs-number">7</span>, value: <span class="hljs-string">'seven-B'</span> },
+  { rank: <span class="hljs-number">9</span>, value: <span class="hljs-string">'nine'</span> },
+];
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rankCmp</span><span class="hljs-params">(pair: IPair, rank: number)</span>: <span class="hljs-title">number</span> </span>{
+  <span class="hljs-keyword">return</span> pair.rank - rank;
+}
+
+algo.binaryFindLast(data, <span class="hljs-number">7</span>, rankCmp);  <span class="hljs-comment">// { rank: 7, value: 'seven-B' }</span>
+algo.binaryFindLast(data, <span class="hljs-number">8</span>, rankCmp);  <span class="hljs-comment">// undefined</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#binaryfind">binaryFind</a> and <a href="phosphor.collections.algorithm.html#findlast">findLast</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -278,12 +360,13 @@ algo.binaryFindIndex(data, <span class="hljs-number">6</span>, numberCmp);  <spa
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L544">src/collections/algorithm.ts:544</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L558">src/collections/algorithm.ts:558</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Binary find the index of the last element which is <code>==</code> to <code>value</code>.</p>
+									<p>Using a binary search, find the index of the last element in an
+									array which compares <code>==</code> to a value.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -324,7 +407,8 @@ algo.binaryFindIndex(data, <span class="hljs-number">6</span>, numberCmp);  <spa
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The element index or <code>-1</code> if no element is found.</p>
+							<p>The index of the last element which compares <code>==</code> to
+							<code>value</code>, or <code>array.length</code> if <code>array</code> has no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -350,7 +434,7 @@ algo.binaryFindLastIndex(data, <span class="hljs-number">6</span>, numberCmp);  
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L590">src/collections/algorithm.ts:590</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L670">src/collections/algorithm.ts:670</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -384,12 +468,12 @@ algo.binaryFindLastIndex(data, <span class="hljs-number">6</span>, numberCmp);  
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L323">src/collections/algorithm.ts:323</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L328">src/collections/algorithm.ts:328</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the first value which matches a predicate.</p>
+									<p>Find the first value in an array which matches a predicate.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -439,7 +523,8 @@ algo.binaryFindLastIndex(data, <span class="hljs-number">6</span>, numberCmp);  
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-							<p>The match value or <code>undefined</code> if no match is found.</p>
+							<p>The first matching value, or <code>undefined</code> if no value matches
+							the predicate.</p>
 							<h4 id="notes">Notes</h4>
 							<p>The range of visited indices is set before the first invocation of
 							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
@@ -471,12 +556,12 @@ algo.find(data, isEven, <span class="hljs-number">6</span>, <span class="hljs-li
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L182">src/collections/algorithm.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L185">src/collections/algorithm.ts:185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the index of the first value which matches a predicate.</p>
+									<p>Find the index of the first value in an array which matches a predicate.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -526,7 +611,8 @@ algo.find(data, isEven, <span class="hljs-number">6</span>, <span class="hljs-li
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The match index or <code>-1</code> if no match is found.</p>
+							<p>The index of the first matching value, or <code>-1</code> if no value
+							matches the predicate.</p>
 							<h4 id="notes">Notes</h4>
 							<p>The range of visited indices is set before the first invocation of
 							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
@@ -558,12 +644,12 @@ algo.findIndex(data, isEven, <span class="hljs-number">6</span>, <span class="hl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L370">src/collections/algorithm.ts:370</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L376">src/collections/algorithm.ts:376</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the last value which matches a predicate.</p>
+									<p>Find the last value in an array which matches a predicate.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -613,7 +699,8 @@ algo.findIndex(data, isEven, <span class="hljs-number">6</span>, <span class="hl
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-							<p>The match value or <code>undefined</code> if no match is found.</p>
+							<p>The last matching value, or <code>undefined</code> if no value matches
+							the predicate.</p>
 							<h4 id="notes">Notes</h4>
 							<p>The range of visited indices is set before the first invocation of
 							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
@@ -645,12 +732,12 @@ algo.findLast(data, isEven, <span class="hljs-number">0</span>, <span class="hlj
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L253">src/collections/algorithm.ts:253</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L257">src/collections/algorithm.ts:257</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the index of the last value which matches a predicate.</p>
+									<p>Find the index of the last value in an array which matches a predicate.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -700,7 +787,8 @@ algo.findLast(data, isEven, <span class="hljs-number">0</span>, <span class="hlj
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The match index or <code>-1</code> if no match is found.</p>
+							<p>The index of the last matching value, or <code>-1</code> if no value
+							matches the predicate.</p>
 							<h4 id="notes">Notes</h4>
 							<p>The range of visited indices is set before the first invocation of
 							<code>pred</code>. It is not safe for <code>pred</code> to change the length of <code>array</code>.</p>
@@ -732,12 +820,12 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L46">src/collections/algorithm.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L47">src/collections/algorithm.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the index of the first occurrence of a value.</p>
+									<p>Find the index of the first occurrence of a value in an array.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -787,7 +875,8 @@ algo.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span class
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the value or <code>-1</code> if the value is not found.</p>
+							<p>The index of the first occurrence of <code>value</code> in <code>array</code>,
+							or <code>-1</code> if <code>value</code> is not in <code>array</code>.</p>
 							<h4 id="notes">Notes</h4>
 							<p>Values are compared using the strict equality <code>===</code> operator.</p>
 							<h4 id="example">Example</h4>
@@ -814,7 +903,7 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L611">src/collections/algorithm.ts:611</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L691">src/collections/algorithm.ts:691</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -859,12 +948,12 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L112">src/collections/algorithm.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L114">src/collections/algorithm.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Find the index of the last occurrence of a value.</p>
+									<p>Find the index of the last occurrence of a value in an array.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -914,7 +1003,8 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the value or <code>-1</code> if the value is not found.</p>
+							<p>The index of the last occurrence of <code>value</code> in <code>array</code>,
+							or <code>-1</code> if <code>value</code> is not in <code>array</code>.</p>
 							<h4 id="notes">Notes</h4>
 							<p>Values are compared using the strict equality <code>===</code> operator.</p>
 							<h4 id="example">Example</h4>
@@ -941,12 +1031,13 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L407">src/collections/algorithm.ts:407</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L415">src/collections/algorithm.ts:415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Binary find the index of the first element which is <code>&lt;=</code> to <code>value</code>.</p>
+									<p>Using a binary search, find the index of the first element in an
+									array which compares <code>&lt;=</code> to a value.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -987,7 +1078,8 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The element index or <code>array.length</code> if no element is found.</p>
+							<p>The index of the first element which compares <code>&lt;=</code> to
+							<code>value</code>, or <code>array.length</code> if <code>array</code> has no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -1016,7 +1108,7 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L642">src/collections/algorithm.ts:642</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L722">src/collections/algorithm.ts:722</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1061,7 +1153,7 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L710">src/collections/algorithm.ts:710</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L790">src/collections/algorithm.ts:790</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1099,7 +1191,7 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L686">src/collections/algorithm.ts:686</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L766">src/collections/algorithm.ts:766</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1138,12 +1230,13 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L457">src/collections/algorithm.ts:457</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L467">src/collections/algorithm.ts:467</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Binary find the index of the first element which is <code>&gt;</code> than <code>value</code>.</p>
+									<p>Using a binary search, find the index of the first element in an
+									array which compares <code>&gt;</code> than a value.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1184,7 +1277,8 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The element index or <code>array.length</code> if no element is found.</p>
+							<p>The index of the first element which compares <code>&gt;</code> than
+							<code>value</code>, or <code>array.length</code> if <code>array</code> has no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
