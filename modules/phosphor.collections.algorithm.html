@@ -161,8 +161,8 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-							<p>The first element which compares <code>==</code> to <code>value</code>, or
-							<code>undefined</code> if <code>array</code> has no such element.</p>
+							<p>The first element in <code>array</code> which compares <code>==</code> to
+							<code>value</code>, or <code>undefined</code> if there is no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -247,8 +247,8 @@ algo.binaryFind(data, <span class="hljs-number">8</span>, rankCmp);  <span class
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the first element which compares <code>==</code> to
-							<code>value</code>, or <code>array.length</code> if <code>array</code> has no such element.</p>
+							<p>The index of the first element in <code>array</code> which compares
+							<code>==</code> to <code>value</code>, or <code>-1</code> if there is no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -321,8 +321,8 @@ algo.binaryFindIndex(data, <span class="hljs-number">6</span>, numberCmp);  <spa
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-							<p>The last element which compares <code>==</code> to <code>value</code>, or
-							<code>undefined</code> if <code>array</code> has no such element.</p>
+							<p>The last element in <code>array</code> which compares <code>==</code> to
+							<code>value</code>, or <code>undefined</code> if there is no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -407,8 +407,8 @@ algo.binaryFindLast(data, <span class="hljs-number">8</span>, rankCmp);  <span c
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the last element which compares <code>==</code> to
-							<code>value</code>, or <code>array.length</code> if <code>array</code> has no such element.</p>
+							<p>The index of the last element in <code>array</code> which compares
+							<code>==</code> to <code>value</code>, or <code>-1</code> if there is no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -434,12 +434,12 @@ algo.binaryFindLastIndex(data, <span class="hljs-number">6</span>, numberCmp);  
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L670">src/collections/algorithm.ts:670</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L689">src/collections/algorithm.ts:689</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a shallow copy of the given array.</p>
+									<p>Create a shallow copy of an array.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -452,9 +452,26 @@ algo.binaryFindLastIndex(data, <span class="hljs-number">6</span>, numberCmp);  
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to copy.</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>A shallow copy of <code>array</code>.</p>
+							<h4 id="notes">Notes</h4>
+							<p>This function assumes that <code>array</code> does not have holes.</p>
+							<p>The result array is pre-allocated, which is typically the fastest
+								option for arrays <code>&lt;</code> 100k elements. Use this function when copy
+							performance of small arrays is critical.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+algo.copy(data);  <span class="hljs-comment">// [0, 1, 2, 3, 4];</span>
+</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -903,18 +920,13 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L691">src/collections/algorithm.ts:691</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L730">src/collections/algorithm.ts:730</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Insert an element at the given index.</p>
+									<p>Insert an element into an array at a specified index.</p>
 								</div>
-								<p>If <code>index</code> is negative, it will be offset from the end of the array.
-									If the adjusted value is still negative, it will be clamped to <code>0</code>.
-									If <code>index</code> is greater than <code>array.length</code>, it will be clamped to
-								<code>array.length</code>.</p>
-								<p>Returns the index at which the element was inserted.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -926,15 +938,47 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to modify.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The index at which to insert the value. If this value
+												is negative, it is taken as an offset from the end of the array. If
+												the adjusted value is still negative, it is clamped to <code>0</code>. If this
+											value is positive, it is clamped to <code>array.length</code>.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The value to insert into the array.</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index at which the value was inserted.</p>
+							<h4 id="notes">Notes</h4>
+							<p>This function assumes that <code>array</code> does not have holes.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+algo.insert(data, <span class="hljs-number">0</span>, <span class="hljs-number">12</span>);  <span class="hljs-comment">// 0</span>
+algo.insert(data, <span class="hljs-number">3</span>, <span class="hljs-number">42</span>);  <span class="hljs-comment">// 3</span>
+algo.insert(data, <span class="hljs-number">9</span>, <span class="hljs-number">19</span>);  <span class="hljs-comment">// 7</span>
+algo.insert(data, -<span class="hljs-number">9</span>, <span class="hljs-number">9</span>);  <span class="hljs-comment">// 0</span>
+algo.insert(data, -<span class="hljs-number">2</span>, <span class="hljs-number">8</span>);  <span class="hljs-comment">// 7</span>
+<span class="hljs-built_in">console</span>.log(data);         <span class="hljs-comment">// [9, 12, 0, 1, 42, 2, 3, 8, 4, 19]</span>
+</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -1078,8 +1122,8 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the first element which compares <code>&lt;=</code> to
-							<code>value</code>, or <code>array.length</code> if <code>array</code> has no such element.</p>
+							<p>The index of the first element in <code>array</code> which compares
+							<code>&lt;=</code> to <code>value</code>, or <code>array.length</code> if there is no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -1108,18 +1152,13 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L722">src/collections/algorithm.ts:722</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L773">src/collections/algorithm.ts:773</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Move an array element from one index to another.</p>
+									<p>Move an element in an array from one index to another.</p>
 								</div>
-								<p>If <code>fromIndex</code> is negative, it will be offset from the end of the
-								array. If the adjusted value is out of range, <code>-1</code> will be returned.</p>
-								<p>If <code>toIndex</code> is negative, it will be offset from the end of the
-								array. If the adjusted value is out of range, it will be clamped.</p>
-								<p>Returns the final index of the moved element.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -1131,15 +1170,41 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to modify.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The index of the element to move. If this value
+												is negative, it is taken as an offset from the end of the array.
+												If the adjusted value is not a valid index, the array will not
+											be modified and <code>-1</code> will be returned.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>toIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The target index of the element. If this value is
+												negative, it is taken as an offset from the end of the array. If
+												the adjusted value is still negative, it is clamped to <code>0</code>. If
+											this value is positive, it is clamped to <code>array.length - 1</code>.</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index to which the element was moved, or <code>-1</code> if
+							<code>fromIndex</code> is invalid.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-comment">// TODO</span>
+</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -1153,7 +1218,7 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L790">src/collections/algorithm.ts:790</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L841">src/collections/algorithm.ts:841</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1191,7 +1256,7 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L766">src/collections/algorithm.ts:766</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L817">src/collections/algorithm.ts:817</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1277,8 +1342,8 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index of the first element which compares <code>&gt;</code> than
-							<code>value</code>, or <code>array.length</code> if <code>array</code> has no such element.</p>
+							<p>The index of the first element in <code>array</code> which compares
+							<code>&gt;</code> than <code>value</code>, or <code>array.length</code> if there is no such element.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
