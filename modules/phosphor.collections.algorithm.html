@@ -434,7 +434,7 @@ algo.binaryFindLastIndex(data, <span class="hljs-number">6</span>, numberCmp);  
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L689">src/collections/algorithm.ts:689</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L687">src/collections/algorithm.ts:687</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,7 +462,6 @@ algo.binaryFindLastIndex(data, <span class="hljs-number">6</span>, numberCmp);  
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
 							<p>A shallow copy of <code>array</code>.</p>
 							<h4 id="notes">Notes</h4>
-							<p>This function assumes that <code>array</code> does not have holes.</p>
 							<p>The result array is pre-allocated, which is typically the fastest
 								option for arrays <code>&lt;</code> 100k elements. Use this function when copy
 							performance of small arrays is critical.</p>
@@ -920,7 +919,7 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L730">src/collections/algorithm.ts:730</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L727">src/collections/algorithm.ts:727</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -966,8 +965,6 @@ algo.indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-num
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>The index at which the value was inserted.</p>
-							<h4 id="notes">Notes</h4>
-							<p>This function assumes that <code>array</code> does not have holes.</p>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
@@ -979,6 +976,7 @@ algo.insert(data, -<span class="hljs-number">9</span>, <span class="hljs-number"
 algo.insert(data, -<span class="hljs-number">2</span>, <span class="hljs-number">8</span>);  <span class="hljs-comment">// 7</span>
 <span class="hljs-built_in">console</span>.log(data);         <span class="hljs-comment">// [9, 12, 0, 1, 42, 2, 3, 8, 4, 19]</span>
 </code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#removeat">removeAt</a> and <a href="phosphor.collections.algorithm.html#remove">remove</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -1152,7 +1150,7 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L773">src/collections/algorithm.ts:773</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L777">src/collections/algorithm.ts:777</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1203,7 +1201,14 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 							<p>The index to which the element was moved, or <code>-1</code> if
 							<code>fromIndex</code> is invalid.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-comment">// TODO</span>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+algo.move(data, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);   <span class="hljs-comment">// 2</span>
+algo.move(data, -<span class="hljs-number">1</span>, <span class="hljs-number">0</span>);  <span class="hljs-comment">// 0</span>
+algo.move(data, <span class="hljs-number">3</span>, -<span class="hljs-number">4</span>);  <span class="hljs-comment">// 1</span>
+algo.move(data, <span class="hljs-number">10</span>, <span class="hljs-number">0</span>);  <span class="hljs-comment">// -1</span>
+<span class="hljs-built_in">console</span>.log(data);       <span class="hljs-comment">// [4, 1, 0, 2, 3]</span>
 </code></pre>
 						</li>
 					</ul>
@@ -1218,14 +1223,13 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L841">src/collections/algorithm.ts:841</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L882">src/collections/algorithm.ts:882</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Remove the first occurrence of the element and return its index.</p>
+									<p>Remove the first occurrence of a value from an array.</p>
 								</div>
-								<p>Returns the <code>-1</code> if the element is not in the array.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -1237,12 +1241,34 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to modify.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The value to remove from the array.</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index where <code>value</code> was located, or <code>-1</code> if <code>value</code>
+							is not in <code>array</code>.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+algo.remove(data, <span class="hljs-number">1</span>);  <span class="hljs-comment">// 1</span>
+algo.remove(data, <span class="hljs-number">3</span>);  <span class="hljs-comment">// 2</span>
+algo.remove(data, <span class="hljs-number">7</span>);  <span class="hljs-comment">// -1</span>
+<span class="hljs-built_in">console</span>.log(data);     <span class="hljs-comment">// [0, 2, 4]</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#removeat">removeAt</a> and <a href="phosphor.collections.algorithm.html#insert">insert</a>.</p>
 						</li>
 					</ul>
 				</section>
@@ -1256,15 +1282,13 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L817">src/collections/algorithm.ts:817</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/collections/algorithm.ts#L840">src/collections/algorithm.ts:840</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Remove and return the element at the given index.</p>
+									<p>Remove an element from an array at a specified index.</p>
 								</div>
-								<p>If <code>index</code> is negative, it will be offset from the end of the array.</p>
-								<p>Returns <code>undefined</code> if the index is out of range.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -1276,12 +1300,37 @@ algo.lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 							<ul class="tsd-parameters">
 								<li>
 									<h5>array: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The array of values to modify.</li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The index of the element to remove. If this value
+												is negative, it is taken as an offset from the end of the array.
+												If the adjusted value is not a valid index, the array will not
+											be modified and <code>undefined</code> will be returned.</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>The element which was removed from <code>array</code>, or <code>undefined</code>
+							if <code>index</code> is invalid.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+algo.removeAt(data, <span class="hljs-number">1</span>);   <span class="hljs-comment">// 1</span>
+algo.removeAt(data, -<span class="hljs-number">2</span>);  <span class="hljs-comment">// 3</span>
+algo.removeAt(data, <span class="hljs-number">10</span>);  <span class="hljs-comment">// undefined</span>
+<span class="hljs-built_in">console</span>.log(data);        <span class="hljs-comment">// [0, 2, 4]</span>
+</code></pre>
+							<p><strong>See also</strong> <a href="phosphor.collections.algorithm.html#remove">remove</a> and <a href="phosphor.collections.algorithm.html#insert">insert</a>.</p>
 						</li>
 					</ul>
 				</section>
