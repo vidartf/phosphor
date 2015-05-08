@@ -105,6 +105,7 @@
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.widgets.panel.html" class="tsd-kind-icon">Panel</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.widgets.renderwidget.html" class="tsd-kind-icon">Render<wbr>Widget</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.widgets.resizemessage.html" class="tsd-kind-icon">Resize<wbr>Message</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.widgets.scrollbar.html" class="tsd-kind-icon">Scroll<wbr>Bar</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.widgets.spaceritem.html" class="tsd-kind-icon">Spacer<wbr>Item</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.widgets.splithandle.html" class="tsd-kind-icon">Split<wbr>Handle</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.widgets.splititem.html" class="tsd-kind-icon">Split<wbr>Item</a></li>
@@ -184,9 +185,11 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#overlay_class" class="tsd-kind-icon">OVERLAY_<wbr>CLASS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#removing_class" class="tsd-kind-icon">REMOVING_<wbr>CLASS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#render_widget_class" class="tsd-kind-icon">RENDER_<wbr>WIDGET_<wbr>CLASS</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#scrollbar_class" class="tsd-kind-icon">SCROLLBAR_<wbr>CLASS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#selected_class" class="tsd-kind-icon">SELECTED_<wbr>CLASS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#separator_type_class" class="tsd-kind-icon">SEPARATOR_<wbr>TYPE_<wbr>CLASS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#shortcut_class" class="tsd-kind-icon">SHORTCUT_<wbr>CLASS</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#slider_class" class="tsd-kind-icon">SLIDER_<wbr>CLASS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#split_panel_class" class="tsd-kind-icon">SPLIT_<wbr>PANEL_<wbr>CLASS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#stacked_panel_class" class="tsd-kind-icon">STACKED_<wbr>PANEL_<wbr>CLASS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.widgets.html#submenu_icon_class" class="tsd-kind-icon">SUBMENU_<wbr>ICON_<wbr>CLASS</a></li>
@@ -246,12 +249,14 @@
 						<ul>
 							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/menu.ts#L70">src/widgets/menu.ts:70</a></li>
 							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/menubar.ts#L56">src/widgets/menubar.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L31">src/widgets/scrollbar.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The class name added to active menu items.
-							The class name added to active menu items.</p>
+								The class name added to active menu items.
+							The class name added to an active scroll bar.</p>
 						</div>
 					</div>
 				</section>
@@ -576,11 +581,13 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/splithandle.ts#L26">src/widgets/splithandle.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L36">src/widgets/scrollbar.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The class name added to horizontal split handles.</p>
+							<p>The class name added to horizontal split handles.
+							The class name added to a horizontal scroll bar.</p>
 						</div>
 					</div>
 				</section>
@@ -673,7 +680,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>AFTER_<wbr>ATTACH<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L82">src/widgets/widget.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L87">src/widgets/widget.ts:87</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -688,7 +695,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>AFTER_<wbr>DETACH<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L92">src/widgets/widget.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L97">src/widgets/widget.ts:97</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -703,7 +710,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>AFTER_<wbr>HIDE<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L72">src/widgets/widget.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L77">src/widgets/widget.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -718,7 +725,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>AFTER_<wbr>RENDER<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/renderwidget.ts#L41">src/widgets/renderwidget.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/renderwidget.ts#L33">src/widgets/renderwidget.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -733,7 +740,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>AFTER_<wbr>SHOW<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L62">src/widgets/widget.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L67">src/widgets/widget.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -748,7 +755,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>BEFORE_<wbr>ATTACH<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L77">src/widgets/widget.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L82">src/widgets/widget.ts:82</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -763,7 +770,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>BEFORE_<wbr>DETACH<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L87">src/widgets/widget.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L92">src/widgets/widget.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -778,7 +785,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>BEFORE_<wbr>HIDE<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L67">src/widgets/widget.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L72">src/widgets/widget.ts:72</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -793,7 +800,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>BEFORE_<wbr>RENDER<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/renderwidget.ts#L36">src/widgets/renderwidget.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/renderwidget.ts#L28">src/widgets/renderwidget.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -808,7 +815,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>BEFORE_<wbr>SHOW<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L57">src/widgets/widget.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L62">src/widgets/widget.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -823,7 +830,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>CLOSE<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L97">src/widgets/widget.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L102">src/widgets/widget.ts:102</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -870,7 +877,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>PARENT_<wbr>CHANGED<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L52">src/widgets/widget.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L57">src/widgets/widget.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -885,7 +892,7 @@
 					<div class="tsd-signature tsd-kind-icon">MSG_<wbr>UPDATE_<wbr>REQUEST<span class="tsd-signature-symbol">:</span> <a href="../classes/phosphor.core.message.html" class="tsd-signature-type">Message</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/renderwidget.ts#L31">src/widgets/renderwidget.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L52">src/widgets/widget.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -962,12 +969,27 @@
 					<div class="tsd-signature tsd-kind-icon">RENDER_<wbr>WIDGET_<wbr>CLASS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/renderwidget.ts#L26">src/widgets/renderwidget.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/renderwidget.ts#L23">src/widgets/renderwidget.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The class name added to RenderWidget instances.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="scrollbar_class" class="tsd-anchor"></a>
+					<h3>SCROLLBAR_<wbr>CLASS</h3>
+					<div class="tsd-signature tsd-kind-icon">SCROLLBAR_<wbr>CLASS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L21">src/widgets/scrollbar.ts:21</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The class name added to ScrollBar instances.</p>
 						</div>
 					</div>
 				</section>
@@ -1017,6 +1039,21 @@
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The class name added to a menu item shortcut cell.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="slider_class" class="tsd-anchor"></a>
+					<h3>SLIDER_<wbr>CLASS</h3>
+					<div class="tsd-signature tsd-kind-icon">SLIDER_<wbr>CLASS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L26">src/widgets/scrollbar.ts:26</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The class name assigned to a scroll bar slider.</p>
 						</div>
 					</div>
 				</section>
@@ -1196,11 +1233,13 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/splithandle.ts#L31">src/widgets/splithandle.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L41">src/widgets/scrollbar.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The class name added to vertical split handles.</p>
+							<p>The class name added to vertical split handles.
+							The class name added to a vertical scroll bar.</p>
 						</div>
 					</div>
 				</section>
@@ -1225,7 +1264,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Size<wbr>Policy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L915">src/widgets/widget.ts:915</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L949">src/widgets/widget.ts:949</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1247,7 +1286,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L982">src/widgets/widget.ts:982</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L1016">src/widgets/widget.ts:1016</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1275,7 +1314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L1009">src/widgets/widget.ts:1009</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L1043">src/widgets/widget.ts:1043</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1303,7 +1342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L958">src/widgets/widget.ts:958</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L992">src/widgets/widget.ts:992</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1331,7 +1370,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L933">src/widgets/widget.ts:933</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L967">src/widgets/widget.ts:967</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1359,7 +1398,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L971">src/widgets/widget.ts:971</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L1005">src/widgets/widget.ts:1005</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1387,7 +1426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L998">src/widgets/widget.ts:998</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L1032">src/widgets/widget.ts:1032</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1415,7 +1454,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L946">src/widgets/widget.ts:946</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L980">src/widgets/widget.ts:980</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1443,7 +1482,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L921">src/widgets/widget.ts:921</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L955">src/widgets/widget.ts:955</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1502,7 +1541,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/splitlayout.ts#L549">src/widgets/splitlayout.ts:549</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/splitlayout.ts#L547">src/widgets/splitlayout.ts:547</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1932,13 +1971,13 @@ c) If <span class="hljs-keyword">after</span> adjusting all stretch <span class=
 					<a name="normalize" class="tsd-anchor"></a>
 					<h3>normalize</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">normalize<span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">normalize<span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/splitlayout.ts#L591">src/widgets/splitlayout.ts:591</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/splitlayout.ts#L589">src/widgets/splitlayout.ts:589</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1949,10 +1988,10 @@ c) If <span class="hljs-keyword">after</span> adjusting all stretch <span class=
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>values: <span class="tsd-signature-type">number[]</span></h5>
+									<h5>values: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2077,7 +2116,7 @@ c) If <span class="hljs-keyword">after</span> adjusting all stretch <span class=
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/splitlayout.ts#L534">src/widgets/splitlayout.ts:534</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/splitlayout.ts#L532">src/widgets/splitlayout.ts:532</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2217,6 +2256,9 @@ c) If <span class="hljs-keyword">after</span> adjusting all stretch <span class=
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/phosphor.widgets.resizemessage.html" class="tsd-kind-icon">Resize<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/phosphor.widgets.scrollbar.html" class="tsd-kind-icon">Scroll<wbr>Bar</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/phosphor.widgets.spaceritem.html" class="tsd-kind-icon">Spacer<wbr>Item</a>
@@ -2426,6 +2468,9 @@ c) If <span class="hljs-keyword">after</span> adjusting all stretch <span class=
 						<a href="phosphor.widgets.html#render_widget_class" class="tsd-kind-icon">RENDER_<wbr>WIDGET_<wbr>CLASS</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="phosphor.widgets.html#scrollbar_class" class="tsd-kind-icon">SCROLLBAR_<wbr>CLASS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="phosphor.widgets.html#selected_class" class="tsd-kind-icon">SELECTED_<wbr>CLASS</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
@@ -2433,6 +2478,9 @@ c) If <span class="hljs-keyword">after</span> adjusting all stretch <span class=
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="phosphor.widgets.html#shortcut_class" class="tsd-kind-icon">SHORTCUT_<wbr>CLASS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="phosphor.widgets.html#slider_class" class="tsd-kind-icon">SLIDER_<wbr>CLASS</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="phosphor.widgets.html#split_panel_class" class="tsd-kind-icon">SPLIT_<wbr>PANEL_<wbr>CLASS</a>

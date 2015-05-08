@@ -155,12 +155,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="phosphor.widgets.stackedlayout.html#minsize" class="tsd-kind-icon">min<wbr>Size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="phosphor.widgets.stackedlayout.html#movewidget" class="tsd-kind-icon">move<wbr>Widget</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.stackedlayout.html#processparentmessage" class="tsd-kind-icon">process<wbr>Parent<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.stackedlayout.html#refresh" class="tsd-kind-icon">refresh</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.stackedlayout.html#remove" class="tsd-kind-icon">remove</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="phosphor.widgets.stackedlayout.html#removeat" class="tsd-kind-icon">remove<wbr>At</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.stackedlayout.html#reparentchildwidgets" class="tsd-kind-icon">reparent<wbr>Child<wbr>Widgets</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.stackedlayout.html#setalignment" class="tsd-kind-icon">set<wbr>Alignment</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="phosphor.widgets.stackedlayout.html#sizehint" class="tsd-kind-icon">size<wbr>Hint</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.stackedlayout.html#update" class="tsd-kind-icon">update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.stackedlayout.html#widgetat" class="tsd-kind-icon">widget<wbr>At</a></li>
 							</ul>
 						</section>
@@ -872,6 +872,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="refresh" class="tsd-anchor"></a>
+					<h3>refresh</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">refresh<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="phosphor.widgets.layout.html">Layout</a>.<a href="phosphor.widgets.layout.html#refresh">refresh</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/layout.ts#L212">src/widgets/layout.ts:212</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Refresh the layout for the parent widget immediately.</p>
+								</div>
+								<p>This is typically called automatically at the appropriate times.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="remove" class="tsd-anchor"></a>
 					<h3>remove</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -1007,30 +1031,6 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="phosphor.utility.size.html" class="tsd-signature-type">Size</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="update" class="tsd-anchor"></a>
-					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="phosphor.widgets.layout.html">Layout</a>.<a href="phosphor.widgets.layout.html#update">update</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/layout.ts#L212">src/widgets/layout.ts:212</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update the layout for the parent widget immediately.</p>
-								</div>
-								<p>This is typically called automatically at the appropriate times.</p>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1201,6 +1201,9 @@
 								<a href="phosphor.widgets.stackedlayout.html#processparentmessage" class="tsd-kind-icon">process<wbr>Parent<wbr>Message</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.stackedlayout.html#refresh" class="tsd-kind-icon">refresh</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="phosphor.widgets.stackedlayout.html#remove" class="tsd-kind-icon">remove</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
@@ -1214,9 +1217,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="phosphor.widgets.stackedlayout.html#sizehint" class="tsd-kind-icon">size<wbr>Hint</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.stackedlayout.html#update" class="tsd-kind-icon">update</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="phosphor.widgets.stackedlayout.html#widgetat" class="tsd-kind-icon">widget<wbr>At</a>

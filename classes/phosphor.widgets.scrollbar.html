@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TabPanel | Phosphor</title>
+	<title>ScrollBar | Phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -63,10 +63,10 @@
 					<a href="../modules/phosphor.widgets.html">widgets</a>
 				</li>
 				<li>
-					<a href="phosphor.widgets.tabpanel.html">TabPanel</a>
+					<a href="phosphor.widgets.scrollbar.html">ScrollBar</a>
 				</li>
 			</ul>
-			<h1>Class TabPanel</h1>
+			<h1>Class ScrollBar</h1>
 		</div>
 	</div>
 </header>
@@ -76,11 +76,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A panel which provides a tabbed container for child widgets.</p>
+						<p>A widget which provides a horizontal or vertical scroll bar.</p>
 					</div>
-					<p>The TabPanel provides a convenient combination of a TabBar and a
-						StackedPanel which allows the user to toggle between widgets by
-					selecting the tab associated with a widget.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -90,7 +87,7 @@
 						<a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">TabPanel</span>
+								<span class="target">ScrollBar</span>
 							</li>
 						</ul>
 					</li>
@@ -110,97 +107,99 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="phosphor.widgets.tabpanel.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="phosphor.widgets.scrollbar.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.tabpanel.html#_stackedpanel" class="tsd-kind-icon">_stacked<wbr>Panel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.tabpanel.html#_tabbar" class="tsd-kind-icon">_tab<wbr>Bar</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#currentchanged" class="tsd-kind-icon">current<wbr>Changed</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#disposed" class="tsd-kind-icon">disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_dragdata" class="tsd-kind-icon">_drag<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_maximum" class="tsd-kind-icon">_maximum</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_minimum" class="tsd-kind-icon">_minimum</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_orientation" class="tsd-kind-icon">_orientation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_pagesize" class="tsd-kind-icon">_page<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_sliderminsize" class="tsd-kind-icon">_slider<wbr>Min<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_value" class="tsd-kind-icon">_value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#disposed" class="tsd-kind-icon">disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.widgets.scrollbar.html#slidermoved" class="tsd-kind-icon">slider<wbr>Moved</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#boxsizing" class="tsd-kind-icon">box<wbr>Sizing</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#childcount" class="tsd-kind-icon">child<wbr>Count</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#count" class="tsd-kind-icon">count</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#currentindex" class="tsd-kind-icon">current<wbr>Index</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#currentwidget" class="tsd-kind-icon">current<wbr>Widget</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#height" class="tsd-kind-icon">height</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#horizontalsizepolicy" class="tsd-kind-icon">horizontal<wbr>Size<wbr>Policy</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#isattached" class="tsd-kind-icon">is<wbr>Attached</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#layout" class="tsd-kind-icon">layout</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#node" class="tsd-kind-icon">node</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#parent" class="tsd-kind-icon">parent</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#tabbar" class="tsd-kind-icon">tab<wbr>Bar</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#tabsmovable" class="tsd-kind-icon">tabs<wbr>Movable</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#verticalsizepolicy" class="tsd-kind-icon">vertical<wbr>Size<wbr>Policy</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#width" class="tsd-kind-icon">width</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#x" class="tsd-kind-icon">x</a></li>
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#y" class="tsd-kind-icon">y</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#boxsizing" class="tsd-kind-icon">box<wbr>Sizing</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#childcount" class="tsd-kind-icon">child<wbr>Count</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#horizontalsizepolicy" class="tsd-kind-icon">horizontal<wbr>Size<wbr>Policy</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#isattached" class="tsd-kind-icon">is<wbr>Attached</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#layout" class="tsd-kind-icon">layout</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="phosphor.widgets.scrollbar.html#maximum" class="tsd-kind-icon">maximum</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="phosphor.widgets.scrollbar.html#minimum" class="tsd-kind-icon">minimum</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#node" class="tsd-kind-icon">node</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="phosphor.widgets.scrollbar.html#orientation" class="tsd-kind-icon">orientation</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="phosphor.widgets.scrollbar.html#pagesize" class="tsd-kind-icon">page<wbr>Size</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="phosphor.widgets.scrollbar.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#verticalsizepolicy" class="tsd-kind-icon">vertical<wbr>Size<wbr>Policy</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#width" class="tsd-kind-icon">width</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#x" class="tsd-kind-icon">x</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#y" class="tsd-kind-icon">y</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.tabpanel.html#_sw_widgetremoved" class="tsd-kind-icon">_sw_<wbr>widget<wbr>Removed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.tabpanel.html#_tb_currentchanged" class="tsd-kind-icon">_tb_<wbr>current<wbr>Changed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.tabpanel.html#_tb_tabcloserequested" class="tsd-kind-icon">_tb_<wbr>tab<wbr>Close<wbr>Requested</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.tabpanel.html#_tb_tabmoved" class="tsd-kind-icon">_tb_<wbr>tab<wbr>Moved</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#addclass" class="tsd-kind-icon">add<wbr>Class</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#addwidget" class="tsd-kind-icon">add<wbr>Widget</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#attach" class="tsd-kind-icon">attach</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#childat" class="tsd-kind-icon">child<wbr>At</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#clearflag" class="tsd-kind-icon">clear<wbr>Flag</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#close" class="tsd-kind-icon">close</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#compressmessage" class="tsd-kind-icon">compress<wbr>Message</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#detach" class="tsd-kind-icon">detach</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="phosphor.widgets.tabpanel.html#dispose" class="tsd-kind-icon">dispose</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#fit" class="tsd-kind-icon">fit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#hasclass" class="tsd-kind-icon">has<wbr>Class</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#hide" class="tsd-kind-icon">hide</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#insertwidget" class="tsd-kind-icon">insert<wbr>Widget</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#invalidateboxsizing" class="tsd-kind-icon">invalidate<wbr>Box<wbr>Sizing</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#maxsizehint" class="tsd-kind-icon">max<wbr>Size<wbr>Hint</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#minsizehint" class="tsd-kind-icon">min<wbr>Size<wbr>Hint</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#move" class="tsd-kind-icon">move</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#movewidget" class="tsd-kind-icon">move<wbr>Widget</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onafterattach" class="tsd-kind-icon">on<wbr>After<wbr>Attach</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onafterdetach" class="tsd-kind-icon">on<wbr>After<wbr>Detach</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onafterhide" class="tsd-kind-icon">on<wbr>After<wbr>Hide</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onbeforeattach" class="tsd-kind-icon">on<wbr>Before<wbr>Attach</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onbeforeshow" class="tsd-kind-icon">on<wbr>Before<wbr>Show</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onchildadded" class="tsd-kind-icon">on<wbr>Child<wbr>Added</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onclose" class="tsd-kind-icon">on<wbr>Close</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onmove" class="tsd-kind-icon">on<wbr>Move</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.tabpanel.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#removeclass" class="tsd-kind-icon">remove<wbr>Class</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#resize" class="tsd-kind-icon">resize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#setflag" class="tsd-kind-icon">set<wbr>Flag</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#setgeometry" class="tsd-kind-icon">set<wbr>Geometry</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#setsizepolicy" class="tsd-kind-icon">set<wbr>Size<wbr>Policy</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#setvisible" class="tsd-kind-icon">set<wbr>Visible</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#show" class="tsd-kind-icon">show</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#sizehint" class="tsd-kind-icon">size<wbr>Hint</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#update" class="tsd-kind-icon">update</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.tabpanel.html#updategeometry" class="tsd-kind-icon">update<wbr>Geometry</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="phosphor.widgets.tabpanel.html#widgetat" class="tsd-kind-icon">widget<wbr>At</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="phosphor.widgets.tabpanel.html#createnode" class="tsd-kind-icon">create<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_evtmousedown" class="tsd-kind-icon">_evt<wbr>Mouse<wbr>Down</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_evtmousemove" class="tsd-kind-icon">_evt<wbr>Mouse<wbr>Move</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_evtmouseup" class="tsd-kind-icon">_evt<wbr>Mouse<wbr>Up</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_getsliderminsize" class="tsd-kind-icon">_get<wbr>Slider<wbr>Min<wbr>Size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="phosphor.widgets.scrollbar.html#_scrollto" class="tsd-kind-icon">_scroll<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#addclass" class="tsd-kind-icon">add<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#attach" class="tsd-kind-icon">attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#childat" class="tsd-kind-icon">child<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#clearflag" class="tsd-kind-icon">clear<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#compressmessage" class="tsd-kind-icon">compress<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#detach" class="tsd-kind-icon">detach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#fit" class="tsd-kind-icon">fit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="phosphor.widgets.scrollbar.html#handleevent" class="tsd-kind-icon">handle<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#hasclass" class="tsd-kind-icon">has<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#hide" class="tsd-kind-icon">hide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#invalidateboxsizing" class="tsd-kind-icon">invalidate<wbr>Box<wbr>Sizing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#maxsizehint" class="tsd-kind-icon">max<wbr>Size<wbr>Hint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#minsizehint" class="tsd-kind-icon">min<wbr>Size<wbr>Hint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#move" class="tsd-kind-icon">move</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onafterattach" class="tsd-kind-icon">on<wbr>After<wbr>Attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onafterdetach" class="tsd-kind-icon">on<wbr>After<wbr>Detach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onafterhide" class="tsd-kind-icon">on<wbr>After<wbr>Hide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onbeforeattach" class="tsd-kind-icon">on<wbr>Before<wbr>Attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onbeforeshow" class="tsd-kind-icon">on<wbr>Before<wbr>Show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onchildadded" class="tsd-kind-icon">on<wbr>Child<wbr>Added</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onclose" class="tsd-kind-icon">on<wbr>Close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onmove" class="tsd-kind-icon">on<wbr>Move</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="phosphor.widgets.scrollbar.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#removeclass" class="tsd-kind-icon">remove<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#resize" class="tsd-kind-icon">resize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#setflag" class="tsd-kind-icon">set<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#setgeometry" class="tsd-kind-icon">set<wbr>Geometry</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#setsizepolicy" class="tsd-kind-icon">set<wbr>Size<wbr>Policy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#setvisible" class="tsd-kind-icon">set<wbr>Visible</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#show" class="tsd-kind-icon">show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="phosphor.widgets.scrollbar.html#sizehint" class="tsd-kind-icon">size<wbr>Hint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="phosphor.widgets.scrollbar.html#updategeometry" class="tsd-kind-icon">update<wbr>Geometry</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static"><a href="phosphor.widgets.scrollbar.html#createnode" class="tsd-kind-icon">create<wbr>Node</a></li>
 							</ul>
 						</section>
 					</div>
@@ -212,22 +211,35 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Tab<wbr>Panel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.tabpanel.html" class="tsd-signature-type">TabPanel</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Scroll<wbr>Bar<span class="tsd-signature-symbol">(</span>orientation<span class="tsd-signature-symbol">?: </span><a href="../enums/phosphor.widgets.orientation.html" class="tsd-signature-type">Orientation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.scrollbar.html" class="tsd-signature-type">ScrollBar</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L45">src/widgets/tabpanel.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L68">src/widgets/scrollbar.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Construct a new tab panel.</p>
+									<p>Construct a new scroll bar.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="phosphor.widgets.tabpanel.html" class="tsd-signature-type">TabPanel</a></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> orientation: <a href="../enums/phosphor.widgets.orientation.html" class="tsd-signature-type">Orientation</a><span class="tsd-signature-symbol"> =&nbsp;Orientation.Vertical</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<ul>
+												<li>The orientation of the scroll bar.</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="phosphor.widgets.scrollbar.html" class="tsd-signature-type">ScrollBar</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -235,39 +247,74 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_stackedpanel" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _stacked<wbr>Panel</h3>
-					<div class="tsd-signature tsd-kind-icon">_stacked<wbr>Panel<span class="tsd-signature-symbol">:</span> <a href="phosphor.widgets.stackedpanel.html" class="tsd-signature-type">StackedPanel</a></div>
+					<a name="_dragdata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _drag<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">_drag<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IDragData</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L213">src/widgets/tabpanel.ts:213</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L457">src/widgets/scrollbar.ts:457</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_tabbar" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tab<wbr>Bar</h3>
-					<div class="tsd-signature tsd-kind-icon">_tab<wbr>Bar<span class="tsd-signature-symbol">:</span> <a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a></div>
+					<a name="_maximum" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _maximum</h3>
+					<div class="tsd-signature tsd-kind-icon">_maximum<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L212">src/widgets/tabpanel.ts:212</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L454">src/widgets/scrollbar.ts:454</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="currentchanged" class="tsd-anchor"></a>
-					<h3>current<wbr>Changed</h3>
-					<div class="tsd-signature tsd-kind-icon">current<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><a href="phosphor.widgets.tabpanel.html" class="tsd-signature-type">TabPanel</a><span class="tsd-signature-symbol">, </span><a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_minimum" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _minimum</h3>
+					<div class="tsd-signature tsd-kind-icon">_minimum<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L45">src/widgets/tabpanel.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L453">src/widgets/scrollbar.ts:453</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A signal emitted when the current widget is changed.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_orientation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _orientation</h3>
+					<div class="tsd-signature tsd-kind-icon">_orientation<span class="tsd-signature-symbol">:</span> <a href="../enums/phosphor.widgets.orientation.html" class="tsd-signature-type">Orientation</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L458">src/widgets/scrollbar.ts:458</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_pagesize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _page<wbr>Size</h3>
+					<div class="tsd-signature tsd-kind-icon">_page<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L455">src/widgets/scrollbar.ts:455</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_sliderminsize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _slider<wbr>Min<wbr>Size</h3>
+					<div class="tsd-signature tsd-kind-icon">_slider<wbr>Min<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L456">src/widgets/scrollbar.ts:456</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_value" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _value</h3>
+					<div class="tsd-signature tsd-kind-icon">_value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L452">src/widgets/scrollbar.ts:452</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="disposed" class="tsd-anchor"></a>
@@ -283,6 +330,24 @@
 						<div class="lead">
 							<p>A signal emitted when the widget is disposed.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="slidermoved" class="tsd-anchor"></a>
+					<h3>slider<wbr>Moved</h3>
+					<div class="tsd-signature tsd-kind-icon">slider<wbr>Moved<span class="tsd-signature-symbol">:</span> <a href="phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><a href="phosphor.widgets.scrollbar.html" class="tsd-signature-type">ScrollBar</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L68">src/widgets/scrollbar.ts:68</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A signal emitted when the user moves the scroll bar slider.</p>
+						</div>
+						<p>The signal parameter is the current <code>value</code> of the scroll bar.</p>
+						<h4 id="notes">Notes</h4>
+						<p>This signal is not emitted when <code>value</code> is changed from code.</p>
 					</div>
 				</section>
 			</section>
@@ -333,112 +398,6 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="count" class="tsd-anchor"></a>
-					<h3>count</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L130">src/widgets/tabpanel.ts:130</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the number of widgets in the panel.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
-					<a name="currentindex" class="tsd-anchor"></a>
-					<h3>current<wbr>Index</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> currentIndex<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> currentIndex<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L81">src/widgets/tabpanel.ts:81</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the index of the currently selected widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L88">src/widgets/tabpanel.ts:88</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Set the index of the currently selected widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>index: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
-					<a name="currentwidget" class="tsd-anchor"></a>
-					<h3>current<wbr>Widget</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> currentWidget<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> currentWidget<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L95">src/widgets/tabpanel.ts:95</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the currently selected widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L102">src/widgets/tabpanel.ts:102</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Set the currently selected widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>widget: <a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -681,6 +640,90 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="maximum" class="tsd-anchor"></a>
+					<h3>maximum</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> maximum<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> maximum<span class="tsd-signature-symbol">(</span>maximum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L140">src/widgets/scrollbar.ts:140</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the maximum value of the scroll bar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L147">src/widgets/scrollbar.ts:147</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the maximum value of the scroll bar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>maximum: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="minimum" class="tsd-anchor"></a>
+					<h3>minimum</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> minimum<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> minimum<span class="tsd-signature-symbol">(</span>minimum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L120">src/widgets/scrollbar.ts:120</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the minimum value of the scroll bar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L127">src/widgets/scrollbar.ts:127</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the minimum value of the scroll bar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>minimum: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="node" class="tsd-anchor"></a>
 					<h3>node</h3>
@@ -701,6 +744,98 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="orientation" class="tsd-anchor"></a>
+					<h3>orientation</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> orientation<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/phosphor.widgets.orientation.html" class="tsd-signature-type">Orientation</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> orientation<span class="tsd-signature-symbol">(</span>orientation<span class="tsd-signature-symbol">: </span><a href="../enums/phosphor.widgets.orientation.html" class="tsd-signature-type">Orientation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L91">src/widgets/scrollbar.ts:91</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the orientation of the scroll bar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/phosphor.widgets.orientation.html" class="tsd-signature-type">Orientation</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L98">src/widgets/scrollbar.ts:98</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the orientation of the scroll bar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orientation: <a href="../enums/phosphor.widgets.orientation.html" class="tsd-signature-type">Orientation</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="pagesize" class="tsd-anchor"></a>
+					<h3>page<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> pageSize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> pageSize<span class="tsd-signature-symbol">(</span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L179">src/widgets/scrollbar.ts:179</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the page size of the scroll bar.</p>
+								</div>
+								<p>The page size controls the size of the slider control in relation
+									to the current scroll bar range. It should be set to a value which
+									represents a single &quot;page&quot; of content. This is the amount that the
+								slider will move when the user clicks inside the scroll bar track.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L191">src/widgets/scrollbar.ts:191</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the page size of the scroll bar.</p>
+								</div>
+								<p>The page size controls the size of the slider control in relation
+									to the current scroll bar range. It should be set to a value which
+									represents a single &quot;page&quot; of content. This is the amount that the
+								slider will move when the user clicks inside the scroll bar track.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>size: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -751,64 +886,42 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="tabbar" class="tsd-anchor"></a>
-					<h3>tab<wbr>Bar</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> tabBar<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L123">src/widgets/tabpanel.ts:123</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the tab bar used by the panel.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
-					<a name="tabsmovable" class="tsd-anchor"></a>
-					<h3>tabs<wbr>Movable</h3>
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> tabsMovable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> tabsMovable<span class="tsd-signature-symbol">(</span>movable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> value<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L109">src/widgets/tabpanel.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L160">src/widgets/scrollbar.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get whether the tabs are movable by the user.</p>
+									<p>Get the current value of the scroll bar.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L116">src/widgets/tabpanel.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L167">src/widgets/scrollbar.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Set whether the tabs are movable by the user.</p>
+									<p>Set the current value of the scroll bar.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>movable: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1003,30 +1116,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="_sw_widgetremoved" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _sw_<wbr>widget<wbr>Removed</h3>
+					<a name="_evtmousedown" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _evt<wbr>Mouse<wbr>Down</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_sw_<wbr>widget<wbr>Removed<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.stackedpanel.html" class="tsd-signature-type">StackedPanel</a>, args<span class="tsd-signature-symbol">: </span><a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">_evt<wbr>Mouse<wbr>Down<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L208">src/widgets/tabpanel.ts:208</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L310">src/widgets/scrollbar.ts:310</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Handle the <code>widgetRemoved</code> signal from the stacked panel.</p>
+									<p>Handle the &#39;mousedown&#39; event for the scroll bar.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>sender: <a href="phosphor.widgets.stackedpanel.html" class="tsd-signature-type">StackedPanel</a></h5>
-								</li>
-								<li>
-									<h5>args: <a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1034,30 +1144,27 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="_tb_currentchanged" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tb_<wbr>current<wbr>Changed</h3>
+					<a name="_evtmousemove" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _evt<wbr>Mouse<wbr>Move</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_tb_<wbr>current<wbr>Changed<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a>, args<span class="tsd-signature-symbol">: </span><a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="phosphor.widgets.tab.html" class="tsd-signature-type">Tab</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">_evt<wbr>Mouse<wbr>Move<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L192">src/widgets/tabpanel.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L376">src/widgets/scrollbar.ts:376</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Handle the <code>currentChanged</code> signal from the tab bar.</p>
+									<p>Handle the &#39;mousemove&#39; event for the scroll bar.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>sender: <a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a></h5>
-								</li>
-								<li>
-									<h5>args: <a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="phosphor.widgets.tab.html" class="tsd-signature-type">Tab</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1065,30 +1172,27 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="_tb_tabcloserequested" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tb_<wbr>tab<wbr>Close<wbr>Requested</h3>
+					<a name="_evtmouseup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _evt<wbr>Mouse<wbr>Up</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_tb_<wbr>tab<wbr>Close<wbr>Requested<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a>, args<span class="tsd-signature-symbol">: </span><a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="phosphor.widgets.tab.html" class="tsd-signature-type">Tab</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">_evt<wbr>Mouse<wbr>Up<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L201">src/widgets/tabpanel.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L401">src/widgets/scrollbar.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Handle the <code>tabCloseRequested</code> signal from the tab bar.</p>
+									<p>Handle the &#39;mouseup&#39; event for the scroll bar.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>sender: <a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a></h5>
-								</li>
-								<li>
-									<h5>args: <a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="phosphor.widgets.tab.html" class="tsd-signature-type">Tab</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1096,30 +1200,55 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="_tb_tabmoved" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tb_<wbr>tab<wbr>Moved</h3>
+					<a name="_getsliderminsize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _get<wbr>Slider<wbr>Min<wbr>Size</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_tb_<wbr>tab<wbr>Moved<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a>, args<span class="tsd-signature-symbol">: </span><a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">_get<wbr>Slider<wbr>Min<wbr>Size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L185">src/widgets/tabpanel.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L440">src/widgets/scrollbar.ts:440</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Handle the <code>tabMoved</code> signal from the tab bar.</p>
+									<p>Get the minimum size of the slider for the current orientation.</p>
 								</div>
+								<p>This computes the value once and caches it, which ensures that
+									multiple calls to this method are quick. The cached value can
+								be cleared by setting the <code>_sliderMinSize</code> property to <code>-1</code>.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_scrollto" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _scroll<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_scroll<wbr>To<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L423">src/widgets/scrollbar.ts:423</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll to the given value expressed in scroll coordinates.</p>
+								</div>
+								<p>The given value will be clamped to the scroll bar range. If the
+									adjusted value is different from the current value, the scroll
+								bar will be updated and the <code>sliderMoved</code> signal will be emitted.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>sender: <a href="phosphor.widgets.tabbar.html" class="tsd-signature-type">TabBar</a></h5>
-								</li>
-								<li>
-									<h5>args: <a href="phosphor.utility.pair.html" class="tsd-signature-type">Pair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1152,39 +1281,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addwidget" class="tsd-anchor"></a>
-					<h3>add<wbr>Widget</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Widget<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.widgets.itabwidget.html" class="tsd-signature-type">ITabWidget</a>, alignment<span class="tsd-signature-symbol">?: </span><a href="../enums/phosphor.widgets.alignment.html" class="tsd-signature-type">Alignment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L157">src/widgets/tabpanel.ts:157</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Add a tabbable widget to the end of the panel.</p>
-								</div>
-								<p>If the widget already exists in the panel, it will be moved.</p>
-								<p>Returns the index of the added widget.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>widget: <a href="../interfaces/phosphor.widgets.itabwidget.html" class="tsd-signature-type">ITabWidget</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> alignment: <a href="../enums/phosphor.widgets.alignment.html" class="tsd-signature-type">Alignment</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1362,23 +1458,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="dispose" class="tsd-anchor"></a>
 					<h3>dispose</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overwrites <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#dispose">dispose</a></p>
+								<p>Inherited from <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#dispose">dispose</a></p>
+								<p>Overwrites <a href="phosphor.core.nodebase.html">NodeBase</a>.<a href="phosphor.core.nodebase.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L71">src/widgets/tabpanel.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L135">src/widgets/widget.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Dispose of the resources held by the panel.</p>
+									<p>Dispose of the widget and its descendants.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1417,6 +1514,34 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> box: <a href="../interfaces/phosphor.utility.iboxsizing.html" class="tsd-signature-type">IBoxSizing</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handleevent" class="tsd-anchor"></a>
+					<h3>handle<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L216">src/widgets/scrollbar.ts:216</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the DOM events for the scroll bar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">Event</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1473,70 +1598,6 @@
 								<p>If the widget is already hidden, this is a no-op.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="indexof" class="tsd-anchor"></a>
-					<h3>index<wbr>Of</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">index<wbr>Of<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L137">src/widgets/tabpanel.ts:137</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the index of the given widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>widget: <a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="insertwidget" class="tsd-anchor"></a>
-					<h3>insert<wbr>Widget</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">insert<wbr>Widget<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, widget<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.widgets.itabwidget.html" class="tsd-signature-type">ITabWidget</a>, alignment<span class="tsd-signature-symbol">?: </span><a href="../enums/phosphor.widgets.alignment.html" class="tsd-signature-type">Alignment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L168">src/widgets/tabpanel.ts:168</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Insert a tabbable widget into the panel at the given index.</p>
-								</div>
-								<p>If the widget already exists in the panel, it will be moved.</p>
-								<p>Returns the index of the added widget.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>index: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>widget: <a href="../interfaces/phosphor.widgets.itabwidget.html" class="tsd-signature-type">ITabWidget</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> alignment: <a href="../enums/phosphor.widgets.alignment.html" class="tsd-signature-type">Alignment</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1655,57 +1716,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="movewidget" class="tsd-anchor"></a>
-					<h3>move<wbr>Widget</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">move<wbr>Widget<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L178">src/widgets/tabpanel.ts:178</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Move a widget from one index to another.</p>
-								</div>
-								<p>Returns the new index of the widget.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>toIndex: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="onafterattach" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>After<wbr>Attach</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Attach<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.core.imessage.html" class="tsd-signature-type">IMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#onafterattach">onAfterAttach</a></p>
+								<p>Overwrites <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#onafterattach">onAfterAttach</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L917">src/widgets/widget.ts:917</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L233">src/widgets/scrollbar.ts:233</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>A method invoked when an &#39;after-attach&#39; message is received.</p>
+									<p>A method invoked on an &#39;after-attach&#39; message.</p>
 								</div>
-								<p>The default implementation is a no-op.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1717,25 +1745,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="onafterdetach" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>After<wbr>Detach</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Detach<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.core.imessage.html" class="tsd-signature-type">IMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#onafterdetach">onAfterDetach</a></p>
+								<p>Overwrites <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#onafterdetach">onAfterDetach</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L931">src/widgets/widget.ts:931</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L241">src/widgets/scrollbar.ts:241</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>A method invoked when an &#39;after-detach&#39; message is received.</p>
+									<p>A method invoked on an &#39;after-detach&#39; message.</p>
 								</div>
-								<p>The default implementation is a no-op.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -2047,25 +2074,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="onresize" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Resize</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Resize<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.resizemessage.html" class="tsd-signature-type">ResizeMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#onresize">onResize</a></p>
+								<p>Overwrites <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#onresize">onResize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L868">src/widgets/widget.ts:868</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L248">src/widgets/scrollbar.ts:248</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>A method invoked when a &#39;resize&#39; message is received.</p>
+									<p>A method invoked on a &#39;resize&#39; message.</p>
 								</div>
-								<p>The default implementation is a no-op.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -2077,25 +2103,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="onupdaterequest" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Update<wbr>Request</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Update<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.core.imessage.html" class="tsd-signature-type">IMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#onupdaterequest">onUpdateRequest</a></p>
+								<p>Overwrites <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#onupdaterequest">onUpdateRequest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L875">src/widgets/widget.ts:875</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L255">src/widgets/scrollbar.ts:255</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>A method invoked on an &#39;update-request&#39; message.</p>
 								</div>
-								<p>The default implementation is a no-op.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -2354,29 +2379,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="sizehint" class="tsd-anchor"></a>
 					<h3>size<wbr>Hint</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">size<wbr>Hint<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="phosphor.utility.size.html" class="tsd-signature-type">Size</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#sizehint">sizeHint</a></p>
+								<p>Overwrites <a href="phosphor.widgets.widget.html">Widget</a>.<a href="phosphor.widgets.widget.html#sizehint">sizeHint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/widget.ts#L572">src/widgets/widget.ts:572</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L203">src/widgets/scrollbar.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Calculate the preferred size for the widget.</p>
+									<p>Calculate the preferred size for the scroll bar.</p>
 								</div>
-								<p>This is used by Phosphor&#39;s layout machinery to compute the natural
-									space required for the widget and its children. A subclass which
-								provides leaf content should reimplement this method.</p>
-								<p>The default implementation of this method delegates to the layout
-								manager if installed, otherwise it returns a zero size.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="phosphor.utility.size.html" class="tsd-signature-type">Size</a></h4>
 						</li>
@@ -2481,54 +2501,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="widgetat" class="tsd-anchor"></a>
-					<h3>widget<wbr>At</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">widget<wbr>At<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabpanel.ts#L146">src/widgets/tabpanel.ts:146</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the widget at the given index.</p>
-								</div>
-								<p>Returns <code>undefined</code> if there is no widget at the given index.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>index: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="phosphor.widgets.widget.html" class="tsd-signature-type">Widget</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
 					<a name="createnode" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>Node</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">create<wbr>Node<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="phosphor.core.nodebase.html">NodeBase</a>.<a href="phosphor.core.nodebase.html#createnode">createNode</a></p>
+								<p>Overwrites <a href="phosphor.core.nodebase.html">NodeBase</a>.<a href="phosphor.core.nodebase.html#createnode">createNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/nodebase.ts#L23">src/core/nodebase.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/scrollbar.ts#L52">src/widgets/scrollbar.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create the DOM node for a new object instance.</p>
+									<p>Create the DOM node for a scroll bar.</p>
 								</div>
-								<p>This may be reimplemented to create a custom DOM node.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
 						</li>
@@ -2587,235 +2577,241 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="phosphor.widgets.tabpanel.html" class="tsd-kind-icon">Tab<wbr>Panel</a>
+						<a href="phosphor.widgets.scrollbar.html" class="tsd-kind-icon">Scroll<wbr>Bar</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="phosphor.widgets.tabpanel.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="phosphor.widgets.scrollbar.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="phosphor.widgets.tabpanel.html#_stackedpanel" class="tsd-kind-icon">_stacked<wbr>Panel</a>
+								<a href="phosphor.widgets.scrollbar.html#_dragdata" class="tsd-kind-icon">_drag<wbr>Data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="phosphor.widgets.tabpanel.html#_tabbar" class="tsd-kind-icon">_tab<wbr>Bar</a>
+								<a href="phosphor.widgets.scrollbar.html#_maximum" class="tsd-kind-icon">_maximum</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#currentchanged" class="tsd-kind-icon">current<wbr>Changed</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="phosphor.widgets.scrollbar.html#_minimum" class="tsd-kind-icon">_minimum</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="phosphor.widgets.scrollbar.html#_orientation" class="tsd-kind-icon">_orientation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="phosphor.widgets.scrollbar.html#_pagesize" class="tsd-kind-icon">_page<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="phosphor.widgets.scrollbar.html#_sliderminsize" class="tsd-kind-icon">_slider<wbr>Min<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="phosphor.widgets.scrollbar.html#_value" class="tsd-kind-icon">_value</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#disposed" class="tsd-kind-icon">disposed</a>
+								<a href="phosphor.widgets.scrollbar.html#disposed" class="tsd-kind-icon">disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="phosphor.widgets.scrollbar.html#slidermoved" class="tsd-kind-icon">slider<wbr>Moved</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#boxsizing" class="tsd-kind-icon">box<wbr>Sizing</a>
+								<a href="phosphor.widgets.scrollbar.html#boxsizing" class="tsd-kind-icon">box<wbr>Sizing</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#childcount" class="tsd-kind-icon">child<wbr>Count</a>
+								<a href="phosphor.widgets.scrollbar.html#childcount" class="tsd-kind-icon">child<wbr>Count</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#count" class="tsd-kind-icon">count</a>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#height" class="tsd-kind-icon">height</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#horizontalsizepolicy" class="tsd-kind-icon">horizontal<wbr>Size<wbr>Policy</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#isattached" class="tsd-kind-icon">is<wbr>Attached</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#layout" class="tsd-kind-icon">layout</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#currentindex" class="tsd-kind-icon">current<wbr>Index</a>
+								<a href="phosphor.widgets.scrollbar.html#maximum" class="tsd-kind-icon">maximum</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#currentwidget" class="tsd-kind-icon">current<wbr>Widget</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#height" class="tsd-kind-icon">height</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#horizontalsizepolicy" class="tsd-kind-icon">horizontal<wbr>Size<wbr>Policy</a>
+								<a href="phosphor.widgets.scrollbar.html#minimum" class="tsd-kind-icon">minimum</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#isattached" class="tsd-kind-icon">is<wbr>Attached</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#layout" class="tsd-kind-icon">layout</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#node" class="tsd-kind-icon">node</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#parent" class="tsd-kind-icon">parent</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#tabbar" class="tsd-kind-icon">tab<wbr>Bar</a>
+								<a href="phosphor.widgets.scrollbar.html#node" class="tsd-kind-icon">node</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#tabsmovable" class="tsd-kind-icon">tabs<wbr>Movable</a>
+								<a href="phosphor.widgets.scrollbar.html#orientation" class="tsd-kind-icon">orientation</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="phosphor.widgets.scrollbar.html#pagesize" class="tsd-kind-icon">page<wbr>Size</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#verticalsizepolicy" class="tsd-kind-icon">vertical<wbr>Size<wbr>Policy</a>
+								<a href="phosphor.widgets.scrollbar.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="phosphor.widgets.scrollbar.html#value" class="tsd-kind-icon">value</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#width" class="tsd-kind-icon">width</a>
+								<a href="phosphor.widgets.scrollbar.html#verticalsizepolicy" class="tsd-kind-icon">vertical<wbr>Size<wbr>Policy</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#x" class="tsd-kind-icon">x</a>
+								<a href="phosphor.widgets.scrollbar.html#width" class="tsd-kind-icon">width</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#y" class="tsd-kind-icon">y</a>
+								<a href="phosphor.widgets.scrollbar.html#x" class="tsd-kind-icon">x</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#y" class="tsd-kind-icon">y</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="phosphor.widgets.tabpanel.html#_sw_widgetremoved" class="tsd-kind-icon">_sw_<wbr>widget<wbr>Removed</a>
+								<a href="phosphor.widgets.scrollbar.html#_evtmousedown" class="tsd-kind-icon">_evt<wbr>Mouse<wbr>Down</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="phosphor.widgets.tabpanel.html#_tb_currentchanged" class="tsd-kind-icon">_tb_<wbr>current<wbr>Changed</a>
+								<a href="phosphor.widgets.scrollbar.html#_evtmousemove" class="tsd-kind-icon">_evt<wbr>Mouse<wbr>Move</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="phosphor.widgets.tabpanel.html#_tb_tabcloserequested" class="tsd-kind-icon">_tb_<wbr>tab<wbr>Close<wbr>Requested</a>
+								<a href="phosphor.widgets.scrollbar.html#_evtmouseup" class="tsd-kind-icon">_evt<wbr>Mouse<wbr>Up</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="phosphor.widgets.tabpanel.html#_tb_tabmoved" class="tsd-kind-icon">_tb_<wbr>tab<wbr>Moved</a>
+								<a href="phosphor.widgets.scrollbar.html#_getsliderminsize" class="tsd-kind-icon">_get<wbr>Slider<wbr>Min<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="phosphor.widgets.scrollbar.html#_scrollto" class="tsd-kind-icon">_scroll<wbr>To</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#addclass" class="tsd-kind-icon">add<wbr>Class</a>
+								<a href="phosphor.widgets.scrollbar.html#addclass" class="tsd-kind-icon">add<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#attach" class="tsd-kind-icon">attach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#childat" class="tsd-kind-icon">child<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#clearflag" class="tsd-kind-icon">clear<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#close" class="tsd-kind-icon">close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#compressmessage" class="tsd-kind-icon">compress<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#detach" class="tsd-kind-icon">detach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#fit" class="tsd-kind-icon">fit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#addwidget" class="tsd-kind-icon">add<wbr>Widget</a>
+								<a href="phosphor.widgets.scrollbar.html#handleevent" class="tsd-kind-icon">handle<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#attach" class="tsd-kind-icon">attach</a>
+								<a href="phosphor.widgets.scrollbar.html#hasclass" class="tsd-kind-icon">has<wbr>Class</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#childat" class="tsd-kind-icon">child<wbr>At</a>
+								<a href="phosphor.widgets.scrollbar.html#hide" class="tsd-kind-icon">hide</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#clearflag" class="tsd-kind-icon">clear<wbr>Flag</a>
+								<a href="phosphor.widgets.scrollbar.html#invalidateboxsizing" class="tsd-kind-icon">invalidate<wbr>Box<wbr>Sizing</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#close" class="tsd-kind-icon">close</a>
+								<a href="phosphor.widgets.scrollbar.html#maxsizehint" class="tsd-kind-icon">max<wbr>Size<wbr>Hint</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#compressmessage" class="tsd-kind-icon">compress<wbr>Message</a>
+								<a href="phosphor.widgets.scrollbar.html#minsizehint" class="tsd-kind-icon">min<wbr>Size<wbr>Hint</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#detach" class="tsd-kind-icon">detach</a>
+								<a href="phosphor.widgets.scrollbar.html#move" class="tsd-kind-icon">move</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onafterattach" class="tsd-kind-icon">on<wbr>After<wbr>Attach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onafterdetach" class="tsd-kind-icon">on<wbr>After<wbr>Detach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onafterhide" class="tsd-kind-icon">on<wbr>After<wbr>Hide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onbeforeattach" class="tsd-kind-icon">on<wbr>Before<wbr>Attach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onbeforeshow" class="tsd-kind-icon">on<wbr>Before<wbr>Show</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onchildadded" class="tsd-kind-icon">on<wbr>Child<wbr>Added</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onclose" class="tsd-kind-icon">on<wbr>Close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onmove" class="tsd-kind-icon">on<wbr>Move</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="phosphor.widgets.scrollbar.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#removeclass" class="tsd-kind-icon">remove<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#resize" class="tsd-kind-icon">resize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#setflag" class="tsd-kind-icon">set<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#setgeometry" class="tsd-kind-icon">set<wbr>Geometry</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#setsizepolicy" class="tsd-kind-icon">set<wbr>Size<wbr>Policy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#setvisible" class="tsd-kind-icon">set<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="phosphor.widgets.scrollbar.html#show" class="tsd-kind-icon">show</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="phosphor.widgets.tabpanel.html#dispose" class="tsd-kind-icon">dispose</a>
+								<a href="phosphor.widgets.scrollbar.html#sizehint" class="tsd-kind-icon">size<wbr>Hint</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#fit" class="tsd-kind-icon">fit</a>
+								<a href="phosphor.widgets.scrollbar.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#hasclass" class="tsd-kind-icon">has<wbr>Class</a>
+								<a href="phosphor.widgets.scrollbar.html#update" class="tsd-kind-icon">update</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#hide" class="tsd-kind-icon">hide</a>
+								<a href="phosphor.widgets.scrollbar.html#updategeometry" class="tsd-kind-icon">update<wbr>Geometry</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#indexof" class="tsd-kind-icon">index<wbr>Of</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#insertwidget" class="tsd-kind-icon">insert<wbr>Widget</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#invalidateboxsizing" class="tsd-kind-icon">invalidate<wbr>Box<wbr>Sizing</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#maxsizehint" class="tsd-kind-icon">max<wbr>Size<wbr>Hint</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#minsizehint" class="tsd-kind-icon">min<wbr>Size<wbr>Hint</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#move" class="tsd-kind-icon">move</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#movewidget" class="tsd-kind-icon">move<wbr>Widget</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onafterattach" class="tsd-kind-icon">on<wbr>After<wbr>Attach</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onafterdetach" class="tsd-kind-icon">on<wbr>After<wbr>Detach</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onafterhide" class="tsd-kind-icon">on<wbr>After<wbr>Hide</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onbeforeattach" class="tsd-kind-icon">on<wbr>Before<wbr>Attach</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onbeforeshow" class="tsd-kind-icon">on<wbr>Before<wbr>Show</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onchildadded" class="tsd-kind-icon">on<wbr>Child<wbr>Added</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onclose" class="tsd-kind-icon">on<wbr>Close</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onmove" class="tsd-kind-icon">on<wbr>Move</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="phosphor.widgets.tabpanel.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#removeclass" class="tsd-kind-icon">remove<wbr>Class</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#resize" class="tsd-kind-icon">resize</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#setflag" class="tsd-kind-icon">set<wbr>Flag</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#setgeometry" class="tsd-kind-icon">set<wbr>Geometry</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#setsizepolicy" class="tsd-kind-icon">set<wbr>Size<wbr>Policy</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#setvisible" class="tsd-kind-icon">set<wbr>Visible</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#show" class="tsd-kind-icon">show</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#sizehint" class="tsd-kind-icon">size<wbr>Hint</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#update" class="tsd-kind-icon">update</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="phosphor.widgets.tabpanel.html#updategeometry" class="tsd-kind-icon">update<wbr>Geometry</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="phosphor.widgets.tabpanel.html#widgetat" class="tsd-kind-icon">widget<wbr>At</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="phosphor.widgets.tabpanel.html#createnode" class="tsd-kind-icon">create<wbr>Node</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
+								<a href="phosphor.widgets.scrollbar.html#createnode" class="tsd-kind-icon">create<wbr>Node</a>
 							</li>
 						</ul>
 					</li>
