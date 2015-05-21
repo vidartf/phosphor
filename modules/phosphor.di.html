@@ -80,6 +80,7 @@
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.di.container.html" class="tsd-kind-icon">Container</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/phosphor.di.perresolvelifetime.html" class="tsd-kind-icon">Per<wbr>Resolve<wbr>Lifetime</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/phosphor.di.singletonlifetime.html" class="tsd-kind-icon">Singleton<wbr>Lifetime</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/phosphor.di.token.html" class="tsd-kind-icon">Token</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/phosphor.di.transientlifetime.html" class="tsd-kind-icon">Transient<wbr>Lifetime</a></li>
 							</ul>
 						</section>
@@ -90,7 +91,6 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/phosphor.di.iinjectable.html" class="tsd-kind-icon">IInjectable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/phosphor.di.ilifetime.html" class="tsd-kind-icon">ILifetime</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/phosphor.di.iregistryitem.html" class="tsd-kind-icon">IRegistry<wbr>Item</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/phosphor.di.itoken.html" class="tsd-kind-icon">IToken</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -104,7 +104,6 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.di.html#createlifetime" class="tsd-kind-icon">create<wbr>Lifetime</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.di.html#createtoken" class="tsd-kind-icon">create<wbr>Token</a></li>
 							</ul>
 						</section>
 					</div>
@@ -179,40 +178,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="createtoken" class="tsd-anchor"></a>
-					<h3>create<wbr>Token</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Token&lt;T&gt;<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/phosphor.di.itoken.html" class="tsd-signature-type">IToken</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/di/token.ts#L31">src/di/token.ts:31</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a token with the given name.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/phosphor.di.itoken.html" class="tsd-signature-type">IToken</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -273,6 +238,9 @@
 						<a href="../classes/phosphor.di.singletonlifetime.html" class="tsd-kind-icon">Singleton<wbr>Lifetime</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/phosphor.di.token.html" class="tsd-kind-icon">Token</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../classes/phosphor.di.transientlifetime.html" class="tsd-kind-icon">Transient<wbr>Lifetime</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
@@ -287,9 +255,6 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../interfaces/phosphor.di.iregistryitem.html" class="tsd-kind-icon">IRegistry<wbr>Item</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../interfaces/phosphor.di.itoken.html" class="tsd-kind-icon">IToken</a>
-					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="phosphor.di.html#resolvekeytick" class="tsd-kind-icon">resolve<wbr>Key<wbr>Tick</a>
 					</li>
@@ -298,9 +263,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="phosphor.di.html#createlifetime" class="tsd-kind-icon">create<wbr>Lifetime</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="phosphor.di.html#createtoken" class="tsd-kind-icon">create<wbr>Token</a>
 					</li>
 				</ul>
 			</nav>

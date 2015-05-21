@@ -179,7 +179,7 @@
   { rank: <span class="hljs-number">9</span>, value: <span class="hljs-string">'nine'</span> },
 ];
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rankCmp</span><span class="hljs-params">(pair: IPair, rank: number)</span>: <span class="hljs-title">number</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rankCmp</span>(<span class="hljs-params">pair: IPair, rank: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
   <span class="hljs-keyword">return</span> pair.rank - rank;
 }
 
@@ -252,7 +252,7 @@ algo.binaryFind(data, <span class="hljs-number">8</span>, rankCmp);  <span class
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span><span class="hljs-params">(a: number, b: number)</span>: <span class="hljs-title">number</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
   <span class="hljs-keyword">return</span> a - b;
 }
 
@@ -339,7 +339,7 @@ algo.binaryFindIndex(data, <span class="hljs-number">6</span>, numberCmp);  <spa
   { rank: <span class="hljs-number">9</span>, value: <span class="hljs-string">'nine'</span> },
 ];
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rankCmp</span><span class="hljs-params">(pair: IPair, rank: number)</span>: <span class="hljs-title">number</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rankCmp</span>(<span class="hljs-params">pair: IPair, rank: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
   <span class="hljs-keyword">return</span> pair.rank - rank;
 }
 
@@ -412,7 +412,7 @@ algo.binaryFindLast(data, <span class="hljs-number">8</span>, rankCmp);  <span c
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span><span class="hljs-params">(a: number, b: number)</span>: <span class="hljs-title">number</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
   <span class="hljs-keyword">return</span> a - b;
 }
 
@@ -547,7 +547,7 @@ algo.copy(data);  <span class="hljs-comment">// [0, 1, 2, 3, 4];</span>
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span>(<span class="hljs-params">value: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">boolean</span> </span>{
   <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
 }
 
@@ -635,7 +635,7 @@ algo.find(data, isEven, <span class="hljs-number">6</span>, <span class="hljs-li
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span>(<span class="hljs-params">value: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">boolean</span> </span>{
   <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
 }
 
@@ -723,7 +723,7 @@ algo.findIndex(data, isEven, <span class="hljs-number">6</span>, <span class="hl
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span>(<span class="hljs-params">value: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">boolean</span> </span>{
   <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
 }
 
@@ -811,7 +811,7 @@ algo.findLast(data, isEven, <span class="hljs-number">0</span>, <span class="hlj
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span><span class="hljs-params">(value: number)</span>: <span class="hljs-title">boolean</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span>(<span class="hljs-params">value: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">boolean</span> </span>{
   <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
 }
 
@@ -1125,7 +1125,7 @@ algo.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span><span class="hljs-params">(a: number, b: number)</span>: <span class="hljs-title">number</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
   <span class="hljs-keyword">return</span> a - b;
 }
 
@@ -1396,7 +1396,7 @@ algo.removeAt(data, <span class="hljs-number">10</span>);  <span class="hljs-com
 							<h4 id="example">Example</h4>
 							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> algo = phosphor.collections.algorithm;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span><span class="hljs-params">(a: number, b: number)</span>: <span class="hljs-title">number</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
   <span class="hljs-keyword">return</span> a - b;
 }
 
