@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IMessageFilter | Phosphor</title>
+	<title>Connection | Phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -63,10 +63,10 @@
 					<a href="../modules/phosphor.core.html">core</a>
 				</li>
 				<li>
-					<a href="phosphor.core.imessagefilter.html">IMessageFilter</a>
+					<a href="phosphor.core.connection.html">Connection</a>
 				</li>
 			</ul>
-			<h1>Interface IMessageFilter</h1>
+			<h1>Class Connection</h1>
 		</div>
 	</div>
 </header>
@@ -76,7 +76,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An object which filters messages sent to a message handler.</p>
+						<p>An object which holds data for a signal connection.</p>
 					</div>
 				</div>
 			</section>
@@ -84,18 +84,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IMessageFilter</span>
+						<span class="target">Connection</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/phosphor.shell.autohidefilter.html" class="tsd-signature-type">AutoHideFilter</a></li>
-					<li><a href="../classes/phosphor.widgets.boxlayout.html" class="tsd-signature-type">BoxLayout</a></li>
-					<li><a href="../classes/phosphor.widgets.layout.html" class="tsd-signature-type">Layout</a></li>
-					<li><a href="../classes/phosphor.widgets.splitlayout.html" class="tsd-signature-type">SplitLayout</a></li>
-					<li><a href="../classes/phosphor.widgets.stackedlayout.html" class="tsd-signature-type">StackedLayout</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -103,47 +93,126 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="phosphor.core.imessagefilter.html#filtermessage" class="tsd-kind-icon">filter<wbr>Message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.core.connection.html#method" class="tsd-kind-icon">method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.core.connection.html#nextreceiver" class="tsd-kind-icon">next<wbr>Receiver</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.core.connection.html#nextsender" class="tsd-kind-icon">next<wbr>Sender</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.core.connection.html#prevsender" class="tsd-kind-icon">prev<wbr>Sender</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.core.connection.html#receiver" class="tsd-kind-icon">receiver</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.core.connection.html#sender" class="tsd-kind-icon">sender</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="phosphor.core.connection.html#signal" class="tsd-kind-icon">signal</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="filtermessage" class="tsd-anchor"></a>
-					<h3>filter<wbr>Message</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">filter<wbr>Message<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><a href="phosphor.core.imessagehandler.html" class="tsd-signature-type">IMessageHandler</a>, msg<span class="tsd-signature-symbol">: </span><a href="phosphor.core.imessage.html" class="tsd-signature-type">IMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/imessagefilter.ts#L20">src/core/imessagefilter.ts:20</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Filter a message sent to a message handler.</p>
-								</div>
-								<p>Returns true if the message should be filtered, false otherwise.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>handler: <a href="phosphor.core.imessagehandler.html" class="tsd-signature-type">IMessageHandler</a></h5>
-								</li>
-								<li>
-									<h5>msg: <a href="phosphor.core.imessage.html" class="tsd-signature-type">IMessage</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="method" class="tsd-anchor"></a>
+					<h3>method</h3>
+					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L290">src/core/signaling.ts:290</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The receiver method for the connection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="nextreceiver" class="tsd-anchor"></a>
+					<h3>next<wbr>Receiver</h3>
+					<div class="tsd-signature tsd-kind-icon">next<wbr>Receiver<span class="tsd-signature-symbol">:</span> <a href="phosphor.core.connection.html" class="tsd-signature-type">Connection</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L295">src/core/signaling.ts:295</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The next connection in the singly linked receivers list.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="nextsender" class="tsd-anchor"></a>
+					<h3>next<wbr>Sender</h3>
+					<div class="tsd-signature tsd-kind-icon">next<wbr>Sender<span class="tsd-signature-symbol">:</span> <a href="phosphor.core.connection.html" class="tsd-signature-type">Connection</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L300">src/core/signaling.ts:300</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The next connection in the doubly linked senders list.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="prevsender" class="tsd-anchor"></a>
+					<h3>prev<wbr>Sender</h3>
+					<div class="tsd-signature tsd-kind-icon">prev<wbr>Sender<span class="tsd-signature-symbol">:</span> <a href="phosphor.core.connection.html" class="tsd-signature-type">Connection</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L305">src/core/signaling.ts:305</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The previous connection in the doubly linked senders list.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="receiver" class="tsd-anchor"></a>
+					<h3>receiver</h3>
+					<div class="tsd-signature tsd-kind-icon">receiver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L285">src/core/signaling.ts:285</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The receiver object for the connection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="sender" class="tsd-anchor"></a>
+					<h3>sender</h3>
+					<div class="tsd-signature tsd-kind-icon">sender<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L275">src/core/signaling.ts:275</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The sender object for the connection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="signal" class="tsd-anchor"></a>
+					<h3>signal</h3>
+					<div class="tsd-signature tsd-kind-icon">signal<span class="tsd-signature-symbol">:</span> <a href="phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L280">src/core/signaling.ts:280</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The signal object for the connection.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -195,44 +264,62 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/phosphor.core.connection.html" class="tsd-kind-icon">Connection</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/phosphor.core.connectionlist.html" class="tsd-kind-icon">Connection<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/phosphor.core.filterwrapper.html" class="tsd-kind-icon">Filter<wbr>Wrapper</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/phosphor.core.message.html" class="tsd-kind-icon">Message</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/phosphor.core.messagedispatcher.html" class="tsd-kind-icon">Message<wbr>Dispatcher</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/phosphor.core.nodebase.html" class="tsd-kind-icon">Node<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../classes/phosphor.core.signal.html" class="tsd-kind-icon">Signal</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="phosphor.core.imessage.html" class="tsd-kind-icon">IMessage</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="phosphor.core.imessagefilter.html" class="tsd-kind-icon">IMessage<wbr>Filter</a>
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="phosphor.core.connection.html" class="tsd-kind-icon">Connection</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="phosphor.core.imessagefilter.html#filtermessage" class="tsd-kind-icon">filter<wbr>Message</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="phosphor.core.connection.html#method" class="tsd-kind-icon">method</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="phosphor.core.connection.html#nextreceiver" class="tsd-kind-icon">next<wbr>Receiver</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="phosphor.core.connection.html#nextsender" class="tsd-kind-icon">next<wbr>Sender</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="phosphor.core.connection.html#prevsender" class="tsd-kind-icon">prev<wbr>Sender</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="phosphor.core.connection.html#receiver" class="tsd-kind-icon">receiver</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="phosphor.core.connection.html#sender" class="tsd-kind-icon">sender</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="phosphor.core.connection.html#signal" class="tsd-kind-icon">signal</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="phosphor.core.connectionlist.html" class="tsd-kind-icon">Connection<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="phosphor.core.filterwrapper.html" class="tsd-kind-icon">Filter<wbr>Wrapper</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="phosphor.core.message.html" class="tsd-kind-icon">Message</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="phosphor.core.messagedispatcher.html" class="tsd-kind-icon">Message<wbr>Dispatcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="phosphor.core.nodebase.html" class="tsd-kind-icon">Node<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.core.signal.html" class="tsd-kind-icon">Signal</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="phosphor.core.imessagehandler.html" class="tsd-kind-icon">IMessage<wbr>Handler</a>
+						<a href="../interfaces/phosphor.core.imessage.html" class="tsd-kind-icon">IMessage</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/phosphor.core.imessagefilter.html" class="tsd-kind-icon">IMessage<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/phosphor.core.imessagehandler.html" class="tsd-kind-icon">IMessage<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/phosphor.core.html#dispatchqueue" class="tsd-kind-icon">dispatch<wbr>Queue</a>

@@ -77,7 +77,8 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/phosphor.core.cbwrapper.html" class="tsd-kind-icon">CBWrapper</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.core.connection.html" class="tsd-kind-icon">Connection</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.core.connectionlist.html" class="tsd-kind-icon">Connection<wbr>List</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.core.filterwrapper.html" class="tsd-kind-icon">Filter<wbr>Wrapper</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.core.message.html" class="tsd-kind-icon">Message</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/phosphor.core.messagedispatcher.html" class="tsd-kind-icon">Message<wbr>Dispatcher</a></li>
@@ -100,17 +101,26 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.core.html#dispatchermap" class="tsd-kind-icon">dispatcher<wbr>Map</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.core.html#frameid" class="tsd-kind-icon">frame<wbr>Id</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.core.html#raf" class="tsd-kind-icon">raf</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.core.html#receivermap" class="tsd-kind-icon">receiver<wbr>Map</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="phosphor.core.html#sendermap" class="tsd-kind-icon">sender<wbr>Map</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#cleanreceiverslist" class="tsd-kind-icon">clean<wbr>Receivers<wbr>List</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#clearmessagedata" class="tsd-kind-icon">clear<wbr>Message<wbr>Data</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.core.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.core.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#dispatchmessage" class="tsd-kind-icon">dispatch<wbr>Message</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="phosphor.core.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#getdispatcher" class="tsd-kind-icon">get<wbr>Dispatcher</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#haspendingmessages" class="tsd-kind-icon">has<wbr>Pending<wbr>Messages</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#installmessagefilter" class="tsd-kind-icon">install<wbr>Message<wbr>Filter</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#invokereceivers" class="tsd-kind-icon">invoke<wbr>Receivers</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#ismatch" class="tsd-kind-icon">is<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#removefromsenderslist" class="tsd-kind-icon">remove<wbr>From<wbr>Senders<wbr>List</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#removemessagefilter" class="tsd-kind-icon">remove<wbr>Message<wbr>Filter</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#runmessageloop" class="tsd-kind-icon">run<wbr>Message<wbr>Loop</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.core.html#sendmessage" class="tsd-kind-icon">send<wbr>Message</a></li>
@@ -183,9 +193,67 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="receivermap" class="tsd-anchor"></a>
+					<h3>receiver<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">receiver<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WeakMap</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../classes/phosphor.core.connection.html" class="tsd-signature-type">Connection</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L318">src/core/signaling.ts:318</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A mapping of receiver object to its first connected sender.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="sendermap" class="tsd-anchor"></a>
+					<h3>sender<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">sender<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WeakMap</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../classes/phosphor.core.connectionlist.html" class="tsd-signature-type">ConnectionList</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L312">src/core/signaling.ts:312</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A mapping of sender object to its connection list.</p>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="cleanreceiverslist" class="tsd-anchor"></a>
+					<h3>clean<wbr>Receivers<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">clean<wbr>Receivers<wbr>List<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.connectionlist.html" class="tsd-signature-type">ConnectionList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L388">src/core/signaling.ts:388</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cleanup the receivers list by removing dead connections.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>list: <a href="../classes/phosphor.core.connectionlist.html" class="tsd-signature-type">ConnectionList</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="clearmessagedata" class="tsd-anchor"></a>
 					<h3>clear<wbr>Message<wbr>Data</h3>
@@ -209,6 +277,220 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>handler: <a href="../interfaces/phosphor.core.imessagehandler.html" class="tsd-signature-type">IMessageHandler</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="connect" class="tsd-anchor"></a>
+					<h3>connect</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">connect&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L63">src/core/signaling.ts:63</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Connect the signal of a sender to the method of a receiver.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sender: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The object which will emit the signal. This will
+												be passed as the first argument to the receiver method when the
+											signal is emitted. This must be a non-primitive object.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>signal: <a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The signal which will be emitted by the sender.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>receiver: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The object to connect to the signal. This will
+												become the <code>this</code> context in the receiver method. This must be
+											a non-primitive object.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>method: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The receiver method to invoke when the signal is
+												emitted. The sender is passed as the first argument followed by
+											the args object emitted with the signal.</li>
+										</ul>
+										<h4 id="notes">Notes</h4>
+										<p>Receiver methods are invoked synchronously, in the order in which
+										they are connected.</p>
+										<p>Signal connections are unique. If a connection already exists for
+										the given combination of arguments, this function is a no-op.</p>
+										<p>A newly connected receiver method will not be invoked until the next
+										emission of the signal, even if it is connected during an emission.</p>
+										<h4 id="example">Example</h4>
+										<pre><code class="lang-typescript">connect(someObject, SomeClass.valueChanged, myObject, myObject.onValueChanged);
+</code></pre>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>sender: <span class="tsd-signature-type">T</span></h5>
+														</li>
+														<li>
+															<h5>args: <span class="tsd-signature-type">U</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="disconnect" class="tsd-anchor"></a>
+					<h3>disconnect</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">disconnect&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L153">src/core/signaling.ts:153</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Disconnect the signal of a sender from the method of a receiver.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sender: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The object which emits the signal.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>signal: <a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The signal emitted by the sender.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>receiver: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The object connected to the signal.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>method: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The receiver method connected to the signal.</li>
+										</ul>
+										<h4 id="notes">Notes</h4>
+										<p>Any argument to this function may be null, and it will be treated
+											as a wildcard when matching the connection. However, <code>sender</code> and
+										<code>receiver</code> cannot both be null; one or both must be provided.</p>
+										<p>A disconnected receiver method will no longer be invoked, even if
+										it is disconnected during signal emission.</p>
+										<p>If no connection exists for the given combination of arguments,
+										this function is a no-op.</p>
+										<h4 id="example">Example</h4>
+										<pre><code class="lang-typescript"><span class="hljs-comment">// disconnect a specific signal from a specific handler</span>
+disconnect(someObject, SomeClass.valueChanged, myObject, myObject.onValueChanged);
+
+<span class="hljs-comment">// disconnect all receivers from a specific sender</span>
+disconnect(someObject, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>);
+
+<span class="hljs-comment">// disconnect all receivers from a specific signal</span>
+disconnect(someObject, SomeClass.valueChanged, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>);
+
+<span class="hljs-comment">// disconnect a specific receiver from all senders</span>
+disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, myObject, <span class="hljs-literal">null</span>);
+
+<span class="hljs-comment">// disconnect a specific handler from all senders</span>
+disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, myObject, myObject.onValueChanged);
+</code></pre>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>sender: <span class="tsd-signature-type">T</span></h5>
+														</li>
+														<li>
+															<h5>args: <span class="tsd-signature-type">U</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -239,6 +521,74 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>dispatcher: <a href="../classes/phosphor.core.messagedispatcher.html" class="tsd-signature-type">MessageDispatcher</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="emit" class="tsd-anchor"></a>
+					<h3>emit</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">emit&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L224">src/core/signaling.ts:224</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Emit the signal of a sender and invoke the connected receivers.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sender: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The object which is emitting the signal. This will
+												be passed as the first argument to all connected receivers. This
+											must be a non-primitive object.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>signal: <a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The signal to be emitted by the sender.</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h5>args: <span class="tsd-signature-type">U</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<ul>
+											<li>The args object for the signal. This will be passed
+											as the second argument to all connected receivers.</li>
+										</ul>
+										<h4 id="notes">Notes</h4>
+										<p>If a receiver throws an exception, dispatching of the signal will
+											terminate immediately and the exception will be propagated to the
+										call site of this function.</p>
+										<h4 id="example">Example</h4>
+										<pre><code class="lang-typescript">emit(someObject, SomeClass.valueChanged, <span class="hljs-number">42</span>);
+</code></pre>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -338,6 +688,85 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="invokereceivers" class="tsd-anchor"></a>
+					<h3>invoke<wbr>Receivers</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">invoke<wbr>Receivers<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.connectionlist.html" class="tsd-signature-type">ConnectionList</a>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L328">src/core/signaling.ts:328</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invoke the receiver connections which match a specific signal.</p>
+								</div>
+								<p>This walks the provided connection list and invokes each receiver
+									connection which has a matching signal. A connection added during
+								dispatch will not be invoked.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>list: <a href="../classes/phosphor.core.connectionlist.html" class="tsd-signature-type">ConnectionList</a></h5>
+								</li>
+								<li>
+									<h5>signal: <a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>args: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="ismatch" class="tsd-anchor"></a>
+					<h3>is<wbr>Match</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Match<span class="tsd-signature-symbol">(</span>conn<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.connection.html" class="tsd-signature-type">Connection</a>, sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L349">src/core/signaling.ts:349</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether a connection matches the given arguments.</p>
+								</div>
+								<p>Null arguments are treated as wildcards which will match the
+								corresponding property of the connection.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>conn: <a href="../classes/phosphor.core.connection.html" class="tsd-signature-type">Connection</a></h5>
+								</li>
+								<li>
+									<h5>sender: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>signal: <a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>receiver: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>method: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="postmessage" class="tsd-anchor"></a>
 					<h3>post<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -362,6 +791,34 @@
 								</li>
 								<li>
 									<h5>msg: <a href="../interfaces/phosphor.core.imessage.html" class="tsd-signature-type">IMessage</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="removefromsenderslist" class="tsd-anchor"></a>
+					<h3>remove<wbr>From<wbr>Senders<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>From<wbr>Senders<wbr>List<span class="tsd-signature-symbol">(</span>conn<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.connection.html" class="tsd-signature-type">Connection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L362">src/core/signaling.ts:362</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove a live connection from the doubly linked list of senders.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>conn: <a href="../classes/phosphor.core.connection.html" class="tsd-signature-type">Connection</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -558,8 +1015,11 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../classes/phosphor.core.cbwrapper.html" class="tsd-kind-icon">CBWrapper</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/phosphor.core.connection.html" class="tsd-kind-icon">Connection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/phosphor.core.connectionlist.html" class="tsd-kind-icon">Connection<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/phosphor.core.filterwrapper.html" class="tsd-kind-icon">Filter<wbr>Wrapper</a>
@@ -597,11 +1057,29 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="phosphor.core.html#raf" class="tsd-kind-icon">raf</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="phosphor.core.html#receivermap" class="tsd-kind-icon">receiver<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="phosphor.core.html#sendermap" class="tsd-kind-icon">sender<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="phosphor.core.html#cleanreceiverslist" class="tsd-kind-icon">clean<wbr>Receivers<wbr>List</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="phosphor.core.html#clearmessagedata" class="tsd-kind-icon">clear<wbr>Message<wbr>Data</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.core.html#connect" class="tsd-kind-icon">connect</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.core.html#disconnect" class="tsd-kind-icon">disconnect</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="phosphor.core.html#dispatchmessage" class="tsd-kind-icon">dispatch<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="phosphor.core.html#emit" class="tsd-kind-icon">emit</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="phosphor.core.html#getdispatcher" class="tsd-kind-icon">get<wbr>Dispatcher</a>
@@ -613,7 +1091,16 @@
 						<a href="phosphor.core.html#installmessagefilter" class="tsd-kind-icon">install<wbr>Message<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="phosphor.core.html#invokereceivers" class="tsd-kind-icon">invoke<wbr>Receivers</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="phosphor.core.html#ismatch" class="tsd-kind-icon">is<wbr>Match</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="phosphor.core.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="phosphor.core.html#removefromsenderslist" class="tsd-kind-icon">remove<wbr>From<wbr>Senders<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="phosphor.core.html#removemessagefilter" class="tsd-kind-icon">remove<wbr>Message<wbr>Filter</a>
