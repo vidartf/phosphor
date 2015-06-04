@@ -232,6 +232,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.widgets.html#normalize" class="tsd-kind-icon">normalize</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.widgets.html#openrootmenu" class="tsd-kind-icon">open<wbr>Root<wbr>Menu</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.widgets.html#opensubmenu" class="tsd-kind-icon">open<wbr>Submenu</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.widgets.html#saferemove" class="tsd-kind-icon">safe<wbr>Remove</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.widgets.html#showmenu" class="tsd-kind-icon">show<wbr>Menu</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="phosphor.widgets.html#storesizes" class="tsd-kind-icon">store<wbr>Sizes</a></li>
 							</ul>
@@ -1610,7 +1611,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabbar.ts#L1124">src/widgets/tabbar.ts:1124</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabbar.ts#L1113">src/widgets/tabbar.ts:1113</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2060,6 +2061,39 @@ c) If <span class="hljs-keyword">after</span> adjusting all stretch <span class=
 								</li>
 								<li>
 									<h5>item: <span class="tsd-signature-type">HTMLElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="saferemove" class="tsd-anchor"></a>
+					<h3>safe<wbr>Remove</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">safe<wbr>Remove<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Node</span>, child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Node</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/widgets/tabbar.ts#L1136">src/widgets/tabbar.ts:1136</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Safely remove a child node from its parent.</p>
+								</div>
+								<p>This is a no-op if either node is null or if the given parent
+								node does not match the child node true parent.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parent: <span class="tsd-signature-type">Node</span></h5>
+								</li>
+								<li>
+									<h5>child: <span class="tsd-signature-type">Node</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2583,6 +2617,9 @@ c) If <span class="hljs-keyword">after</span> adjusting all stretch <span class=
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="phosphor.widgets.html#opensubmenu" class="tsd-kind-icon">open<wbr>Submenu</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="phosphor.widgets.html#saferemove" class="tsd-kind-icon">safe<wbr>Remove</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="phosphor.widgets.html#showmenu" class="tsd-kind-icon">show<wbr>Menu</a>
