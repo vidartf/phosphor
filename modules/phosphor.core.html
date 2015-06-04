@@ -199,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">receiver<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WeakMap</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../classes/phosphor.core.connection.html" class="tsd-signature-type">Connection</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L318">src/core/signaling.ts:318</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L329">src/core/signaling.ts:329</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -214,7 +214,7 @@
 					<div class="tsd-signature tsd-kind-icon">sender<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WeakMap</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../classes/phosphor.core.connectionlist.html" class="tsd-signature-type">ConnectionList</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L312">src/core/signaling.ts:312</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L323">src/core/signaling.ts:323</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -236,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L388">src/core/signaling.ts:388</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L399">src/core/signaling.ts:399</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -287,13 +287,13 @@
 					<a name="connect" class="tsd-anchor"></a>
 					<h3>connect</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">connect&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">connect&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L63">src/core/signaling.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L65">src/core/signaling.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -348,16 +348,6 @@
 												emitted. The sender is passed as the first argument followed by
 											the args object emitted with the signal.</li>
 										</ul>
-										<h4 id="notes">Notes</h4>
-										<p>Receiver methods are invoked synchronously, in the order in which
-										they are connected.</p>
-										<p>Signal connections are unique. If a connection already exists for
-										the given combination of arguments, this function is a no-op.</p>
-										<p>A newly connected receiver method will not be invoked until the next
-										emission of the signal, even if it is connected during an emission.</p>
-										<h4 id="example">Example</h4>
-										<pre><code class="lang-typescript">connect(someObject, SomeClass.valueChanged, myObject, myObject.onValueChanged);
-</code></pre>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
@@ -382,7 +372,18 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the connection succeeds, <code>false</code> otherwise.</p>
+							<h4 id="notes">Notes</h4>
+							<p>Receiver methods are invoked synchronously, in the order in which
+							they are connected.</p>
+							<p>Signal connections are unique. If a connection already exists for
+							the given combination of arguments, this function is a no-op.</p>
+							<p>A newly connected receiver method will not be invoked until the next
+							emission of the signal, even if it is connected during an emission.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript">connect(someObject, SomeClass.valueChanged, myObject, myObject.onValueChanged);
+</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -390,13 +391,13 @@
 					<a name="disconnect" class="tsd-anchor"></a>
 					<h3>disconnect</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">disconnect&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">disconnect&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, signal<span class="tsd-signature-symbol">: </span><a href="../classes/phosphor.core.signal.html" class="tsd-signature-type">Signal</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L153">src/core/signaling.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L159">src/core/signaling.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,30 +446,6 @@
 										<ul>
 											<li>The receiver method connected to the signal.</li>
 										</ul>
-										<h4 id="notes">Notes</h4>
-										<p>Any argument to this function may be null, and it will be treated
-											as a wildcard when matching the connection. However, <code>sender</code> and
-										<code>receiver</code> cannot both be null; one or both must be provided.</p>
-										<p>A disconnected receiver method will no longer be invoked, even if
-										it is disconnected during signal emission.</p>
-										<p>If no connection exists for the given combination of arguments,
-										this function is a no-op.</p>
-										<h4 id="example">Example</h4>
-										<pre><code class="lang-typescript"><span class="hljs-comment">// disconnect a specific signal from a specific handler</span>
-disconnect(someObject, SomeClass.valueChanged, myObject, myObject.onValueChanged);
-
-<span class="hljs-comment">// disconnect all receivers from a specific sender</span>
-disconnect(someObject, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>);
-
-<span class="hljs-comment">// disconnect all receivers from a specific signal</span>
-disconnect(someObject, SomeClass.valueChanged, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>);
-
-<span class="hljs-comment">// disconnect a specific receiver from all senders</span>
-disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, myObject, <span class="hljs-literal">null</span>);
-
-<span class="hljs-comment">// disconnect a specific handler from all senders</span>
-disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, myObject, myObject.onValueChanged);
-</code></pre>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
@@ -493,7 +470,32 @@ disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">nu
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the connection is broken, <code>false</code> otherwise.</p>
+							<h4 id="notes">Notes</h4>
+							<p>Any argument to this function may be null, and it will be treated
+								as a wildcard when matching the connection. However, <code>sender</code> and
+							<code>receiver</code> cannot both be null; one or both must be provided.</p>
+							<p>A disconnected receiver method will no longer be invoked, even if
+							it is disconnected during signal emission.</p>
+							<p>If no connection exists for the given combination of arguments,
+							this function is a no-op.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-comment">// disconnect a specific signal from a specific handler</span>
+disconnect(someObject, SomeClass.valueChanged, myObject, myObject.onValueChanged);
+
+<span class="hljs-comment">// disconnect all receivers from a specific sender</span>
+disconnect(someObject, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>);
+
+<span class="hljs-comment">// disconnect all receivers from a specific signal</span>
+disconnect(someObject, SomeClass.valueChanged, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>);
+
+<span class="hljs-comment">// disconnect a specific receiver from all senders</span>
+disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, myObject, <span class="hljs-literal">null</span>);
+
+<span class="hljs-comment">// disconnect a specific handler from all senders</span>
+disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, myObject, myObject.onValueChanged);
+</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -537,7 +539,7 @@ disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">nu
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L224">src/core/signaling.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L235">src/core/signaling.ts:235</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -697,7 +699,7 @@ disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">nu
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L328">src/core/signaling.ts:328</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L339">src/core/signaling.ts:339</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -734,7 +736,7 @@ disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">nu
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L349">src/core/signaling.ts:349</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L360">src/core/signaling.ts:360</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -807,7 +809,7 @@ disconnect(<span class="hljs-literal">null</span>, <span class="hljs-literal">nu
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L362">src/core/signaling.ts:362</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/HEAD/src/core/signaling.ts#L373">src/core/signaling.ts:373</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
