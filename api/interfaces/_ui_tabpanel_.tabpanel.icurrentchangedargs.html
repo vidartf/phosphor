@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;core/properties&quot; | phosphor</title>
+	<title>ICurrentChangedArgs | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,76 +55,114 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_core_properties_.html">&quot;core/properties&quot;</a>
+					<a href="../modules/_ui_tabpanel_.html">&quot;ui/tabpanel&quot;</a>
+				</li>
+				<li>
+					<a href="../classes/_ui_tabpanel_.tabpanel.html">TabPanel</a>
+				</li>
+				<li>
+					<a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html">ICurrentChangedArgs</a>
 				</li>
 			</ul>
-			<h1>External module &quot;core/properties&quot;</h1>
+			<h1>Interface ICurrentChangedArgs</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The arguments object for the <code>currentChanged</code> signal.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ICurrentChangedArgs</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Classes</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../classes/_core_properties_.attachedproperty.html" class="tsd-kind-icon">Attached<wbr>Property</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_core_properties_.iattachedpropertyoptions.html" class="tsd-kind-icon">IAttached<wbr>Property<wbr>Options</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_core_properties_.html#clearpropertydata" class="tsd-kind-icon">clear<wbr>Property<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html#currentindex" class="tsd-kind-icon">current<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html#currentwidget" class="tsd-kind-icon">current<wbr>Widget</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html#previousindex" class="tsd-kind-icon">previous<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html#previouswidget" class="tsd-kind-icon">previous<wbr>Widget</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="clearpropertydata" class="tsd-anchor"></a>
-					<h3>clear<wbr>Property<wbr>Data</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">clear<wbr>Property<wbr>Data<span class="tsd-signature-symbol">(</span>owner<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/85e0e02/src/core/properties.ts#L247">core/properties.ts:247</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Clear the stored property data for the given property owner.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>owner: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The property owner of interest.</p>
-										<h4 id="notes">Notes</h4>
-										<p>This will clear all property values for the owner, but it will
-										<strong>not</strong> run the change notification for any of the properties.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="currentindex" class="tsd-anchor"></a>
+					<h3>current<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/85e0e02/src/ui/tabpanel.ts#L317">ui/tabpanel.ts:317</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The currently selected index.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="currentwidget" class="tsd-anchor"></a>
+					<h3>current<wbr>Widget</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Widget<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/85e0e02/src/ui/tabpanel.ts#L322">ui/tabpanel.ts:322</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The currently selected widget.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="previousindex" class="tsd-anchor"></a>
+					<h3>previous<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/85e0e02/src/ui/tabpanel.ts#L307">ui/tabpanel.ts:307</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The previously selected index.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="previouswidget" class="tsd-anchor"></a>
+					<h3>previous<wbr>Widget</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<wbr>Widget<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/85e0e02/src/ui/tabpanel.ts#L312">ui/tabpanel.ts:312</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The previously selected widget.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -135,21 +173,38 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_core_properties_.html">"core/properties"</a>
+						<a href="../modules/_ui_tabpanel_.html">"ui/tabpanel"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../classes/_core_properties_.attachedproperty.html" class="tsd-kind-icon">Attached<wbr>Property</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_tabpanel_.tabpanel.html" class="tsd-kind-icon">Tab<wbr>Panel</a>
+						<ul>
+							<li class="current tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html" class="tsd-kind-icon">ICurrent<wbr>Changed<wbr>Args</a>
+								<ul>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html#currentindex" class="tsd-kind-icon">current<wbr>Index</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html#currentwidget" class="tsd-kind-icon">current<wbr>Widget</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html#previousindex" class="tsd-kind-icon">previous<wbr>Index</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_tabpanel_.tabpanel.icurrentchangedargs.html#previouswidget" class="tsd-kind-icon">previous<wbr>Widget</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_core_properties_.iattachedpropertyoptions.html" class="tsd-kind-icon">IAttached<wbr>Property<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_core_properties_.html#clearpropertydata" class="tsd-kind-icon">clear<wbr>Property<wbr>Data</a>
-					</li>
+				</ul>
+				<ul class="after-current">
 				</ul>
 			</nav>
 		</div>
