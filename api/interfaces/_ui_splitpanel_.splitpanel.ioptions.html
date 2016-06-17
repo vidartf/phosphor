@@ -93,7 +93,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_splitpanel_.splitpanel.ioptions.html#layout" class="tsd-kind-icon">layout</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_splitpanel_.splitpanel.ioptions.html#orientation" class="tsd-kind-icon">orientation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_splitpanel_.splitpanel.ioptions.html#renderer" class="tsd-kind-icon">renderer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_splitpanel_.splitpanel.ioptions.html#spacing" class="tsd-kind-icon">spacing</a></li>
 							</ul>
 						</section>
@@ -103,12 +105,29 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="layout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> layout</h3>
+					<div class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_splitpanel_.splitlayout.html" class="tsd-signature-type">SplitLayout</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L439">ui/splitpanel.ts:439</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The split layout to use for the split panel.</p>
+						</div>
+						<p>If this is provided, the other options are ignored.</p>
+						<p>The default is a new <code>SplitLayout</code>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="orientation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> orientation</h3>
 					<div class="tsd-signature tsd-kind-icon">orientation<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_splitpanel_.splitpanel.html#orientation" class="tsd-signature-type">Orientation</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L425">ui/splitpanel.ts:425</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L423">ui/splitpanel.ts:423</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -119,19 +138,35 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="renderer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> renderer</h3>
+					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <a href="_ui_splitpanel_.splitlayout.irenderer.html" class="tsd-signature-type">IRenderer</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L416">ui/splitpanel.ts:416</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The renderer to use for the split panel.</p>
+						</div>
+						<p>The default is a shared renderer instance.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="spacing" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> spacing</h3>
 					<div class="tsd-signature tsd-kind-icon">spacing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L432">ui/splitpanel.ts:432</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L430">ui/splitpanel.ts:430</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The spacing between items in the panel.</p>
 						</div>
-						<p>The default is <code>3</code>.</p>
+						<p>The default is <code>4</code>.</p>
 					</div>
 				</section>
 			</section>
@@ -161,7 +196,13 @@
 								<a href="_ui_splitpanel_.splitpanel.ioptions.html" class="tsd-kind-icon">IOptions</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_splitpanel_.splitpanel.ioptions.html#layout" class="tsd-kind-icon">layout</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
 										<a href="_ui_splitpanel_.splitpanel.ioptions.html#orientation" class="tsd-kind-icon">orientation</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_splitpanel_.splitpanel.ioptions.html#renderer" class="tsd-kind-icon">renderer</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
 										<a href="_ui_splitpanel_.splitpanel.ioptions.html#spacing" class="tsd-kind-icon">spacing</a>

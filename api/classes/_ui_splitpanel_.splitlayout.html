@@ -103,7 +103,8 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ui_splitpanel_.splitlayout.ihandlerenderer.html" class="tsd-kind-icon">IHandle<wbr>Renderer</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ui_splitpanel_.splitlayout.ioptions.html" class="tsd-kind-icon">IOptions</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ui_splitpanel_.splitlayout.irenderer.html" class="tsd-kind-icon">IRenderer</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -138,6 +139,7 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ui_splitpanel_.splitlayout.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_ui_splitpanel_.splitlayout.html#orientation-1" class="tsd-kind-icon">orientation</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_ui_splitpanel_.splitlayout.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_splitpanel_.splitlayout.html#renderer" class="tsd-kind-icon">renderer</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_ui_splitpanel_.splitlayout.html#spacing" class="tsd-kind-icon">spacing</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ui_splitpanel_.splitlayout.html#widgets" class="tsd-kind-icon">widgets</a></li>
 							</ul>
@@ -185,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">Orientation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"horizontal"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"vertical"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L972">ui/splitpanel.ts:972</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L1012">ui/splitpanel.ts:1012</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -201,13 +203,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Split<wbr>Layout<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_splitpanel_.splitlayout.ihandlerenderer.html" class="tsd-signature-type">IHandleRenderer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_splitpanel_.splitlayout.html" class="tsd-signature-type">SplitLayout</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Split<wbr>Layout<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_splitpanel_.splitlayout.ioptions.html" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_splitpanel_.splitlayout.html" class="tsd-signature-type">SplitLayout</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L465">ui/splitpanel.ts:465</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L489">ui/splitpanel.ts:489</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -218,10 +220,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>renderer: <a href="../interfaces/_ui_splitpanel_.splitlayout.ihandlerenderer.html" class="tsd-signature-type">IHandleRenderer</a></h5>
+									<h5>options: <a href="../interfaces/_ui_splitpanel_.splitlayout.ioptions.html" class="tsd-signature-type">IOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The handle renderer for creating split handles.</p>
+											<p>The options for initializing the layout.</p>
 										</div>
 									</div>
 								</li>
@@ -239,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">_box<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_dom_sizing_.iboxsizing.html" class="tsd-signature-type">IBoxSizing</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L955">ui/splitpanel.ts:955</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L995">ui/splitpanel.ts:995</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +251,7 @@
 					<div class="tsd-signature tsd-kind-icon">_dirty<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L954">ui/splitpanel.ts:954</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L994">ui/splitpanel.ts:994</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">_fixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L952">ui/splitpanel.ts:952</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L992">ui/splitpanel.ts:992</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -269,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">_handles<span class="tsd-signature-symbol">:</span> <a href="_collections_vector_.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Vector&lt;HTMLElement&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L957">ui/splitpanel.ts:957</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L998">ui/splitpanel.ts:998</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,17 +281,17 @@
 					<div class="tsd-signature tsd-kind-icon">_orientation<span class="tsd-signature-symbol">:</span> <a href="_ui_splitpanel_.splitlayout.html#orientation" class="tsd-signature-type">Orientation</a><span class="tsd-signature-symbol"> =&nbsp;&quot;horizontal&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L959">ui/splitpanel.ts:959</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L999">ui/splitpanel.ts:999</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_renderer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _renderer</h3>
-					<div class="tsd-signature tsd-kind-icon">_renderer<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_ui_splitpanel_.splitlayout.ihandlerenderer.html" class="tsd-signature-type">IHandleRenderer</a></div>
+					<div class="tsd-signature tsd-kind-icon">_renderer<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_ui_splitpanel_.splitlayout.irenderer.html" class="tsd-signature-type">IRenderer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L958">ui/splitpanel.ts:958</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L996">ui/splitpanel.ts:996</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -299,17 +301,17 @@
 					<div class="tsd-signature tsd-kind-icon">_sizers<span class="tsd-signature-symbol">:</span> <a href="_collections_vector_.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_boxengine_.boxsizer.html" class="tsd-signature-type">BoxSizer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Vector&lt;BoxSizer&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L956">ui/splitpanel.ts:956</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L997">ui/splitpanel.ts:997</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_spacing" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _spacing</h3>
-					<div class="tsd-signature tsd-kind-icon">_spacing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;3</span></div>
+					<div class="tsd-signature tsd-kind-icon">_spacing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L953">ui/splitpanel.ts:953</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L993">ui/splitpanel.ts:993</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -326,7 +328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L526">ui/splitpanel.ts:526</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L566">ui/splitpanel.ts:566</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -351,7 +353,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#isdisposed">isDisposed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/widget.ts#L933">ui/widget.ts:933</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/widget.ts#L933">ui/widget.ts:933</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -376,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L479">ui/splitpanel.ts:479</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L509">ui/splitpanel.ts:509</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +391,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L486">ui/splitpanel.ts:486</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L516">ui/splitpanel.ts:516</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -419,7 +421,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#parent">parent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/widget.ts#L940">ui/widget.ts:940</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/widget.ts#L940">ui/widget.ts:940</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,7 +438,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#parent">parent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/widget.ts#L951">ui/widget.ts:951</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/widget.ts#L951">ui/widget.ts:951</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -457,6 +459,30 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="renderer" class="tsd-anchor"></a>
+					<h3>renderer</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> renderer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_splitpanel_.splitlayout.irenderer.html" class="tsd-signature-type">IRenderer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L556">ui/splitpanel.ts:556</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The renderer used by the split layout.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ui_splitpanel_.splitlayout.irenderer.html" class="tsd-signature-type">IRenderer</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="spacing" class="tsd-anchor"></a>
 					<h3>spacing</h3>
@@ -468,7 +494,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L501">ui/splitpanel.ts:501</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L531">ui/splitpanel.ts:531</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -481,7 +507,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L508">ui/splitpanel.ts:508</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L538">ui/splitpanel.ts:538</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -510,7 +536,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#widgets">widgets</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/panel.ts#L147">ui/panel.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/panel.ts#L157">ui/panel.ts:157</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -537,7 +563,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L785">ui/splitpanel.ts:785</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L825">ui/splitpanel.ts:825</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -559,7 +585,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L884">ui/splitpanel.ts:884</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L924">ui/splitpanel.ts:924</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -592,7 +618,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#addwidget">addWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/panel.ts#L168">ui/panel.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/panel.ts#L178">ui/panel.ts:178</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -626,7 +652,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#attachwidget">attachWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L631">ui/splitpanel.ts:631</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L671">ui/splitpanel.ts:671</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -666,7 +692,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#detachwidget">detachWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L684">ui/splitpanel.ts:684</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L724">ui/splitpanel.ts:724</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -708,7 +734,7 @@
 								<p>Inherited from <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#dispose">dispose</a></p>
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/panel.ts#L134">ui/panel.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/panel.ts#L144">ui/panel.ts:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -735,7 +761,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#insertwidget">insertWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/panel.ts#L184">ui/panel.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/panel.ts#L194">ui/panel.ts:194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -778,7 +804,7 @@
 								<p>Inherited from <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#iter">iter</a></p>
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#iter">iter</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/panel.ts#L156">ui/panel.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/panel.ts#L166">ui/panel.ts:166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -802,7 +828,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#movewidget">moveWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L665">ui/splitpanel.ts:665</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L705">ui/splitpanel.ts:705</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -848,7 +874,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onafterattach">onAfterAttach</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L728">ui/splitpanel.ts:728</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L768">ui/splitpanel.ts:768</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -877,7 +903,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onaftershow">onAfterShow</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L720">ui/splitpanel.ts:720</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L760">ui/splitpanel.ts:760</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -906,7 +932,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onbeforedetach">onBeforeDetach</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/widget.ts#L1073">ui/widget.ts:1073</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/widget.ts#L1073">ui/widget.ts:1073</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -940,7 +966,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onbeforehide">onBeforeHide</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/widget.ts#L1101">ui/widget.ts:1101</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/widget.ts#L1101">ui/widget.ts:1101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -974,7 +1000,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onchildhidden">onChildHidden</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L747">ui/splitpanel.ts:747</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L787">ui/splitpanel.ts:787</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1004,7 +1030,7 @@
 								<p>Inherited from <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#onchildremoved">onChildRemoved</a></p>
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onchildremoved">onChildRemoved</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/panel.ts#L387">ui/panel.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/panel.ts#L397">ui/panel.ts:397</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1036,7 +1062,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onchildshown">onChildShown</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L736">ui/splitpanel.ts:736</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L776">ui/splitpanel.ts:776</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1065,7 +1091,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onfitrequest">onFitRequest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L776">ui/splitpanel.ts:776</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L816">ui/splitpanel.ts:816</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1094,7 +1120,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#onlayoutchanged">onLayoutChanged</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L712">ui/splitpanel.ts:712</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L752">ui/splitpanel.ts:752</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1125,7 +1151,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onresize">onResize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L758">ui/splitpanel.ts:758</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L798">ui/splitpanel.ts:798</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1154,7 +1180,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#onupdaterequest">onUpdateRequest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L767">ui/splitpanel.ts:767</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L807">ui/splitpanel.ts:807</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1183,7 +1209,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_widget_.layout.html">Layout</a>.<a href="_ui_widget_.layout.html#processparentmessage">processParentMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/widget.ts#L977">ui/widget.ts:977</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/widget.ts#L977">ui/widget.ts:977</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1218,7 +1244,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ui_panel_.panellayout.html">PanelLayout</a>.<a href="_ui_panel_.panellayout.html#removewidget">removeWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/panel.ts#L237">ui/panel.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/panel.ts#L247">ui/panel.ts:247</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1256,7 +1282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L585">ui/splitpanel.ts:585</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L625">ui/splitpanel.ts:625</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1299,7 +1325,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L558">ui/splitpanel.ts:558</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L598">ui/splitpanel.ts:598</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1335,7 +1361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L541">ui/splitpanel.ts:541</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L581">ui/splitpanel.ts:581</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1362,7 +1388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L995">ui/splitpanel.ts:995</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L1060">ui/splitpanel.ts:1060</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1394,7 +1420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/0835173/src/ui/splitpanel.ts#L1007">ui/splitpanel.ts:1007</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/splitpanel.ts#L1072">ui/splitpanel.ts:1072</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1442,7 +1468,10 @@
 						<a href="_ui_splitpanel_.splitlayout.html" class="tsd-kind-icon">Split<wbr>Layout</a>
 						<ul>
 							<li class=" tsd-kind-interface tsd-parent-kind-class">
-								<a href="../interfaces/_ui_splitpanel_.splitlayout.ihandlerenderer.html" class="tsd-kind-icon">IHandle<wbr>Renderer</a>
+								<a href="../interfaces/_ui_splitpanel_.splitlayout.ioptions.html" class="tsd-kind-icon">IOptions</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/_ui_splitpanel_.splitlayout.irenderer.html" class="tsd-kind-icon">IRenderer</a>
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
 								<a href="_ui_splitpanel_.splitlayout.html#orientation" class="tsd-kind-icon">Orientation</a>
@@ -1485,6 +1514,9 @@
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ui_splitpanel_.splitlayout.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_ui_splitpanel_.splitlayout.html#renderer" class="tsd-kind-icon">renderer</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="_ui_splitpanel_.splitlayout.html#spacing" class="tsd-kind-icon">spacing</a>
