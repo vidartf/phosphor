@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IContentRenderer | phosphor</title>
+	<title>IRenderer | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,16 +55,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ui_menu_.html">&quot;ui/menu&quot;</a>
+					<a href="../modules/_ui_tabbar_.html">&quot;ui/tabbar&quot;</a>
 				</li>
 				<li>
-					<a href="../classes/_ui_menu_.menu.html">Menu</a>
+					<a href="../classes/_ui_tabbar_.tabbar.html">TabBar</a>
 				</li>
 				<li>
-					<a href="_ui_menu_.menu.icontentrenderer.html">IContentRenderer</a>
+					<a href="_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>
 				</li>
 			</ul>
-			<h1>Interface IContentRenderer</h1>
+			<h1>Interface IRenderer</h1>
 		</div>
 	</div>
 </header>
@@ -74,25 +74,22 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An object which renders the content for a menu.</p>
+						<p>A renderer for use with a tab bar.</p>
 					</div>
-					<h4 id="notes">Notes</h4>
-					<p>User code can implement a custom renderer when the default
-					content created by the menu is insufficient.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IContentRenderer</span>
+						<span class="target">IRenderer</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_ui_menu_.menu.contentrenderer.html" class="tsd-signature-type">ContentRenderer</a></li>
+					<li><a href="../classes/_ui_tabbar_.tabbar.renderer.html" class="tsd-signature-type">Renderer</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -102,8 +99,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_ui_menu_.menu.icontentrenderer.html#createitemnode" class="tsd-kind-icon">create<wbr>Item<wbr>Node</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_ui_menu_.menu.icontentrenderer.html#updateitemnode" class="tsd-kind-icon">update<wbr>Item<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_ui_tabbar_.tabbar.irenderer.html#closeiconnode" class="tsd-kind-icon">close<wbr>Icon<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_ui_tabbar_.tabbar.irenderer.html#createtabnode" class="tsd-kind-icon">create<wbr>Tab<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_ui_tabbar_.tabbar.irenderer.html#updatetabnode" class="tsd-kind-icon">update<wbr>Tab<wbr>Node</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,47 +110,21 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="createitemnode" class="tsd-anchor"></a>
-					<h3>create<wbr>Item<wbr>Node</h3>
+					<a name="closeiconnode" class="tsd-anchor"></a>
+					<h3>close<wbr>Icon<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Item<wbr>Node<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
+						<li class="tsd-signature tsd-kind-icon">close<wbr>Icon<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/menu.ts#L1367">ui/menu.ts:1367</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/ui/tabbar.ts#L1176">ui/tabbar.ts:1176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a node for a menu item.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
-							<p>A new node for a menu item.</p>
-							<h4 id="notes">Notes</h4>
-							<p>The data in the node should be uninitialized.</p>
-							<p>The <code>updateItemNode</code> method will be called for initialization.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="updateitemnode" class="tsd-anchor"></a>
-					<h3>update<wbr>Item<wbr>Node</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Item<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, item<span class="tsd-signature-symbol">: </span><a href="../classes/_ui_menu_.menuitem.html" class="tsd-signature-type">MenuItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/menu.ts#L1380">ui/menu.ts:1380</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update an item node to reflect the state of a menu item.</p>
+									<p>Look up the close icon descendant node for a tab node.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -160,16 +132,76 @@
 								<li>
 									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>A node created by a call to <code>createItemNode</code>.</p>
+										<p>A node created by a call to <code>createTabNode</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+							<p>The close icon node, or <code>null</code> if none exists.</p>
+							<h4 id="notes">Notes</h4>
+							<p>This is used by the tab bar to detect clicks on the close icon.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="createtabnode" class="tsd-anchor"></a>
+					<h3>create<wbr>Tab<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Tab<wbr>Node<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/ui/tabbar.ts#L1151">ui/tabbar.ts:1151</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a node for a tab.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+							<p>A new node for a tab.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The data in the node should be uninitialized.</p>
+							<p>The <code>updateTabNode</code> method will be called for initialization.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="updatetabnode" class="tsd-anchor"></a>
+					<h3>update<wbr>Tab<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Tab<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, title<span class="tsd-signature-symbol">: </span><a href="../classes/_ui_title_.title.html" class="tsd-signature-type">Title</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/ui/tabbar.ts#L1164">ui/tabbar.ts:1164</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update a tab node to reflect the state of a title.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A node created by a call to <code>createTabNode</code>.</p>
 									</div>
 								</li>
 								<li>
-									<h5>item: <a href="../classes/_ui_menu_.menuitem.html" class="tsd-signature-type">MenuItem</a></h5>
+									<h5>title: <a href="../classes/_ui_title_.title.html" class="tsd-signature-type">Title</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The menu item holding the data for the node.</p>
+										<p>The title object holding the data for the tab.</p>
 										<h4 id="notes">Notes</h4>
 										<p>This method should completely reset the state of the node to
-										reflect the data for the menu item.</p>
+										reflect the data in the title.</p>
 									</div>
 								</li>
 							</ul>
@@ -186,7 +218,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ui_menu_.html">"ui/menu"</a>
+						<a href="../modules/_ui_tabbar_.html">"ui/tabbar"</a>
 					</li>
 				</ul>
 			</nav>
@@ -195,16 +227,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_menu_.menu.html" class="tsd-kind-icon">Menu</a>
+						<a href="../classes/_ui_tabbar_.tabbar.html" class="tsd-kind-icon">Tab<wbr>Bar</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-class">
-								<a href="_ui_menu_.menu.icontentrenderer.html" class="tsd-kind-icon">IContent<wbr>Renderer</a>
+								<a href="_ui_tabbar_.tabbar.irenderer.html" class="tsd-kind-icon">IRenderer</a>
 								<ul>
 									<li class=" tsd-kind-method tsd-parent-kind-interface">
-										<a href="_ui_menu_.menu.icontentrenderer.html#createitemnode" class="tsd-kind-icon">create<wbr>Item<wbr>Node</a>
+										<a href="_ui_tabbar_.tabbar.irenderer.html#closeiconnode" class="tsd-kind-icon">close<wbr>Icon<wbr>Node</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-interface">
-										<a href="_ui_menu_.menu.icontentrenderer.html#updateitemnode" class="tsd-kind-icon">update<wbr>Item<wbr>Node</a>
+										<a href="_ui_tabbar_.tabbar.irenderer.html#createtabnode" class="tsd-kind-icon">create<wbr>Tab<wbr>Node</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-interface">
+										<a href="_ui_tabbar_.tabbar.irenderer.html#updatetabnode" class="tsd-kind-icon">update<wbr>Tab<wbr>Node</a>
 									</li>
 								</ul>
 							</li>
@@ -212,9 +247,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_menu_.menuitem.html" class="tsd-kind-icon">Menu<wbr>Item</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

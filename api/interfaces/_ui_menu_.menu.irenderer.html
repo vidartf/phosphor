@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;dom/sizing&quot; | phosphor</title>
+	<title>IRenderer | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,99 +55,101 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_dom_sizing_.html">&quot;dom/sizing&quot;</a>
+					<a href="../modules/_ui_menu_.html">&quot;ui/menu&quot;</a>
+				</li>
+				<li>
+					<a href="../classes/_ui_menu_.menu.html">Menu</a>
+				</li>
+				<li>
+					<a href="_ui_menu_.menu.irenderer.html">IRenderer</a>
 				</li>
 			</ul>
-			<h1>External module &quot;dom/sizing&quot;</h1>
+			<h1>Interface IRenderer</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A renderer for use with a menu.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IRenderer</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/_ui_menu_.menu.renderer.html" class="tsd-signature-type">Renderer</a></li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_dom_sizing_.iboxsizing.html" class="tsd-kind-icon">IBox<wbr>Sizing</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_dom_sizing_.isizelimits.html" class="tsd-kind-icon">ISize<wbr>Limits</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_dom_sizing_.html#boxsizing" class="tsd-kind-icon">box<wbr>Sizing</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_dom_sizing_.html#sizelimits" class="tsd-kind-icon">size<wbr>Limits</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_ui_menu_.menu.irenderer.html#createitemnode" class="tsd-kind-icon">create<wbr>Item<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_ui_menu_.menu.irenderer.html#updateitemnode" class="tsd-kind-icon">update<wbr>Item<wbr>Node</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="boxsizing" class="tsd-anchor"></a>
-					<h3>box<wbr>Sizing</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">box<wbr>Sizing<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_dom_sizing_.iboxsizing.html" class="tsd-signature-type">IBoxSizing</a></li>
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="createitemnode" class="tsd-anchor"></a>
+					<h3>create<wbr>Item<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Item<wbr>Node<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/dom/sizing.ts#L89">dom/sizing.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/ui/menu.ts#L1375">ui/menu.ts:1375</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Compute the box sizing for a DOM node.</p>
+									<p>Create a node for a menu item.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The DOM node for which to compute the box sizing.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_dom_sizing_.iboxsizing.html" class="tsd-signature-type">IBoxSizing</a></h4>
-							<p>The box sizing data for the specified DOM node.</p>
-							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { boxSizing } from <span class="hljs-string">'phosphor-ui/lib/dom-util'</span>;
-
-<span class="hljs-keyword">let</span> div = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
-div.style.borderTop = <span class="hljs-string">'solid 10px black'</span>;
-<span class="hljs-built_in">document</span>.body.appendChild(div);
-
-<span class="hljs-keyword">let</span> sizing = boxSizing(div);
-sizing.borderTop;    <span class="hljs-comment">// 10</span>
-sizing.paddingLeft;  <span class="hljs-comment">// 0</span>
-<span class="hljs-comment">// etc...</span>
-</code></pre>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+							<p>A new node for a menu item.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The data in the node should be uninitialized.</p>
+							<p>The <code>updateItemNode</code> method will be called for initialization.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="sizelimits" class="tsd-anchor"></a>
-					<h3>size<wbr>Limits</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">size<wbr>Limits<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_dom_sizing_.isizelimits.html" class="tsd-signature-type">ISizeLimits</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="updateitemnode" class="tsd-anchor"></a>
+					<h3>update<wbr>Item<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Item<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, item<span class="tsd-signature-symbol">: </span><a href="../classes/_ui_menu_.menuitem.html" class="tsd-signature-type">MenuItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/dom/sizing.ts#L165">dom/sizing.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/ui/menu.ts#L1388">ui/menu.ts:1388</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Compute the size limits for a DOM node.</p>
+									<p>Update an item node to reflect the state of a menu item.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,24 +157,20 @@ sizing.paddingLeft;  <span class="hljs-comment">// 0</span>
 								<li>
 									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The node for which to compute the size limits.</p>
+										<p>A node created by a call to <code>createItemNode</code>.</p>
+									</div>
+								</li>
+								<li>
+									<h5>item: <a href="../classes/_ui_menu_.menuitem.html" class="tsd-signature-type">MenuItem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The menu item holding the data for the node.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This method should completely reset the state of the node to
+										reflect the data for the menu item.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_dom_sizing_.isizelimits.html" class="tsd-signature-type">ISizeLimits</a></h4>
-							<p>The size limit data for the specified DOM node.</p>
-							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { sizeLimits } from <span class="hljs-string">'phosphor-ui/lib/dom-util'</span>;
-
-<span class="hljs-keyword">let</span> div = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
-div.style.minWidth = <span class="hljs-string">'90px'</span>;
-<span class="hljs-built_in">document</span>.body.appendChild(div);
-
-<span class="hljs-keyword">let</span> limits = sizeLimits(div);
-limits.minWidth;   <span class="hljs-comment">// 90</span>
-limits.maxHeight;  <span class="hljs-comment">// Infinity</span>
-<span class="hljs-comment">// etc...</span>
-</code></pre>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -185,23 +183,34 @@ limits.maxHeight;  <span class="hljs-comment">// Infinity</span>
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_dom_sizing_.html">"dom/sizing"</a>
+						<a href="../modules/_ui_menu_.html">"ui/menu"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_dom_sizing_.iboxsizing.html" class="tsd-kind-icon">IBox<wbr>Sizing</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_menu_.menu.html" class="tsd-kind-icon">Menu</a>
+						<ul>
+							<li class="current tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_menu_.menu.irenderer.html" class="tsd-kind-icon">IRenderer</a>
+								<ul>
+									<li class=" tsd-kind-method tsd-parent-kind-interface">
+										<a href="_ui_menu_.menu.irenderer.html#createitemnode" class="tsd-kind-icon">create<wbr>Item<wbr>Node</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-interface">
+										<a href="_ui_menu_.menu.irenderer.html#updateitemnode" class="tsd-kind-icon">update<wbr>Item<wbr>Node</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_dom_sizing_.isizelimits.html" class="tsd-kind-icon">ISize<wbr>Limits</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_dom_sizing_.html#boxsizing" class="tsd-kind-icon">box<wbr>Sizing</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_dom_sizing_.html#sizelimits" class="tsd-kind-icon">size<wbr>Limits</a>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_menu_.menuitem.html" class="tsd-kind-icon">Menu<wbr>Item</a>
 					</li>
 				</ul>
 			</nav>

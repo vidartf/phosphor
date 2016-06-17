@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ContentRenderer | phosphor</title>
+	<title>Renderer | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,16 +55,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ui_commandpalette_.html">&quot;ui/commandpalette&quot;</a>
+					<a href="../modules/_ui_menubar_.html">&quot;ui/menubar&quot;</a>
 				</li>
 				<li>
-					<a href="_ui_commandpalette_.commandpalette.html">CommandPalette</a>
+					<a href="_ui_menubar_.menubar.html">MenuBar</a>
 				</li>
 				<li>
-					<a href="_ui_commandpalette_.commandpalette.contentrenderer.html">ContentRenderer</a>
+					<a href="_ui_menubar_.menubar.renderer.html">Renderer</a>
 				</li>
 			</ul>
-			<h1>Class ContentRenderer</h1>
+			<h1>Class Renderer</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The default implementation of <a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html">IContentRenderer</a>.</p>
+						<p>The default implementation of <code>IRenderer</code>.</p>
 					</div>
 				</div>
 			</section>
@@ -82,14 +82,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ContentRenderer</span>
+						<span class="target">Renderer</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html" class="tsd-signature-type">IContentRenderer</a></li>
+					<li><a href="../interfaces/_ui_menubar_.menubar.irenderer.html" class="tsd-signature-type">IRenderer</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -99,11 +99,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_commandpalette_.commandpalette.contentrenderer.html#createheadernode" class="tsd-kind-icon">create<wbr>Header<wbr>Node</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_commandpalette_.commandpalette.contentrenderer.html#createitemnode" class="tsd-kind-icon">create<wbr>Item<wbr>Node</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_commandpalette_.commandpalette.contentrenderer.html#formatshortcut" class="tsd-kind-icon">format<wbr>Shortcut</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_commandpalette_.commandpalette.contentrenderer.html#updateheadernode" class="tsd-kind-icon">update<wbr>Header<wbr>Node</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_commandpalette_.commandpalette.contentrenderer.html#updateitemnode" class="tsd-kind-icon">update<wbr>Item<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_menubar_.menubar.renderer.html#createitemnode" class="tsd-kind-icon">create<wbr>Item<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_menubar_.menubar.renderer.html#formatlabel" class="tsd-kind-icon">format<wbr>Label</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_menubar_.menubar.renderer.html#updateitemnode" class="tsd-kind-icon">update<wbr>Item<wbr>Node</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,30 +109,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="createheadernode" class="tsd-anchor"></a>
-					<h3>create<wbr>Header<wbr>Node</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Header<wbr>Node<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html">IContentRenderer</a>.<a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html#createheadernode">createHeaderNode</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/commandpalette.ts#L865">ui/commandpalette.ts:865</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a node for a section header.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
-							<p>A new node for a section header.</p>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="createitemnode" class="tsd-anchor"></a>
 					<h3>create<wbr>Item<wbr>Node</h3>
@@ -144,90 +118,56 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html">IContentRenderer</a>.<a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html#createitemnode">createItemNode</a></p>
+								<p>Implementation of <a href="../interfaces/_ui_menubar_.menubar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_menubar_.menubar.irenderer.html#createitemnode">createItemNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/commandpalette.ts#L876">ui/commandpalette.ts:876</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/ui/menubar.ts#L871">ui/menubar.ts:871</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a node for a command item.</p>
+									<p>Create a node for a menu bar item.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
-							<p>A new node for a command item.</p>
+							<p>A new node for a menu bar item.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="formatshortcut" class="tsd-anchor"></a>
-					<h3>format<wbr>Shortcut</h3>
+					<a name="formatlabel" class="tsd-anchor"></a>
+					<h3>format<wbr>Label</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">format<wbr>Shortcut<span class="tsd-signature-symbol">(</span>binding<span class="tsd-signature-symbol">: </span><a href="_ui_keymap_.keybinding.html" class="tsd-signature-type">KeyBinding</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">format<wbr>Label<span class="tsd-signature-symbol">(</span>label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mnemonic<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/commandpalette.ts#L962">ui/commandpalette.ts:962</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/ui/menubar.ts#L911">ui/menubar.ts:911</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Format a key binding into shortcut text for display.</p>
+									<p>Format a label into HTML for display.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>binding: <a href="_ui_keymap_.keybinding.html" class="tsd-signature-type">KeyBinding</a></h5>
+									<h5>label: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The key binding to format. This may be <code>null</code>.</p>
+										<p>The label text of interest.</p>
+									</div>
+								</li>
+								<li>
+									<h5>mnemonic: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index of the mnemonic character.</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>The formatted shortcut text for display.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateheadernode" class="tsd-anchor"></a>
-					<h3>update<wbr>Header<wbr>Node</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Header<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, markup<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html">IContentRenderer</a>.<a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html#updateheadernode">updateHeaderNode</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/commandpalette.ts#L900">ui/commandpalette.ts:900</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update a header node to reflect the given data.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A node created by a call to <code>createHeaderNode</code>.</p>
-									</div>
-								</li>
-								<li>
-									<h5>markup: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The markup for the header text. This is the
-											section category text interpolated with <code>&lt;mark&gt;</code> tags for
-										the matching search characters.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>The formatted label HTML for display.</p>
 						</li>
 					</ul>
 				</section>
@@ -235,19 +175,19 @@
 					<a name="updateitemnode" class="tsd-anchor"></a>
 					<h3>update<wbr>Item<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Item<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, item<span class="tsd-signature-symbol">: </span><a href="_ui_commandpalette_.commanditem.html" class="tsd-signature-type">CommandItem</a>, markup<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Item<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, title<span class="tsd-signature-symbol">: </span><a href="_ui_title_.title.html" class="tsd-signature-type">Title</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html">IContentRenderer</a>.<a href="../interfaces/_ui_commandpalette_.commandpalette.icontentrenderer.html#updateitemnode">updateItemNode</a></p>
+								<p>Implementation of <a href="../interfaces/_ui_menubar_.menubar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_menubar_.menubar.irenderer.html#updateitemnode">updateItemNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/dc32100/src/ui/commandpalette.ts#L916">ui/commandpalette.ts:916</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/6730c7b/src/ui/menubar.ts#L890">ui/menubar.ts:890</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Update an item node to reflect the state of a command item.</p>
+									<p>Update an item node to reflect the state of a menu title.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -259,17 +199,9 @@
 									</div>
 								</li>
 								<li>
-									<h5>item: <a href="_ui_commandpalette_.commanditem.html" class="tsd-signature-type">CommandItem</a></h5>
+									<h5>title: <a href="_ui_title_.title.html" class="tsd-signature-type">Title</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The command item holding the data for the node.</p>
-									</div>
-								</li>
-								<li>
-									<h5>markup: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The markup for the item label. This is the
-											item label text interpolated with <code>&lt;mark&gt;</code> tags for the
-										matching search characters.</p>
+										<p>The menu title holding the data for the node.</p>
 									</div>
 								</li>
 							</ul>
@@ -286,37 +218,28 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ui_commandpalette_.html">"ui/commandpalette"</a>
+						<a href="../modules/_ui_menubar_.html">"ui/menubar"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_ui_commandpalette_.commanditem.html" class="tsd-kind-icon">Command<wbr>Item</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_ui_commandpalette_.commandpalette.html" class="tsd-kind-icon">Command<wbr>Palette</a>
+						<a href="_ui_menubar_.menubar.html" class="tsd-kind-icon">Menu<wbr>Bar</a>
 						<ul>
 							<li class="current tsd-kind-class tsd-parent-kind-class">
-								<a href="_ui_commandpalette_.commandpalette.contentrenderer.html" class="tsd-kind-icon">Content<wbr>Renderer</a>
+								<a href="_ui_menubar_.menubar.renderer.html" class="tsd-kind-icon">Renderer</a>
 								<ul>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_commandpalette_.commandpalette.contentrenderer.html#createheadernode" class="tsd-kind-icon">create<wbr>Header<wbr>Node</a>
+										<a href="_ui_menubar_.menubar.renderer.html#createitemnode" class="tsd-kind-icon">create<wbr>Item<wbr>Node</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_commandpalette_.commandpalette.contentrenderer.html#createitemnode" class="tsd-kind-icon">create<wbr>Item<wbr>Node</a>
+										<a href="_ui_menubar_.menubar.renderer.html#formatlabel" class="tsd-kind-icon">format<wbr>Label</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_commandpalette_.commandpalette.contentrenderer.html#formatshortcut" class="tsd-kind-icon">format<wbr>Shortcut</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_commandpalette_.commandpalette.contentrenderer.html#updateheadernode" class="tsd-kind-icon">update<wbr>Header<wbr>Node</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_commandpalette_.commandpalette.contentrenderer.html#updateitemnode" class="tsd-kind-icon">update<wbr>Item<wbr>Node</a>
+										<a href="_ui_menubar_.menubar.renderer.html#updateitemnode" class="tsd-kind-icon">update<wbr>Item<wbr>Node</a>
 									</li>
 								</ul>
 							</li>
