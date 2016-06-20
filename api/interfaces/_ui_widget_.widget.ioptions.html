@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Renderer | phosphor</title>
+	<title>IOptions | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,16 +55,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ui_tabbar_.html">&quot;ui/tabbar&quot;</a>
+					<a href="../modules/_ui_widget_.html">&quot;ui/widget&quot;</a>
 				</li>
 				<li>
-					<a href="_ui_tabbar_.tabbar.html">TabBar</a>
+					<a href="../classes/_ui_widget_.widget.html">Widget</a>
 				</li>
 				<li>
-					<a href="_ui_tabbar_.tabbar.renderer.html">Renderer</a>
+					<a href="_ui_widget_.widget.ioptions.html">IOptions</a>
 				</li>
 			</ul>
-			<h1>Class Renderer</h1>
+			<h1>Interface IOptions</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The default implementation of <code>IRenderer</code>.</p>
+						<p>An options object for initializing a widget.</p>
 					</div>
 				</div>
 			</section>
@@ -82,14 +82,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Renderer</span>
+						<span class="target">IOptions</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html" class="tsd-signature-type">IRenderer</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -97,112 +91,33 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#closeiconnode" class="tsd-kind-icon">close<wbr>Icon<wbr>Node</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#createtabnode" class="tsd-kind-icon">create<wbr>Tab<wbr>Node</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#updatetabnode" class="tsd-kind-icon">update<wbr>Tab<wbr>Node</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_widget_.widget.ioptions.html#node" class="tsd-kind-icon">node</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="closeiconnode" class="tsd-anchor"></a>
-					<h3>close<wbr>Icon<wbr>Node</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">close<wbr>Icon<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html#closeiconnode">closeIconNode</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cfe8409/src/ui/tabbar.ts#L1210">ui/tabbar.ts:1210</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Look up the close icon descendant node for a tab node.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A node created by a call to <code>createTabNode</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
-							<p>The close icon node, or <code>null</code> if none exists.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="createtabnode" class="tsd-anchor"></a>
-					<h3>create<wbr>Tab<wbr>Node</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Tab<wbr>Node<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html#createtabnode">createTabNode</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cfe8409/src/ui/tabbar.ts#L1169">ui/tabbar.ts:1169</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a node for a tab.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
-							<p>A new node for a tab.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updatetabnode" class="tsd-anchor"></a>
-					<h3>update<wbr>Tab<wbr>Node</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Tab<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, title<span class="tsd-signature-symbol">: </span><a href="_ui_title_.title.html" class="tsd-signature-type">Title</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html#updatetabnode">updateTabNode</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cfe8409/src/ui/tabbar.ts#L1191">ui/tabbar.ts:1191</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update a tab node to reflect the state of a title.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A node created by a call to <code>createTabNode</code>.</p>
-									</div>
-								</li>
-								<li>
-									<h5>title: <a href="_ui_title_.title.html" class="tsd-signature-type">Title</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The title object holding the data for the tab.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="node" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> node</h3>
+					<div class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cfe8409/src/ui/widget.ts#L712">ui/widget.ts:712</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The optional node to use for the widget.</p>
+						</div>
+						<p>If a node is provided, the widget will assume full ownership
+						and control of the node, as if it had created the node itself.</p>
+						<p>The default is a new <code>&lt;div&gt;</code>.</p>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -213,28 +128,39 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ui_tabbar_.html">"ui/tabbar"</a>
+						<a href="../modules/_ui_widget_.html">"ui/widget"</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/_ui_widget_.widgetmessage.html">Widget<wbr>Message</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_ui_widget_.widgetflag.html" class="tsd-kind-icon">Widget<wbr>Flag</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_widget_.childmessage.html" class="tsd-kind-icon">Child<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_widget_.layout.html" class="tsd-kind-icon">Layout</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_widget_.resizemessage.html" class="tsd-kind-icon">Resize<wbr>Message</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_ui_tabbar_.tabbar.html" class="tsd-kind-icon">Tab<wbr>Bar</a>
+						<a href="../classes/_ui_widget_.widget.html" class="tsd-kind-icon">Widget</a>
 						<ul>
-							<li class="current tsd-kind-class tsd-parent-kind-class">
-								<a href="_ui_tabbar_.tabbar.renderer.html" class="tsd-kind-icon">Renderer</a>
+							<li class="current tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_widget_.widget.ioptions.html" class="tsd-kind-icon">IOptions</a>
 								<ul>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_tabbar_.tabbar.renderer.html#closeiconnode" class="tsd-kind-icon">close<wbr>Icon<wbr>Node</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_tabbar_.tabbar.renderer.html#createtabnode" class="tsd-kind-icon">create<wbr>Tab<wbr>Node</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_tabbar_.tabbar.renderer.html#updatetabnode" class="tsd-kind-icon">update<wbr>Tab<wbr>Node</a>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_widget_.widget.ioptions.html#node" class="tsd-kind-icon">node</a>
 									</li>
 								</ul>
 							</li>
