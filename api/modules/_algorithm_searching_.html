@@ -84,6 +84,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_algorithm_searching_.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_algorithm_searching_.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_algorithm_searching_.html#lowerbound" class="tsd-kind-icon">lower<wbr>Bound</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_algorithm_searching_.html#max" class="tsd-kind-icon">max</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_algorithm_searching_.html#min" class="tsd-kind-icon">min</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_algorithm_searching_.html#upperbound" class="tsd-kind-icon">upper<wbr>Bound</a></li>
 							</ul>
 						</section>
@@ -102,7 +104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/51efc41/src/algorithm/searching.ts#L50">algorithm/searching.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L50">algorithm/searching.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -184,7 +186,7 @@ find(data, isCat).name;  <span class="hljs-comment">// 'fluffy'</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/51efc41/src/algorithm/searching.ts#L204">algorithm/searching.ts:204</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L294">algorithm/searching.ts:294</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,7 +276,7 @@ findIndex(data, isEven, <span class="hljs-number">6</span>);  <span class="hljs-
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/51efc41/src/algorithm/searching.ts#L261">algorithm/searching.ts:261</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L351">algorithm/searching.ts:351</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -364,7 +366,7 @@ findLastIndex(data, isEven, <span class="hljs-number">0</span>);  <span class="h
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/51efc41/src/algorithm/searching.ts#L94">algorithm/searching.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L184">algorithm/searching.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -430,7 +432,7 @@ indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-number">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/51efc41/src/algorithm/searching.ts#L147">algorithm/searching.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L237">algorithm/searching.ts:237</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -496,7 +498,7 @@ lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-numb
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/51efc41/src/algorithm/searching.ts#L323">algorithm/searching.ts:323</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L413">algorithm/searching.ts:413</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -581,6 +583,168 @@ lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span class="
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="max" class="tsd-anchor"></a>
+					<h3>max</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">max&lt;T&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="_algorithm_iteration_.html#iterableorarraylike" class="tsd-signature-type">IterableOrArrayLike</a>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L136">algorithm/searching.ts:136</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the maximum value in an iterable.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <a href="_algorithm_iteration_.html#iterableorarraylike" class="tsd-signature-type">IterableOrArrayLike</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The iterable or array-like object to search.</p>
+									</div>
+								</li>
+								<li>
+									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The 3-way comparison function to apply to the values.
+											It should return <code>&lt; 0</code> if the first value is less than the second.
+											<code>0</code> if the values are equivalent, or <code>&gt; 0</code> if the first value is
+										greater than the second.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, second<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>first: <span class="tsd-signature-type">T</span></h5>
+														</li>
+														<li>
+															<h5>second: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>The maximum value in the iterable. If multiple values are
+								equivalent to the maximum, the left-most value is returned. If
+							the iterable is empty, this returns <code>undefined</code>.</p>
+							<h4 id="complexity">Complexity</h4>
+							<p>Linear.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { max } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
+  <span class="hljs-keyword">return</span> a - b;
+}
+
+max([<span class="hljs-number">7</span>, <span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">9</span>, <span class="hljs-number">4</span>], numberCmp);  <span class="hljs-comment">// 9</span>
+</code></pre>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="min" class="tsd-anchor"></a>
+					<h3>min</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">min&lt;T&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><a href="_algorithm_iteration_.html#iterableorarraylike" class="tsd-signature-type">IterableOrArrayLike</a>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L91">algorithm/searching.ts:91</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the minimum value in an iterable.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <a href="_algorithm_iteration_.html#iterableorarraylike" class="tsd-signature-type">IterableOrArrayLike</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The iterable or array-like object to search.</p>
+									</div>
+								</li>
+								<li>
+									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The 3-way comparison function to apply to the values.
+											It should return <code>&lt; 0</code> if the first value is less than the second.
+											<code>0</code> if the values are equivalent, or <code>&gt; 0</code> if the first value is
+										greater than the second.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, second<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>first: <span class="tsd-signature-type">T</span></h5>
+														</li>
+														<li>
+															<h5>second: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>The minimum value in the iterable. If multiple values are
+								equivalent to the minimum, the left-most value is returned. If
+							the iterable is empty, this returns <code>undefined</code>.</p>
+							<h4 id="complexity">Complexity</h4>
+							<p>Linear.</p>
+							<h4 id="example">Example</h4>
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { min } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
+  <span class="hljs-keyword">return</span> a - b;
+}
+
+min([<span class="hljs-number">7</span>, <span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">9</span>, <span class="hljs-number">4</span>], numberCmp);  <span class="hljs-comment">// 0</span>
+</code></pre>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="upperbound" class="tsd-anchor"></a>
 					<h3>upper<wbr>Bound</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
@@ -590,7 +754,7 @@ lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span class="
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/51efc41/src/algorithm/searching.ts#L387">algorithm/searching.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/algorithm/searching.ts#L477">algorithm/searching.ts:477</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -711,6 +875,12 @@ upperBound(data, <span class="hljs-number">10</span>, numberCmp);  <span class="
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_algorithm_searching_.html#lowerbound" class="tsd-kind-icon">lower<wbr>Bound</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_algorithm_searching_.html#max" class="tsd-kind-icon">max</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_algorithm_searching_.html#min" class="tsd-kind-icon">min</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_algorithm_searching_.html#upperbound" class="tsd-kind-icon">upper<wbr>Bound</a>

@@ -1,0 +1,2813 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DockPanel | phosphor</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">phosphor</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ui_dockpanel_.html">&quot;ui/dockpanel&quot;</a>
+				</li>
+				<li>
+					<a href="_ui_dockpanel_.dockpanel.html">DockPanel</a>
+				</li>
+			</ul>
+			<h1>Class DockPanel</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A widget which provides a flexible docking area for widgets.
+						The namespace for the <code>DockPanel</code> class statics.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">DockPanel</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_core_disposable_.idisposable.html" class="tsd-signature-type">IDisposable</a></li>
+					<li><a href="../interfaces/_core_messaging_.imessagehandler.html" class="tsd-signature-type">IMessageHandler</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Modules</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-module tsd-parent-kind-class"><a href="../modules/_ui_dockpanel_.dockpanel.widget.html" class="tsd-kind-icon">Widget</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.overlay.html" class="tsd-kind-icon">Overlay</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ui_dockpanel_.dockpanel.iactivewidgetchangedargs.html" class="tsd-kind-icon">IActive<wbr>Widget<wbr>Changed<wbr>Args</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ui_dockpanel_.dockpanel.iaddoptions.html" class="tsd-kind-icon">IAdd<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ui_dockpanel_.dockpanel.idroptarget.html" class="tsd-kind-icon">IDrop<wbr>Target</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ui_dockpanel_.dockpanel.ioptions.html" class="tsd-kind-icon">IOptions</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ui_dockpanel_.dockpanel.ioverlay.html" class="tsd-kind-icon">IOverlay</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="_ui_dockpanel_.dockpanel.html#mode" class="tsd-kind-icon">Mode</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="_ui_dockpanel_.dockpanel.html#zone" class="tsd-kind-icon">Zone</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_ui_dockpanel_.dockpanel.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_drag" class="tsd-kind-icon">_drag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_overlay" class="tsd-kind-icon">_overlay</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_root" class="tsd-kind-icon">_root</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_spacing" class="tsd-kind-icon">_spacing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_splitpanels" class="tsd-kind-icon">_split<wbr>Panels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_tabpanels" class="tsd-kind-icon">_tab<wbr>Panels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_tracker" class="tsd-kind-icon">_tracker</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_widgets" class="tsd-kind-icon">_widgets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#activewidgetchanged" class="tsd-kind-icon">active<wbr>Widget<wbr>Changed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#disposed" class="tsd-kind-icon">disposed</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#activewidget" class="tsd-kind-icon">active<wbr>Widget</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#isattached" class="tsd-kind-icon">is<wbr>Attached</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#layout" class="tsd-kind-icon">layout</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#node" class="tsd-kind-icon">node</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#overlay-1" class="tsd-kind-icon">overlay</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#spacing" class="tsd-kind-icon">spacing</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#widgets" class="tsd-kind-icon">widgets</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_createsplitpanel" class="tsd-kind-icon">_create<wbr>Split<wbr>Panel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_createtabpanel" class="tsd-kind-icon">_create<wbr>Tab<wbr>Panel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_disposesplitpanel" class="tsd-kind-icon">_dispose<wbr>Split<wbr>Panel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_disposetabpanel" class="tsd-kind-icon">_dispose<wbr>Tab<wbr>Panel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_ensuresplitroot" class="tsd-kind-icon">_ensure<wbr>Split<wbr>Root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_ensuretabpanel" class="tsd-kind-icon">_ensure<wbr>Tab<wbr>Panel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_evtdragenter" class="tsd-kind-icon">_evt<wbr>Drag<wbr>Enter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_evtdragleave" class="tsd-kind-icon">_evt<wbr>Drag<wbr>Leave</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_evtdragover" class="tsd-kind-icon">_evt<wbr>Drag<wbr>Over</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_evtdrop" class="tsd-kind-icon">_evt<wbr>Drop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_handledrop" class="tsd-kind-icon">_handle<wbr>Drop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_insertwidget" class="tsd-kind-icon">_insert<wbr>Widget</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_onactivatewidgetchanged" class="tsd-kind-icon">_on<wbr>Activate<wbr>Widget<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_ontabdetachrequested" class="tsd-kind-icon">_on<wbr>Tab<wbr>Detach<wbr>Requested</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_onwidgetremoved" class="tsd-kind-icon">_on<wbr>Widget<wbr>Removed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_removetabpanel" class="tsd-kind-icon">_remove<wbr>Tab<wbr>Panel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ui_dockpanel_.dockpanel.html#_setroot" class="tsd-kind-icon">_set<wbr>Root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#activatewidget" class="tsd-kind-icon">activate<wbr>Widget</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#addclass" class="tsd-kind-icon">add<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#addwidget" class="tsd-kind-icon">add<wbr>Widget</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#blur" class="tsd-kind-icon">blur</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#children" class="tsd-kind-icon">children</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#clearflag" class="tsd-kind-icon">clear<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#contains" class="tsd-kind-icon">contains</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ui_dockpanel_.dockpanel.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#finddroptarget" class="tsd-kind-icon">find<wbr>Drop<wbr>Target</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#fit" class="tsd-kind-icon">fit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#focus" class="tsd-kind-icon">focus</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#handleevent" class="tsd-kind-icon">handle<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#hasclass" class="tsd-kind-icon">has<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#hide" class="tsd-kind-icon">hide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#notifylayout" class="tsd-kind-icon">notify<wbr>Layout</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onafterattach" class="tsd-kind-icon">on<wbr>After<wbr>Attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onblurrequest" class="tsd-kind-icon">on<wbr>Blur<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onchildadded" class="tsd-kind-icon">on<wbr>Child<wbr>Added</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#oncloserequest" class="tsd-kind-icon">on<wbr>Close<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onfocusrequest" class="tsd-kind-icon">on<wbr>Focus<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ui_dockpanel_.dockpanel.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#removeclass" class="tsd-kind-icon">remove<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#setflag" class="tsd-kind-icon">set<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#sethidden" class="tsd-kind-icon">set<wbr>Hidden</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#show" class="tsd-kind-icon">show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_dockpanel_.dockpanel.html#showoverlay" class="tsd-kind-icon">show<wbr>Overlay</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#toggleclass" class="tsd-kind-icon">toggle<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ui_dockpanel_.dockpanel.html#update" class="tsd-kind-icon">update</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="mode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"split-top"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"split-left"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"split-right"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"split-bottom"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab-before"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tab-after"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1130">ui/dockpanel.ts:1130</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type alias for the supported insertion modes.</p>
+						</div>
+						<p>A dock mode is used to specify how a widget should be added
+						to the dock panel relative to a reference widget.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="zone" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Zone</h3>
+					<div class="tsd-signature tsd-kind-icon">Zone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"invalid"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"root-top"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"root-left"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"root-right"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"root-bottom"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"root-center"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"panel-top"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"panel-left"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"panel-right"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"panel-bottom"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"panel-center"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1197">ui/dockpanel.ts:1197</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type alias of the supported dock zones.</p>
+						</div>
+						<p>A dock zone is used to indicate the position of the dock panel
+						overlay when the user drags over the dock panel with the mouse.</p>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Dock<wbr>Panel<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_ui_dockpanel_.dockpanel.ioptions.html" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_dockpanel_.dockpanel.html" class="tsd-signature-type">DockPanel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L113">ui/dockpanel.ts:113</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct a new dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_ui_dockpanel_.dockpanel.ioptions.html" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The options for initializing the panel.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_dockpanel_.dockpanel.html" class="tsd-signature-type">DockPanel</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_drag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _drag</h3>
+					<div class="tsd-signature tsd-kind-icon">_drag<span class="tsd-signature-symbol">:</span> <a href="_dom_dragdrop_.drag.html" class="tsd-signature-type">Drag</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1041">ui/dockpanel.ts:1041</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_overlay" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _overlay</h3>
+					<div class="tsd-signature tsd-kind-icon">_overlay<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_ui_dockpanel_.dockpanel.ioverlay.html" class="tsd-signature-type">IOverlay</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1042">ui/dockpanel.ts:1042</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_root" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _root</h3>
+					<div class="tsd-signature tsd-kind-icon">_root<span class="tsd-signature-symbol">:</span> <a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a><span class="tsd-signature-symbol"> | </span><a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1047">ui/dockpanel.ts:1047</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_spacing" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _spacing</h3>
+					<div class="tsd-signature tsd-kind-icon">_spacing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1040">ui/dockpanel.ts:1040</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_splitpanels" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _split<wbr>Panels</h3>
+					<div class="tsd-signature tsd-kind-icon">_split<wbr>Panels<span class="tsd-signature-symbol">:</span> <a href="_collections_vector_.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Vector&lt;SplitPanel&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1045">ui/dockpanel.ts:1045</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_tabpanels" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tab<wbr>Panels</h3>
+					<div class="tsd-signature tsd-kind-icon">_tab<wbr>Panels<span class="tsd-signature-symbol">:</span> <a href="_collections_vector_.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Vector&lt;TabPanel&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1044">ui/dockpanel.ts:1044</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_tracker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tracker</h3>
+					<div class="tsd-signature tsd-kind-icon">_tracker<span class="tsd-signature-symbol">:</span> <a href="_ui_focustracker_.focustracker.html" class="tsd-signature-type">FocusTracker</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new FocusTracker&lt;Widget&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1046">ui/dockpanel.ts:1046</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_widgets" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _widgets</h3>
+					<div class="tsd-signature tsd-kind-icon">_widgets<span class="tsd-signature-symbol">:</span> <a href="_collections_vector_.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Vector&lt;Widget&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1043">ui/dockpanel.ts:1043</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="activewidgetchanged" class="tsd-anchor"></a>
+					<h3>active<wbr>Widget<wbr>Changed</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Widget<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_core_signaling_.isignal.html" class="tsd-signature-type">ISignal</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_dockpanel_.dockpanel.html" class="tsd-signature-type">DockPanel</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_ui_dockpanel_.dockpanel.iactivewidgetchangedargs.html" class="tsd-signature-type">IActiveWidgetChangedArgs</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L171">ui/dockpanel.ts:171</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A signal emitted when the active widget has changed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="disposed" class="tsd-anchor"></a>
+					<h3>disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">disposed<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_core_signaling_.isignal.html" class="tsd-signature-type">ISignal</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#disposed">disposed</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L108">ui/widget.ts:108</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A signal emitted when the widget is disposed.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="activewidget" class="tsd-anchor"></a>
+					<h3>active<wbr>Widget</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> activeWidget<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L228">ui/dockpanel.ts:228</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The currently active widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The active widget is the widget among the added widgets which
+								has the <em>descendant node</em> which has most recently been focused.</p>
+								<p>This is the <code>activeWidget</code> of the internal <code>FocusTracker</code> which
+								tracks all widgets in the dock panel.</p>
+								<p>This will be <code>null</code> if there is no active widget.</p>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> id<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#id">id</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L166">ui/widget.ts:166</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the id of the widget&#39;s DOM node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#id">id</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L173">ui/widget.ts:173</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the id of the widget&#39;s DOM node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="isattached" class="tsd-anchor"></a>
+					<h3>is<wbr>Attached</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isAttached<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#isattached">isAttached</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L126">ui/widget.ts:126</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the widget&#39;s node is attached to the DOM.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#isdisposed">isDisposed</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L116">ui/widget.ts:116</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the widget has been disposed.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="ishidden" class="tsd-anchor"></a>
+					<h3>is<wbr>Hidden</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isHidden<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#ishidden">isHidden</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L136">ui/widget.ts:136</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the widget is explicitly hidden.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="isvisible" class="tsd-anchor"></a>
+					<h3>is<wbr>Visible</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isVisible<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#isvisible">isVisible</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L149">ui/widget.ts:149</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the widget is visible.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>A widget is visible when it is attached to the DOM, is not
+								explicitly hidden, and has no explicitly hidden ancestors.</p>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+					<a name="layout" class="tsd-anchor"></a>
+					<h3>layout</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> layout<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_widget_.layout.html" class="tsd-signature-type">Layout</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> layout<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.layout.html" class="tsd-signature-type">Layout</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#layout">layout</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L239">ui/widget.ts:239</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the layout for the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This will be <code>null</code> if the widget does not have a layout.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_widget_.layout.html" class="tsd-signature-type">Layout</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#layout">layout</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L252">ui/widget.ts:252</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the layout for the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The layout is single-use only. It cannot be set to <code>null</code> and it
+								cannot be changed after the first assignment.</p>
+								<p>The layout is disposed automatically when the widget is disposed.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <a href="_ui_widget_.layout.html" class="tsd-signature-type">Layout</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="node" class="tsd-anchor"></a>
+					<h3>node</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> node<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#node">node</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L159">ui/widget.ts:159</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the DOM node owned by the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="overlay-1" class="tsd-anchor"></a>
+					<h3>overlay</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> overlay<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_dockpanel_.dockpanel.ioverlay.html" class="tsd-signature-type">IOverlay</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L179">ui/dockpanel.ts:179</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The overlay used by the dock panel.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ui_dockpanel_.dockpanel.ioverlay.html" class="tsd-signature-type">IOverlay</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+					<a name="parent" class="tsd-anchor"></a>
+					<h3>parent</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> parent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> parent<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#parent">parent</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L200">ui/widget.ts:200</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the parent of the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This will be <code>null</code> if the widget does not have a parent.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#parent">parent</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L215">ui/widget.ts:215</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the parent of the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>Children are typically added to a widget by using a layout, which
+								means user code will not normally set the parent widget directly.</p>
+								<p>The widget will be automatically removed from its old parent.</p>
+								<p>This is a no-op if there is no effective parent change.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="spacing" class="tsd-anchor"></a>
+					<h3>spacing</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> spacing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> spacing<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L186">ui/dockpanel.ts:186</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the spacing between the panels.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L193">ui/dockpanel.ts:193</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the spacing between the panels.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="title" class="tsd-anchor"></a>
+					<h3>title</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> title<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_title_.title.html" class="tsd-signature-type">Title</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#title">title</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L190">ui/widget.ts:190</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the title object for the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The title object is used by some container widgets when displaying
+								the widget alongside some title, such as a tab panel or side bar.</p>
+								<p>Since not all widgets will use the title, it is created on demand.</p>
+								<p>The <code>owner</code> property of the title is set to this widget.</p>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_title_.title.html" class="tsd-signature-type">Title</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="widgets" class="tsd-anchor"></a>
+					<h3>widgets</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> widgets<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_algorithm_sequence_.isequence.html" class="tsd-signature-type">ISequence</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L210">ui/dockpanel.ts:210</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A read-only sequence of the widgets in the dock panel.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The order of the widgets in the sequence has no meaning.</p>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_algorithm_sequence_.isequence.html" class="tsd-signature-type">ISequence</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_createsplitpanel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _create<wbr>Split<wbr>Panel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_create<wbr>Split<wbr>Panel<span class="tsd-signature-symbol">(</span>orientation<span class="tsd-signature-symbol">: </span><a href="_ui_splitpanel_.splitpanel.html#orientation" class="tsd-signature-type">Orientation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L789">ui/dockpanel.ts:789</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new split panel for adding to the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orientation: <a href="_ui_splitpanel_.splitpanel.html#orientation" class="tsd-signature-type">Orientation</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_createtabpanel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _create<wbr>Tab<wbr>Panel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_create<wbr>Tab<wbr>Panel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L777">ui/dockpanel.ts:777</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new tab panel for adding to the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_disposesplitpanel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _dispose<wbr>Split<wbr>Panel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_dispose<wbr>Split<wbr>Panel<span class="tsd-signature-symbol">(</span>panel<span class="tsd-signature-symbol">: </span><a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L808">ui/dockpanel.ts:808</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose of a split panel created for the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>panel: <a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_disposetabpanel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _dispose<wbr>Tab<wbr>Panel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_dispose<wbr>Tab<wbr>Panel<span class="tsd-signature-symbol">(</span>panel<span class="tsd-signature-symbol">: </span><a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L799">ui/dockpanel.ts:799</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose of a tab panel created for the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>panel: <a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_ensuresplitroot" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _ensure<wbr>Split<wbr>Root</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_ensure<wbr>Split<wbr>Root<span class="tsd-signature-symbol">(</span>orientation<span class="tsd-signature-symbol">: </span><a href="_ui_splitpanel_.splitpanel.html#orientation" class="tsd-signature-type">Orientation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L851">ui/dockpanel.ts:851</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ensure the root panel is a split panel with the given orientation.</p>
+								</div>
+								<p>This returns split panel so that casting the root is not needed.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orientation: <a href="_ui_splitpanel_.splitpanel.html#orientation" class="tsd-signature-type">Orientation</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_ensuretabpanel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _ensure<wbr>Tab<wbr>Panel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_ensure<wbr>Tab<wbr>Panel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L822">ui/dockpanel.ts:822</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ensure a tab panel is available in the dock panel.</p>
+								</div>
+								<p>If there is no root panel, a new root tab panel will be created.
+									Otherwise, if there is an active widget, the tab panel for that
+									widget will be returned. Otherwise, the top-left tab panel will
+								be returned.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_evtdragenter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _evt<wbr>Drag<wbr>Enter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_evt<wbr>Drag<wbr>Enter<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_dom_dragdrop_.idragevent.html" class="tsd-signature-type">IDragEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L509">ui/dockpanel.ts:509</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the <code>&#39;p-dragenter&#39;</code> event for the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="../interfaces/_dom_dragdrop_.idragevent.html" class="tsd-signature-type">IDragEvent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_evtdragleave" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _evt<wbr>Drag<wbr>Leave</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_evt<wbr>Drag<wbr>Leave<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_dom_dragdrop_.idragevent.html" class="tsd-signature-type">IDragEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L521">ui/dockpanel.ts:521</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the <code>&#39;p-dragleave&#39;</code> event for the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="../interfaces/_dom_dragdrop_.idragevent.html" class="tsd-signature-type">IDragEvent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_evtdragover" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _evt<wbr>Drag<wbr>Over</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_evt<wbr>Drag<wbr>Over<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_dom_dragdrop_.idragevent.html" class="tsd-signature-type">IDragEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L538">ui/dockpanel.ts:538</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the <code>&#39;p-dragover&#39;</code> event for the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="../interfaces/_dom_dragdrop_.idragevent.html" class="tsd-signature-type">IDragEvent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_evtdrop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _evt<wbr>Drop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_evt<wbr>Drop<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_dom_dragdrop_.idragevent.html" class="tsd-signature-type">IDragEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L555">ui/dockpanel.ts:555</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the <code>&#39;p-drop&#39;</code> event for the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="../interfaces/_dom_dragdrop_.idragevent.html" class="tsd-signature-type">IDragEvent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_handledrop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _handle<wbr>Drop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_handle<wbr>Drop<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_dockpanel_.dockpanel.idroptarget.html" class="tsd-signature-type">IDropTarget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L602">ui/dockpanel.ts:602</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Drop a widget onto the dock panel using the given drop target.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h5>
+								</li>
+								<li>
+									<h5>target: <a href="../interfaces/_ui_dockpanel_.dockpanel.idroptarget.html" class="tsd-signature-type">IDropTarget</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_insertwidget" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _insert<wbr>Widget</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_insert<wbr>Widget<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a>, mode<span class="tsd-signature-symbol">: </span><a href="_ui_dockpanel_.dockpanel.html#mode" class="tsd-signature-type">Mode</a>, ref<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L674">ui/dockpanel.ts:674</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Insert a widget into the dock panel using the given mode.</p>
+								</div>
+								<p>The target widget should have no parent, and the reference widget
+								should either be null or a widget contained in the dock panel.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h5>
+								</li>
+								<li>
+									<h5>mode: <a href="_ui_dockpanel_.dockpanel.html#mode" class="tsd-signature-type">Mode</a></h5>
+								</li>
+								<li>
+									<h5>ref: <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_onactivatewidgetchanged" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _on<wbr>Activate<wbr>Widget<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_on<wbr>Activate<wbr>Widget<wbr>Changed<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="_ui_focustracker_.focustracker.html" class="tsd-signature-type">FocusTracker</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span>, args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_focustracker_.focustracker.iactivewidgetchangedargs.html" class="tsd-signature-type">IActiveWidgetChangedArgs</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1036">ui/dockpanel.ts:1036</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the <code>activeWidgetChanged</code> signal from the focus tracker.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sender: <a href="_ui_focustracker_.focustracker.html" class="tsd-signature-type">FocusTracker</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>args: <a href="../interfaces/_ui_focustracker_.focustracker.iactivewidgetchangedargs.html" class="tsd-signature-type">IActiveWidgetChangedArgs</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_ontabdetachrequested" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _on<wbr>Tab<wbr>Detach<wbr>Requested</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_on<wbr>Tab<wbr>Detach<wbr>Requested<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="_ui_tabbar_.tabbar.html" class="tsd-signature-type">TabBar</a>, args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_tabbar_.tabbar.itabdetachrequestedargs.html" class="tsd-signature-type">ITabDetachRequestedArgs</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L977">ui/dockpanel.ts:977</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the <code>tabDetachRequested</code> signal from a tab bar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sender: <a href="_ui_tabbar_.tabbar.html" class="tsd-signature-type">TabBar</a></h5>
+								</li>
+								<li>
+									<h5>args: <a href="../interfaces/_ui_tabbar_.tabbar.itabdetachrequestedargs.html" class="tsd-signature-type">ITabDetachRequestedArgs</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_onwidgetremoved" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _on<wbr>Widget<wbr>Removed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_on<wbr>Widget<wbr>Removed<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><a href="_ui_stackedpanel_.stackedpanel.html" class="tsd-signature-type">StackedPanel</a>, widget<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L1019">ui/dockpanel.ts:1019</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the <code>widgetRemoved</code> signal from a stacked panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sender: <a href="_ui_stackedpanel_.stackedpanel.html" class="tsd-signature-type">StackedPanel</a></h5>
+								</li>
+								<li>
+									<h5>widget: <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_removetabpanel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _remove<wbr>Tab<wbr>Panel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_remove<wbr>Tab<wbr>Panel<span class="tsd-signature-symbol">(</span>tabPanel<span class="tsd-signature-symbol">: </span><a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L901">ui/dockpanel.ts:901</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove an empty dock tab panel from the hierarchy.</p>
+								</div>
+								<p>This ensures that the hierarchy is kept consistent by merging an
+								ancestor split panel when it contains only a single child widget.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tabPanel: <a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_setroot" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _set<wbr>Root</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_set<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a><span class="tsd-signature-symbol"> | </span><a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L889">ui/dockpanel.ts:889</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the non-null root widget for the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>root: <a href="_ui_splitpanel_.splitpanel.html" class="tsd-signature-type">SplitPanel</a><span class="tsd-signature-symbol"> | </span><a href="_ui_tabpanel_.tabpanel.html" class="tsd-signature-type">TabPanel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="activatewidget" class="tsd-anchor"></a>
+					<h3>activate<wbr>Widget</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">activate<wbr>Widget<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L241">ui/dockpanel.ts:241</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Activate the specified widget in the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The widget of interest.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This will ensure that the widget is the current visible widget in
+										its host tab panel, and will send a focus request to the widget.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addclass" class="tsd-anchor"></a>
+					<h3>add<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Class<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#addclass">addClass</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L320">ui/widget.ts:320</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a class name to the widget&#39;s DOM node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class name to add to the node.</p>
+										<h4 id="notes">Notes</h4>
+										<p>If the class name is already added to the node, this is a no-op.</p>
+										<p>The class name must not contain whitespace.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addwidget" class="tsd-anchor"></a>
+					<h3>add<wbr>Widget</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Widget<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_ui_dockpanel_.dockpanel.iaddoptions.html" class="tsd-signature-type">IAddOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L261">ui/dockpanel.ts:261</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a widget to the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The widget to add into the dock panel.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_ui_dockpanel_.dockpanel.iaddoptions.html" class="tsd-signature-type">IAddOptions</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The additional options for adding the widget.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="blur" class="tsd-anchor"></a>
+					<h3>blur</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">blur<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#blur">blur</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L400">ui/widget.ts:400</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send a <code>&#39;blur-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for sending the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="children" class="tsd-anchor"></a>
+					<h3>children</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_algorithm_iteration_.iiterator.html" class="tsd-signature-type">IIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#children">children</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L281">ui/widget.ts:281</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create an iterator over the widget&#39;s children.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_algorithm_iteration_.iiterator.html" class="tsd-signature-type">IIterator</a><span class="tsd-signature-symbol">&lt;</span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A new iterator over the children of the widget.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The widget must have a populated layout in order to have children.</p>
+							<p>If a layout is not installed, the returned iterator will be empty.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="clearflag" class="tsd-anchor"></a>
+					<h3>clear<wbr>Flag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/_ui_widget_.widgetflag.html" class="tsd-signature-type">WidgetFlag</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#clearflag">clearFlag</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L500">ui/widget.ts:500</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clear the given widget flag.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This will not typically be called directly by user code.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <a href="../enums/_ui_widget_.widgetflag.html" class="tsd-signature-type">WidgetFlag</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#close">close</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L410">ui/widget.ts:410</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send a <code>&#39;close-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for sending the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="contains" class="tsd-anchor"></a>
+					<h3>contains</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">contains<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#contains">contains</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L292">ui/widget.ts:292</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether a widget is a descendant of this widget.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <a href="_ui_widget_.widget.html" class="tsd-signature-type">Widget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The descendant widget of interest.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the widget is a descendant, <code>false</code> otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_core_disposable_.idisposable.html">IDisposable</a>.<a href="../interfaces/_core_disposable_.idisposable.html#dispose">dispose</a></p>
+								<p>Overwrites <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L148">ui/dockpanel.ts:148</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose of the resources held by the panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="finddroptarget" class="tsd-anchor"></a>
+					<h3>find<wbr>Drop<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Drop<wbr>Target<span class="tsd-signature-symbol">(</span>clientX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, clientY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_dockpanel_.dockpanel.idroptarget.html" class="tsd-signature-type">IDropTarget</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L315">ui/dockpanel.ts:315</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the drop target for the given client position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>clientX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The client X position of interest.</p>
+									</div>
+								</li>
+								<li>
+									<h5>clientY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The client Y position of interest.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ui_dockpanel_.dockpanel.idroptarget.html" class="tsd-signature-type">IDropTarget</a></h4>
+							<p>The drop target at the specified client position.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="fit" class="tsd-anchor"></a>
+					<h3>fit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">fit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#fit">fit</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L380">ui/widget.ts:380</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Post a <code>&#39;fit-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for posting the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="focus" class="tsd-anchor"></a>
+					<h3>focus</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">focus<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#focus">focus</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L390">ui/widget.ts:390</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send a <code>&#39;focus-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for sending the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handleevent" class="tsd-anchor"></a>
+					<h3>handle<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L467">ui/dockpanel.ts:467</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the DOM events for the dock panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">Event</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The DOM event sent to the dock panel.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This method implements the DOM <code>EventListener</code> interface and is
+											called in response to events on the dock panel&#39;s node. It should
+										not be called directly by user code.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="hasclass" class="tsd-anchor"></a>
+					<h3>has<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Class<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#hasclass">hasClass</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L306">ui/widget.ts:306</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the widget&#39;s DOM node has the given class name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class name of interest.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the node has the class, <code>false</code> otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="hide" class="tsd-anchor"></a>
+					<h3>hide</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">hide<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#hide">hide</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L444">ui/widget.ts:444</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Hide the widget and make it hidden to its parent widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This causes the <a href="_ui_dockpanel_.dockpanel.html#ishidden">isHidden</a> property to be <code>true</code>.</p>
+								<p>If the widget is explicitly hidden, this is a no-op.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="notifylayout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> notify<wbr>Layout</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">notify<wbr>Layout<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#notifylayout">notifyLayout</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L581">ui/widget.ts:581</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invoke the message processing routine of the widget&#39;s layout.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The message to dispatch to the layout.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This is a no-op if the widget does not have a layout.</p>
+										<p>This will not typically be called directly by user code.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<a name="onafterattach" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>After<wbr>Attach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Attach<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onafterattach">onAfterAttach</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L487">ui/dockpanel.ts:487</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on an <code>&#39;after-attach&#39;</code> message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onaftershow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>After<wbr>Show</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Show<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onaftershow">onAfterShow</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L641">ui/widget.ts:641</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on an <code>&#39;after-show&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<a name="onbeforedetach" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Before<wbr>Detach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Before<wbr>Detach<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onbeforedetach">onBeforeDetach</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L498">ui/dockpanel.ts:498</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;before-detach&#39;</code> message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onbeforehide" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Before<wbr>Hide</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Before<wbr>Hide<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onbeforehide">onBeforeHide</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L649">ui/widget.ts:649</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;before-hide&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onblurrequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Blur<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Blur<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onblurrequest">onBlurRequest</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L601">ui/widget.ts:601</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;blur-request&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation blurs the widget&#39;s node.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onchildadded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Child<wbr>Added</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Child<wbr>Added<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.childmessage.html" class="tsd-signature-type">ChildMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onchildadded">onChildAdded</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L673">ui/widget.ts:673</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;child-added&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_ui_widget_.childmessage.html" class="tsd-signature-type">ChildMessage</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onchildremoved" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Child<wbr>Removed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Child<wbr>Removed<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.childmessage.html" class="tsd-signature-type">ChildMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onchildremoved">onChildRemoved</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L681">ui/widget.ts:681</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;child-removed&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_ui_widget_.childmessage.html" class="tsd-signature-type">ChildMessage</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="oncloserequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Close<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Close<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#oncloserequest">onCloseRequest</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L611">ui/widget.ts:611</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;close-request&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation unparents or detaches the widget.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onfocusrequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Focus<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Focus<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onfocusrequest">onFocusRequest</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L591">ui/widget.ts:591</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;focus-request&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation focuses the widget&#39;s node.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onresize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Resize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Resize<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_ui_widget_.resizemessage.html" class="tsd-signature-type">ResizeMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onresize">onResize</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L625">ui/widget.ts:625</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;resize&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_ui_widget_.resizemessage.html" class="tsd-signature-type">ResizeMessage</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onupdaterequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Update<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Update<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#onupdaterequest">onUpdateRequest</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L633">ui/widget.ts:633</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on an <code>&#39;update-request&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="processmessage" class="tsd-anchor"></a>
+					<h3>process<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Message<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_core_messaging_.imessagehandler.html">IMessageHandler</a>.<a href="../interfaces/_core_messaging_.imessagehandler.html#processmessage">processMessage</a></p>
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#processmessage">processMessage</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L512">ui/widget.ts:512</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Process a message sent to the widget.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="_core_messaging_.message.html" class="tsd-signature-type">Message</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The message sent to the widget.</p>
+										<h4 id="notes">Notes</h4>
+										<p>Subclasses may reimplement this method as needed.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="removeclass" class="tsd-anchor"></a>
+					<h3>remove<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Class<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#removeclass">removeClass</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L334">ui/widget.ts:334</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove a class name from the widget&#39;s DOM node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class name to remove from the node.</p>
+										<h4 id="notes">Notes</h4>
+										<p>If the class name is not yet added to the node, this is a no-op.</p>
+										<p>The class name must not contain whitespace.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setflag" class="tsd-anchor"></a>
+					<h3>set<wbr>Flag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/_ui_widget_.widgetflag.html" class="tsd-signature-type">WidgetFlag</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#setflag">setFlag</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L490">ui/widget.ts:490</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the given widget flag.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This will not typically be called directly by user code.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <a href="../enums/_ui_widget_.widgetflag.html" class="tsd-signature-type">WidgetFlag</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="sethidden" class="tsd-anchor"></a>
+					<h3>set<wbr>Hidden</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Hidden<span class="tsd-signature-symbol">(</span>hidden<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#sethidden">setHidden</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L466">ui/widget.ts:466</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Show or hide the widget according to a boolean value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hidden: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>true</code> to hide the widget, or <code>false</code> to show it.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This is a convenience method for <code>hide()</code> and <code>show()</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="show" class="tsd-anchor"></a>
+					<h3>show</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#show">show</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L422">ui/widget.ts:422</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Show the widget and make it visible to its parent widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This causes the <a href="_ui_dockpanel_.dockpanel.html#ishidden">isHidden</a> property to be <code>false</code>.</p>
+								<p>If the widget is not explicitly hidden, this is a no-op.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="showoverlay" class="tsd-anchor"></a>
+					<h3>show<wbr>Overlay</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Overlay<span class="tsd-signature-symbol">(</span>clientX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, clientY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_dockpanel_.dockpanel.html#zone" class="tsd-signature-type">Zone</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/dockpanel.ts#L362">ui/dockpanel.ts:362</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Show the overlay indicator at the given client position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>clientX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The client X position of interest.</p>
+									</div>
+								</li>
+								<li>
+									<h5>clientY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The client Y position of interest.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_dockpanel_.dockpanel.html#zone" class="tsd-signature-type">Zone</a></h4>
+							<p>The dock zone at the specified client position.</p>
+							<h4 id="notes">Notes</h4>
+							<p>If the position is not over a valid zone, the overlay is hidden.</p>
+							<p>This returns the dock zone used to display the overlay.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="testflag" class="tsd-anchor"></a>
+					<h3>test<wbr>Flag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">test<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/_ui_widget_.widgetflag.html" class="tsd-signature-type">WidgetFlag</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#testflag">testFlag</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L480">ui/widget.ts:480</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the given widget flag is set.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This will not typically be called directly by user code.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <a href="../enums/_ui_widget_.widgetflag.html" class="tsd-signature-type">WidgetFlag</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="toggleclass" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Class<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#toggleclass">toggleClass</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L352">ui/widget.ts:352</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Toggle a class name on the widget&#39;s DOM node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class name to toggle on the node.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Whether to force add the class (<code>true</code>) or force
+											remove the class (<code>false</code>). If not provided, the presence of
+										the class will be toggled from its current state.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the class is now present, <code>false</code> otherwise.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The class name must not contain whitespace.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ui_widget_.widget.html">Widget</a>.<a href="_ui_widget_.widget.html#update">update</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/093426d/src/ui/widget.ts#L370">ui/widget.ts:370</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Post an <code>&#39;update-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for posting the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ui_dockpanel_.html">"ui/dockpanel"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ui_dockpanel_.dockpanel.html" class="tsd-kind-icon">Dock<wbr>Panel</a>
+						<ul>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.overlay.html" class="tsd-kind-icon">Overlay</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/_ui_dockpanel_.dockpanel.iactivewidgetchangedargs.html" class="tsd-kind-icon">IActive<wbr>Widget<wbr>Changed<wbr>Args</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/_ui_dockpanel_.dockpanel.iaddoptions.html" class="tsd-kind-icon">IAdd<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/_ui_dockpanel_.dockpanel.idroptarget.html" class="tsd-kind-icon">IDrop<wbr>Target</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/_ui_dockpanel_.dockpanel.ioptions.html" class="tsd-kind-icon">IOptions</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/_ui_dockpanel_.dockpanel.ioverlay.html" class="tsd-kind-icon">IOverlay</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="_ui_dockpanel_.dockpanel.html#mode" class="tsd-kind-icon">Mode</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="_ui_dockpanel_.dockpanel.html#zone" class="tsd-kind-icon">Zone</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ui_dockpanel_.dockpanel.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_drag" class="tsd-kind-icon">_drag</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_overlay" class="tsd-kind-icon">_overlay</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_root" class="tsd-kind-icon">_root</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_spacing" class="tsd-kind-icon">_spacing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_splitpanels" class="tsd-kind-icon">_split<wbr>Panels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_tabpanels" class="tsd-kind-icon">_tab<wbr>Panels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_tracker" class="tsd-kind-icon">_tracker</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_widgets" class="tsd-kind-icon">_widgets</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#activewidgetchanged" class="tsd-kind-icon">active<wbr>Widget<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#disposed" class="tsd-kind-icon">disposed</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#activewidget" class="tsd-kind-icon">active<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#isattached" class="tsd-kind-icon">is<wbr>Attached</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#layout" class="tsd-kind-icon">layout</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#node" class="tsd-kind-icon">node</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#overlay-1" class="tsd-kind-icon">overlay</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#spacing" class="tsd-kind-icon">spacing</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#title" class="tsd-kind-icon">title</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#widgets" class="tsd-kind-icon">widgets</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_createsplitpanel" class="tsd-kind-icon">_create<wbr>Split<wbr>Panel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_createtabpanel" class="tsd-kind-icon">_create<wbr>Tab<wbr>Panel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_disposesplitpanel" class="tsd-kind-icon">_dispose<wbr>Split<wbr>Panel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_disposetabpanel" class="tsd-kind-icon">_dispose<wbr>Tab<wbr>Panel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_ensuresplitroot" class="tsd-kind-icon">_ensure<wbr>Split<wbr>Root</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_ensuretabpanel" class="tsd-kind-icon">_ensure<wbr>Tab<wbr>Panel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_evtdragenter" class="tsd-kind-icon">_evt<wbr>Drag<wbr>Enter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_evtdragleave" class="tsd-kind-icon">_evt<wbr>Drag<wbr>Leave</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_evtdragover" class="tsd-kind-icon">_evt<wbr>Drag<wbr>Over</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_evtdrop" class="tsd-kind-icon">_evt<wbr>Drop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_handledrop" class="tsd-kind-icon">_handle<wbr>Drop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_insertwidget" class="tsd-kind-icon">_insert<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_onactivatewidgetchanged" class="tsd-kind-icon">_on<wbr>Activate<wbr>Widget<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_ontabdetachrequested" class="tsd-kind-icon">_on<wbr>Tab<wbr>Detach<wbr>Requested</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_onwidgetremoved" class="tsd-kind-icon">_on<wbr>Widget<wbr>Removed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_removetabpanel" class="tsd-kind-icon">_remove<wbr>Tab<wbr>Panel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_dockpanel_.dockpanel.html#_setroot" class="tsd-kind-icon">_set<wbr>Root</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#activatewidget" class="tsd-kind-icon">activate<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#addclass" class="tsd-kind-icon">add<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#addwidget" class="tsd-kind-icon">add<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#blur" class="tsd-kind-icon">blur</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#children" class="tsd-kind-icon">children</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#clearflag" class="tsd-kind-icon">clear<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#close" class="tsd-kind-icon">close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#contains" class="tsd-kind-icon">contains</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ui_dockpanel_.dockpanel.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#finddroptarget" class="tsd-kind-icon">find<wbr>Drop<wbr>Target</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#fit" class="tsd-kind-icon">fit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#focus" class="tsd-kind-icon">focus</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#handleevent" class="tsd-kind-icon">handle<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#hasclass" class="tsd-kind-icon">has<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#hide" class="tsd-kind-icon">hide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#notifylayout" class="tsd-kind-icon">notify<wbr>Layout</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onafterattach" class="tsd-kind-icon">on<wbr>After<wbr>Attach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onblurrequest" class="tsd-kind-icon">on<wbr>Blur<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onchildadded" class="tsd-kind-icon">on<wbr>Child<wbr>Added</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#oncloserequest" class="tsd-kind-icon">on<wbr>Close<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onfocusrequest" class="tsd-kind-icon">on<wbr>Focus<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ui_dockpanel_.dockpanel.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#removeclass" class="tsd-kind-icon">remove<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#setflag" class="tsd-kind-icon">set<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#sethidden" class="tsd-kind-icon">set<wbr>Hidden</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#show" class="tsd-kind-icon">show</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ui_dockpanel_.dockpanel.html#showoverlay" class="tsd-kind-icon">show<wbr>Overlay</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#toggleclass" class="tsd-kind-icon">toggle<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ui_dockpanel_.dockpanel.html#update" class="tsd-kind-icon">update</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
