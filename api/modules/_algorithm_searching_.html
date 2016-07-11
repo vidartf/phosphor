@@ -104,7 +104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L50">algorithm/searching.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L50">algorithm/searching.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -157,7 +157,7 @@
 							<h4 id="complexity">Complexity</h4>
 							<p>Linear.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { find } from <span class="hljs-string">'phosphor-core/lib/searching'</span>;
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { find } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
 
 <span class="hljs-keyword">interface</span> IAnimal { species: <span class="hljs-built_in">string</span>, name: <span class="hljs-built_in">string</span> };
 
@@ -186,7 +186,7 @@ find(data, isCat).name;  <span class="hljs-comment">// 'fluffy'</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L294">algorithm/searching.ts:294</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L294">algorithm/searching.ts:294</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -252,7 +252,7 @@ find(data, isCat).name;  <span class="hljs-comment">// 'fluffy'</span>
 							<p>A <code>fromIndex</code> which is non-integral or <code>&lt; 0</code>.</p>
 							<p>Modifying the length of the sequence while searching.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { findIndex } from <span class="hljs-string">'phosphor-core/lib/searching'</span>;
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { findIndex } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span>(<span class="hljs-params">value: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">boolean</span> </span>{
   <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
@@ -276,7 +276,7 @@ findIndex(data, isEven, <span class="hljs-number">6</span>);  <span class="hljs-
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L351">algorithm/searching.ts:351</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L351">algorithm/searching.ts:351</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +342,7 @@ findIndex(data, isEven, <span class="hljs-number">6</span>);  <span class="hljs-
 							<p>A <code>fromIndex</code> which is non-integral or <code>&gt;= length</code>.</p>
 							<p>Modifying the length of the sequence while searching.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { findLastIndex } from <span class="hljs-string">'phosphor-core/lib/searching'</span>;
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { findLastIndex } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEven</span>(<span class="hljs-params">value: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">boolean</span> </span>{
   <span class="hljs-keyword">return</span> value % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
@@ -366,7 +366,7 @@ findLastIndex(data, isEven, <span class="hljs-number">0</span>);  <span class="h
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L184">algorithm/searching.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L184">algorithm/searching.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -411,7 +411,7 @@ findLastIndex(data, isEven, <span class="hljs-number">0</span>);  <span class="h
 							<h4 id="undefined-behavior">Undefined Behavior</h4>
 							<p>A <code>fromIndex</code> which is non-integral or <code>&lt; 0</code>.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { indexOf } from <span class="hljs-string">'phosphor-core/lib/searching'</span>;
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { indexOf } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
 
 <span class="hljs-keyword">let</span> data = [<span class="hljs-string">'one'</span>, <span class="hljs-string">'two'</span>, <span class="hljs-string">'three'</span>, <span class="hljs-string">'four'</span>, <span class="hljs-string">'one'</span>];
 indexOf(data, <span class="hljs-string">'red'</span>);     <span class="hljs-comment">// -1</span>
@@ -432,7 +432,7 @@ indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-number">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L237">algorithm/searching.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L237">algorithm/searching.ts:237</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -477,7 +477,7 @@ indexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-number">
 							<h4 id="undefined-behavior">Undefined Behavior</h4>
 							<p>A <code>fromIndex</code> which is non-integral or <code>&gt;= length</code>.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { lastIndexOf } from <span class="hljs-string">'phosphor-core/lib/searching'</span>;
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { lastIndexOf } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
 
 <span class="hljs-keyword">let</span> data = [<span class="hljs-string">'one'</span>, <span class="hljs-string">'two'</span>, <span class="hljs-string">'three'</span>, <span class="hljs-string">'four'</span>, <span class="hljs-string">'one'</span>];
 lastIndexOf(data, <span class="hljs-string">'red'</span>);     <span class="hljs-comment">// -1</span>
@@ -498,7 +498,7 @@ lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-numb
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L413">algorithm/searching.ts:413</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L413">algorithm/searching.ts:413</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -566,7 +566,7 @@ lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="hljs-numb
 							<p>A sequence which is not sorted in ascending order.</p>
 							<p>Modifying the length of the sequence while searching.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { lowerBound } from <span class="hljs-string">'phosphor-core/lib/searching'</span>;
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { lowerBound } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
   <span class="hljs-keyword">return</span> a - b;
@@ -592,7 +592,7 @@ lowerBound(data, <span class="hljs-number">10</span>, numberCmp);  <span class="
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L136">algorithm/searching.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L136">algorithm/searching.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -673,7 +673,7 @@ max([<span class="hljs-number">7</span>, <span class="hljs-number">4</span>, <sp
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L91">algorithm/searching.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L91">algorithm/searching.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -754,7 +754,7 @@ min([<span class="hljs-number">7</span>, <span class="hljs-number">4</span>, <sp
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/42a1d20/src/algorithm/searching.ts#L477">algorithm/searching.ts:477</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/3c95922/src/algorithm/searching.ts#L477">algorithm/searching.ts:477</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -822,7 +822,7 @@ min([<span class="hljs-number">7</span>, <span class="hljs-number">4</span>, <sp
 							<p>A sequence which is not sorted in ascending order.</p>
 							<p>Modifying the length of the sequence while searching.</p>
 							<h4 id="example">Example</h4>
-							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { upperBound } from <span class="hljs-string">'phosphor-core/lib/searching'</span>;
+							<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { upperBound } from <span class="hljs-string">'phosphor/lib/algorithm/searching'</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">numberCmp</span>(<span class="hljs-params">a: <span class="hljs-built_in">number</span>, b: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">number</span> </span>{
   <span class="hljs-keyword">return</span> a - b;
