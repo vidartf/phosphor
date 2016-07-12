@@ -86,6 +86,12 @@
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_core_disposable_.idisposable.html" class="tsd-signature-type">IDisposable</a></li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -108,6 +114,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_commandpalette_.commanditem.html#_args" class="tsd-kind-icon">_args</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_commandpalette_.commanditem.html#_category" class="tsd-kind-icon">_category</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_commandpalette_.commanditem.html#_command" class="tsd-kind-icon">_command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_commandpalette_.commanditem.html#_commands" class="tsd-kind-icon">_commands</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_commandpalette_.commanditem.html#_disposed" class="tsd-kind-icon">_disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_commandpalette_.commanditem.html#_keymap" class="tsd-kind-icon">_keymap</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -118,11 +127,18 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#category" class="tsd-kind-icon">category</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#keybinding" class="tsd-kind-icon">key<wbr>Binding</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#label" class="tsd-kind-icon">label</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_commandpalette_.commanditem.html#dispose" class="tsd-kind-icon">dispose</a></li>
 							</ul>
 						</section>
 					</div>
@@ -140,7 +156,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L118">ui/commandpalette.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L122">ui/commandpalette.ts:122</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -172,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">_args<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_algorithm_json_.jsonobject.html" class="tsd-signature-type">JSONObject</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L201">ui/commandpalette.ts:201</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L232">ui/commandpalette.ts:232</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -182,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">_category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L202">ui/commandpalette.ts:202</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L233">ui/commandpalette.ts:233</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +208,37 @@
 					<div class="tsd-signature tsd-kind-icon">_command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L200">ui/commandpalette.ts:200</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L231">ui/commandpalette.ts:231</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_commands" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _commands</h3>
+					<div class="tsd-signature tsd-kind-icon">_commands<span class="tsd-signature-symbol">:</span> <a href="_ui_commands_.commandregistry.html" class="tsd-signature-type">CommandRegistry</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L235">ui/commandpalette.ts:235</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_disposed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L234">ui/commandpalette.ts:234</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_keymap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _keymap</h3>
+					<div class="tsd-signature tsd-kind-icon">_keymap<span class="tsd-signature-symbol">:</span> <a href="_ui_keymap_.keymapmanager.html" class="tsd-signature-type">KeymapManager</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L236">ui/commandpalette.ts:236</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -209,7 +255,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L140">ui/commandpalette.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L156">ui/commandpalette.ts:156</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -231,7 +277,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L154">ui/commandpalette.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L170">ui/commandpalette.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -253,7 +299,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L196">ui/commandpalette.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L212">ui/commandpalette.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,7 +321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L161">ui/commandpalette.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L177">ui/commandpalette.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,7 +343,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L133">ui/commandpalette.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L149">ui/commandpalette.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -306,6 +352,30 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L142">ui/commandpalette.ts:142</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the command item is disposed.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a read-only property.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -319,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L168">ui/commandpalette.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L184">ui/commandpalette.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,7 +411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L175">ui/commandpalette.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L191">ui/commandpalette.ts:191</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -363,7 +433,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L182">ui/commandpalette.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L198">ui/commandpalette.ts:198</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -385,7 +455,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L189">ui/commandpalette.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L205">ui/commandpalette.ts:205</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -407,7 +477,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/a74cdb8/src/ui/commandpalette.ts#L147">ui/commandpalette.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L163">ui/commandpalette.ts:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -416,6 +486,34 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_core_disposable_.idisposable.html">IDisposable</a>.<a href="../interfaces/_core_disposable_.idisposable.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/f5797eb/src/ui/commandpalette.ts#L222">ui/commandpalette.ts:222</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose of the resources held by the command item.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>All calls made after the first call to this method are a no-op.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -454,6 +552,15 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_ui_commandpalette_.commanditem.html#_command" class="tsd-kind-icon">_command</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_commandpalette_.commanditem.html#_commands" class="tsd-kind-icon">_commands</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_commandpalette_.commanditem.html#_disposed" class="tsd-kind-icon">_disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ui_commandpalette_.commanditem.html#_keymap" class="tsd-kind-icon">_keymap</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_ui_commandpalette_.commanditem.html#args" class="tsd-kind-icon">args</a>
 							</li>
@@ -470,6 +577,9 @@
 								<a href="_ui_commandpalette_.commanditem.html#command" class="tsd-kind-icon">command</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_ui_commandpalette_.commanditem.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_ui_commandpalette_.commanditem.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
@@ -483,6 +593,9 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_ui_commandpalette_.commanditem.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ui_commandpalette_.commanditem.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
 						</ul>
 					</li>
