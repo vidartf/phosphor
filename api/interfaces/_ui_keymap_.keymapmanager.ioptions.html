@@ -55,13 +55,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ui_title_.html">&quot;ui/title&quot;</a>
+					<a href="../modules/_ui_keymap_.html">&quot;ui/keymap&quot;</a>
 				</li>
 				<li>
-					<a href="../classes/_ui_title_.title.html">Title</a>
+					<a href="../classes/_ui_keymap_.keymapmanager.html">KeymapManager</a>
 				</li>
 				<li>
-					<a href="_ui_title_.title.ioptions.html">IOptions</a>
+					<a href="_ui_keymap_.keymapmanager.ioptions.html">IOptions</a>
 				</li>
 			</ul>
 			<h1>Interface IOptions</h1>
@@ -74,7 +74,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An options object for initializing a title.</p>
+						<p>An options object for initializing a keymap manager.</p>
 					</div>
 				</div>
 			</section>
@@ -93,13 +93,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_title_.title.ioptions.html#caption" class="tsd-kind-icon">caption</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_title_.title.ioptions.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_title_.title.ioptions.html#closable" class="tsd-kind-icon">closable</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_title_.title.ioptions.html#icon" class="tsd-kind-icon">icon</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_title_.title.ioptions.html#label" class="tsd-kind-icon">label</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_title_.title.ioptions.html#mnemonic" class="tsd-kind-icon">mnemonic</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_title_.title.ioptions.html#owner" class="tsd-kind-icon">owner</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.keymapmanager.ioptions.html#commands" class="tsd-kind-icon">commands</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,108 +102,19 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="caption" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> caption</h3>
-					<div class="tsd-signature tsd-kind-icon">caption<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="commands" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> commands</h3>
+					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_commands_.commandregistry.html" class="tsd-signature-type">CommandRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cdb6160/src/ui/title.ts#L251">ui/title.ts:251</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cdb6160/src/ui/keymap.ts#L706">ui/keymap.ts:706</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The caption for the title.</p>
+							<p>The command registry for use with the keymap manager.</p>
 						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="classname" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> class<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cdb6160/src/ui/title.ts#L256">ui/title.ts:256</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The extra class name for the title.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="closable" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> closable</h3>
-					<div class="tsd-signature tsd-kind-icon">closable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cdb6160/src/ui/title.ts#L261">ui/title.ts:261</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The closable state for the title.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="icon" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> icon</h3>
-					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cdb6160/src/ui/title.ts#L246">ui/title.ts:246</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The icon class for the title.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="label" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label</h3>
-					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cdb6160/src/ui/title.ts#L236">ui/title.ts:236</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The label for the title.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mnemonic" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mnemonic</h3>
-					<div class="tsd-signature tsd-kind-icon">mnemonic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cdb6160/src/ui/title.ts#L241">ui/title.ts:241</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The mnemonic index for the title.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="owner" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> owner</h3>
-					<div class="tsd-signature tsd-kind-icon">owner<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/cdb6160/src/ui/title.ts#L231">ui/title.ts:231</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The object which owns the title.</p>
-						</div>
+						<p>The default is the shared <code>commands</code> singleton.</p>
 					</div>
 				</section>
 			</section>
@@ -221,95 +126,128 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ui_title_.html">"ui/title"</a>
+						<a href="../modules/_ui_keymap_.html">"ui/keymap"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_keymap_.keybinding.html" class="tsd-kind-icon">Key<wbr>Binding</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_title_.title.html" class="tsd-kind-icon">Title</a>
+						<a href="../classes/_ui_keymap_.keymapmanager.html" class="tsd-kind-icon">Keymap<wbr>Manager</a>
 						<ul>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_keymap_.keymapmanager.ibindingchangedargs.html" class="tsd-kind-icon">IBinding<wbr>Changed<wbr>Args</a>
+							</li>
 							<li class="current tsd-kind-interface tsd-parent-kind-class">
-								<a href="_ui_title_.title.ioptions.html" class="tsd-kind-icon">IOptions</a>
+								<a href="_ui_keymap_.keymapmanager.ioptions.html" class="tsd-kind-icon">IOptions</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_title_.title.ioptions.html#caption" class="tsd-kind-icon">caption</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_title_.title.ioptions.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_title_.title.ioptions.html#closable" class="tsd-kind-icon">closable</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_title_.title.ioptions.html#icon" class="tsd-kind-icon">icon</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_title_.title.ioptions.html#label" class="tsd-kind-icon">label</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_title_.title.ioptions.html#mnemonic" class="tsd-kind-icon">mnemonic</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_title_.title.ioptions.html#owner" class="tsd-kind-icon">owner</a>
+										<a href="_ui_keymap_.keymapmanager.ioptions.html#commands" class="tsd-kind-icon">commands</a>
 									</li>
 								</ul>
 							</li>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_title_.title.html#_caption" class="tsd-kind-icon">_caption</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_bindings" class="tsd-kind-icon">_bindings</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_title_.title.html#_classname" class="tsd-kind-icon">_class<wbr>Name</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_commands" class="tsd-kind-icon">_commands</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_title_.title.html#_closable" class="tsd-kind-icon">_closable</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_disposed" class="tsd-kind-icon">_disposed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_title_.title.html#_icon" class="tsd-kind-icon">_icon</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_events" class="tsd-kind-icon">_events</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_title_.title.html#_label" class="tsd-kind-icon">_label</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_exact" class="tsd-kind-icon">_exact</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_title_.title.html#_mnemonic" class="tsd-kind-icon">_mnemonic</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_keys" class="tsd-kind-icon">_keys</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_title_.title.html#_owner" class="tsd-kind-icon">_owner</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_layout" class="tsd-kind-icon">_layout</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_replaying" class="tsd-kind-icon">_replaying</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_timerid" class="tsd-kind-icon">_timerID</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#changed" class="tsd-kind-icon">changed</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#bindingchanged" class="tsd-kind-icon">binding<wbr>Changed</a>
 							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#caption" class="tsd-kind-icon">caption</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#closable" class="tsd-kind-icon">closable</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#icon" class="tsd-kind-icon">icon</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#label" class="tsd-kind-icon">label</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#mnemonic" class="tsd-kind-icon">mnemonic</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#layoutchanged" class="tsd-kind-icon">layout<wbr>Changed</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="../classes/_ui_title_.title.html#owner" class="tsd-kind-icon">owner</a>
+								<a href="../classes/_ui_keymap_.keymapmanager.html#bindings" class="tsd-kind-icon">bindings</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#commandregistry" class="tsd-kind-icon">command<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#layout" class="tsd-kind-icon">layout</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_clearpendingstate" class="tsd-kind-icon">_clear<wbr>Pending<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_cleartimer" class="tsd-kind-icon">_clear<wbr>Timer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_onpendingtimeout" class="tsd-kind-icon">_on<wbr>Pending<wbr>Timeout</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_replayevents" class="tsd-kind-icon">_replay<wbr>Events</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#_starttimer" class="tsd-kind-icon">_start<wbr>Timer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#addbinding" class="tsd-kind-icon">add<wbr>Binding</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#findkeybinding" class="tsd-kind-icon">find<wbr>Key<wbr>Binding</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_keymap_.keymapmanager.html#processkeydownevent" class="tsd-kind-icon">process<wbr>Keydown<wbr>Event</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_ui_keymap_.ikeystrokeparts.html" class="tsd-kind-icon">IKeystroke<wbr>Parts</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_ui_keymap_.html#keymap" class="tsd-kind-icon">keymap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ui_keymap_.html#formatkeystroke" class="tsd-kind-icon">format<wbr>Keystroke</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ui_keymap_.html#keystrokeforkeydownevent" class="tsd-kind-icon">keystroke<wbr>For<wbr>Keydown<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ui_keymap_.html#normalizekeystroke" class="tsd-kind-icon">normalize<wbr>Keystroke</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ui_keymap_.html#parsekeystroke" class="tsd-kind-icon">parse<wbr>Keystroke</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
