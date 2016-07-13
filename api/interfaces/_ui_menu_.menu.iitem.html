@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IOptions | phosphor</title>
+	<title>IItem | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,16 +55,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ui_keymap_.html">&quot;ui/keymap&quot;</a>
+					<a href="../modules/_ui_menu_.html">&quot;ui/menu&quot;</a>
 				</li>
 				<li>
-					<a href="../classes/_ui_keymap_.keybinding.html">KeyBinding</a>
+					<a href="../classes/_ui_menu_.menu.html">Menu</a>
 				</li>
 				<li>
-					<a href="_ui_keymap_.keybinding.ioptions.html">IOptions</a>
+					<a href="_ui_menu_.menu.iitem.html">IItem</a>
 				</li>
 			</ul>
-			<h1>Interface IOptions</h1>
+			<h1>Interface IItem</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An options object for initializing a key binding.</p>
+						<p>An object which represents a menu item.</p>
 					</div>
 				</div>
 			</section>
@@ -82,7 +82,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IOptions</span>
+						<span class="target">IItem</span>
 					</li>
 				</ul>
 			</section>
@@ -93,13 +93,19 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.keybinding.ioptions.html#args" class="tsd-kind-icon">args</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.keybinding.ioptions.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.keybinding.ioptions.html#keys" class="tsd-kind-icon">keys</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.keybinding.ioptions.html#linuxkeys" class="tsd-kind-icon">linux<wbr>Keys</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.keybinding.ioptions.html#mackeys" class="tsd-kind-icon">mac<wbr>Keys</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.keybinding.ioptions.html#selector" class="tsd-kind-icon">selector</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.keybinding.ioptions.html#winkeys" class="tsd-kind-icon">win<wbr>Keys</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#args" class="tsd-kind-icon">args</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#caption" class="tsd-kind-icon">caption</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#icon" class="tsd-kind-icon">icon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#keybinding" class="tsd-kind-icon">key<wbr>Binding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#menu" class="tsd-kind-icon">menu</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#mnemonic" class="tsd-kind-icon">mnemonic</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitem.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,16 +115,46 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="args" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> args</h3>
+					<h3>args</h3>
 					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <a href="_algorithm_json_.jsonobject.html" class="tsd-signature-type">JSONObject</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L361">ui/keymap.ts:361</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1146">ui/menu.ts:1146</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The arguments for the command, if necessary.</p>
+							<p>The arguments for the command.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="caption" class="tsd-anchor"></a>
+					<h3>caption</h3>
+					<div class="tsd-signature tsd-kind-icon">caption<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1171">ui/menu.ts:1171</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The display caption for the menu item.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="classname" class="tsd-anchor"></a>
+					<h3>class<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1176">ui/menu.ts:1176</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The extra class name for the menu item.</p>
 						</div>
 					</div>
 				</section>
@@ -128,91 +164,148 @@
 					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L356">ui/keymap.ts:356</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1141">ui/menu.ts:1141</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The command to execute when the key binding is matched.</p>
+							<p>The command to execute when the item is triggered.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="keys" class="tsd-anchor"></a>
-					<h3>keys</h3>
-					<div class="tsd-signature tsd-kind-icon">keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="icon" class="tsd-anchor"></a>
+					<h3>icon</h3>
+					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L346">ui/keymap.ts:346</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1166">ui/menu.ts:1166</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The default key sequence for the key binding.</p>
+							<p>The icon class for the menu item.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="linuxkeys" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> linux<wbr>Keys</h3>
-					<div class="tsd-signature tsd-kind-icon">linux<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="isenabled" class="tsd-anchor"></a>
+					<h3>is<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L382">ui/keymap.ts:382</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1181">ui/menu.ts:1181</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The key sequence to use when running on Linux.</p>
-						</div>
-						<p>If provided, this will override <code>keys</code> on Linux platforms.</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mackeys" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mac<wbr>Keys</h3>
-					<div class="tsd-signature tsd-kind-icon">mac<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L375">ui/keymap.ts:375</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The key sequence to use when running on Mac.</p>
-						</div>
-						<p>If provided, this will override <code>keys</code> on Mac platforms.</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="selector" class="tsd-anchor"></a>
-					<h3>selector</h3>
-					<div class="tsd-signature tsd-kind-icon">selector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L351">ui/keymap.ts:351</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The CSS selector for the key binding.</p>
+							<p>Whether the menu item is enabled.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="winkeys" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> win<wbr>Keys</h3>
-					<div class="tsd-signature tsd-kind-icon">win<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="istoggled" class="tsd-anchor"></a>
+					<h3>is<wbr>Toggled</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Toggled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L368">ui/keymap.ts:368</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1186">ui/menu.ts:1186</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The key sequence to use when running on Windows.</p>
+							<p>Whether the menu item is toggled.</p>
 						</div>
-						<p>If provided, this will override <code>keys</code> on Windows platforms.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isvisible" class="tsd-anchor"></a>
+					<h3>is<wbr>Visible</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1191">ui/menu.ts:1191</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether the menu item is visible.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="keybinding" class="tsd-anchor"></a>
+					<h3>key<wbr>Binding</h3>
+					<div class="tsd-signature tsd-kind-icon">key<wbr>Binding<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_keymap_.keybinding.html" class="tsd-signature-type">KeyBinding</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1195">ui/menu.ts:1195</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The key binding for the menu item.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="label" class="tsd-anchor"></a>
+					<h3>label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1156">ui/menu.ts:1156</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The display label for the menu item.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="menu" class="tsd-anchor"></a>
+					<h3>menu</h3>
+					<div class="tsd-signature tsd-kind-icon">menu<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_menu_.menu.html" class="tsd-signature-type">Menu</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1151">ui/menu.ts:1151</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The menu for a <code>&#39;submenu&#39;</code> type item.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="mnemonic" class="tsd-anchor"></a>
+					<h3>mnemonic</h3>
+					<div class="tsd-signature tsd-kind-icon">mnemonic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1161">ui/menu.ts:1161</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The mnemonic index for the menu item.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_menu_.menu.html#itemtype" class="tsd-signature-type">ItemType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/menu.ts#L1136">ui/menu.ts:1136</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type of the menu item.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -224,7 +317,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ui_keymap_.html">"ui/keymap"</a>
+						<a href="../modules/_ui_menu_.html">"ui/menu"</a>
 					</li>
 				</ul>
 			</nav>
@@ -233,86 +326,56 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_keymap_.keybinding.html" class="tsd-kind-icon">Key<wbr>Binding</a>
+						<a href="../classes/_ui_menu_.menu.html" class="tsd-kind-icon">Menu</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-class">
-								<a href="_ui_keymap_.keybinding.ioptions.html" class="tsd-kind-icon">IOptions</a>
+								<a href="_ui_menu_.menu.iitem.html" class="tsd-kind-icon">IItem</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_keymap_.keybinding.ioptions.html#args" class="tsd-kind-icon">args</a>
+										<a href="_ui_menu_.menu.iitem.html#args" class="tsd-kind-icon">args</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_keymap_.keybinding.ioptions.html#command" class="tsd-kind-icon">command</a>
+										<a href="_ui_menu_.menu.iitem.html#caption" class="tsd-kind-icon">caption</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_keymap_.keybinding.ioptions.html#keys" class="tsd-kind-icon">keys</a>
+										<a href="_ui_menu_.menu.iitem.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_keymap_.keybinding.ioptions.html#linuxkeys" class="tsd-kind-icon">linux<wbr>Keys</a>
+										<a href="_ui_menu_.menu.iitem.html#command" class="tsd-kind-icon">command</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_keymap_.keybinding.ioptions.html#mackeys" class="tsd-kind-icon">mac<wbr>Keys</a>
+										<a href="_ui_menu_.menu.iitem.html#icon" class="tsd-kind-icon">icon</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_keymap_.keybinding.ioptions.html#selector" class="tsd-kind-icon">selector</a>
+										<a href="_ui_menu_.menu.iitem.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_keymap_.keybinding.ioptions.html#winkeys" class="tsd-kind-icon">win<wbr>Keys</a>
+										<a href="_ui_menu_.menu.iitem.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_menu_.menu.iitem.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_menu_.menu.iitem.html#keybinding" class="tsd-kind-icon">key<wbr>Binding</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_menu_.menu.iitem.html#label" class="tsd-kind-icon">label</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_menu_.menu.iitem.html#menu" class="tsd-kind-icon">menu</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_menu_.menu.iitem.html#mnemonic" class="tsd-kind-icon">mnemonic</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_menu_.menu.iitem.html#type" class="tsd-kind-icon">type</a>
 									</li>
 								</ul>
-							</li>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="../classes/_ui_keymap_.keybinding.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_keymap_.keybinding.html#_args" class="tsd-kind-icon">_args</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_keymap_.keybinding.html#_command" class="tsd-kind-icon">_command</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_keymap_.keybinding.html#_keys" class="tsd-kind-icon">_keys</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="../classes/_ui_keymap_.keybinding.html#_selector" class="tsd-kind-icon">_selector</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="../classes/_ui_keymap_.keybinding.html#args" class="tsd-kind-icon">args</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="../classes/_ui_keymap_.keybinding.html#command" class="tsd-kind-icon">command</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="../classes/_ui_keymap_.keybinding.html#keys" class="tsd-kind-icon">keys</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="../classes/_ui_keymap_.keybinding.html#selector" class="tsd-kind-icon">selector</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_keymap_.keymapmanager.html" class="tsd-kind-icon">Keymap<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_ui_keymap_.ikeystrokeparts.html" class="tsd-kind-icon">IKeystroke<wbr>Parts</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#keymap" class="tsd-kind-icon">keymap</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#formatkeystroke" class="tsd-kind-icon">format<wbr>Keystroke</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#keystrokeforkeydownevent" class="tsd-kind-icon">keystroke<wbr>For<wbr>Keydown<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#normalizekeystroke" class="tsd-kind-icon">normalize<wbr>Keystroke</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#parsekeystroke" class="tsd-kind-icon">parse<wbr>Keystroke</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
