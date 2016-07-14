@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IBoxSizing | phosphor</title>
+	<title>IItem | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_dom_sizing_.html">&quot;dom/sizing&quot;</a>
+					<a href="../modules/_ui_commandpalette_.html">&quot;ui/commandpalette&quot;</a>
 				</li>
 				<li>
-					<a href="_dom_sizing_.iboxsizing.html">IBoxSizing</a>
+					<a href="../classes/_ui_commandpalette_.commandpalette.html">CommandPalette</a>
+				</li>
+				<li>
+					<a href="_ui_commandpalette_.commandpalette.iitem.html">IItem</a>
 				</li>
 			</ul>
-			<h1>Interface IBoxSizing</h1>
+			<h1>Interface IItem</h1>
 		</div>
 	</div>
 </header>
@@ -71,15 +74,17 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The box sizing (border and padding) for a a DOM node.</p>
+						<p>An object which represents an item in a command palette.</p>
 					</div>
+					<h4 id="notes">Notes</h4>
+					<p>An item is an immutable object created by a command palette.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IBoxSizing</span>
+						<span class="target">IItem</span>
 					</li>
 				</ul>
 			</section>
@@ -90,16 +95,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#borderbottom" class="tsd-kind-icon">border<wbr>Bottom</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#borderleft" class="tsd-kind-icon">border<wbr>Left</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#borderright" class="tsd-kind-icon">border<wbr>Right</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#bordertop" class="tsd-kind-icon">border<wbr>Top</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#horizontalsum" class="tsd-kind-icon">horizontal<wbr>Sum</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#paddingbottom" class="tsd-kind-icon">padding<wbr>Bottom</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#paddingleft" class="tsd-kind-icon">padding<wbr>Left</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#paddingright" class="tsd-kind-icon">padding<wbr>Right</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#paddingtop" class="tsd-kind-icon">padding<wbr>Top</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_dom_sizing_.iboxsizing.html#verticalsum" class="tsd-kind-icon">vertical<wbr>Sum</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#args" class="tsd-kind-icon">args</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#caption" class="tsd-kind-icon">caption</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#category" class="tsd-kind-icon">category</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#keybinding" class="tsd-kind-icon">key<wbr>Binding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandpalette_.commandpalette.iitem.html#label" class="tsd-kind-icon">label</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,152 +113,152 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="borderbottom" class="tsd-anchor"></a>
-					<h3>border<wbr>Bottom</h3>
-					<div class="tsd-signature tsd-kind-icon">border<wbr>Bottom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="args" class="tsd-anchor"></a>
+					<h3>args</h3>
+					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <a href="_algorithm_json_.jsonobject.html" class="tsd-signature-type">JSONObject</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L33">dom/sizing.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L748">ui/commandpalette.ts:748</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The bottom border width, in pixels.</p>
+							<p>The arguments for the command.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="borderleft" class="tsd-anchor"></a>
-					<h3>border<wbr>Left</h3>
-					<div class="tsd-signature tsd-kind-icon">border<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="caption" class="tsd-anchor"></a>
+					<h3>caption</h3>
+					<div class="tsd-signature tsd-kind-icon">caption<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L23">dom/sizing.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L763">ui/commandpalette.ts:763</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The left border width, in pixels.</p>
+							<p>The display caption for the command item.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="borderright" class="tsd-anchor"></a>
-					<h3>border<wbr>Right</h3>
-					<div class="tsd-signature tsd-kind-icon">border<wbr>Right<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="category" class="tsd-anchor"></a>
+					<h3>category</h3>
+					<div class="tsd-signature tsd-kind-icon">category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L28">dom/sizing.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L753">ui/commandpalette.ts:753</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The right border width, in pixels.</p>
+							<p>The category for the command item.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="bordertop" class="tsd-anchor"></a>
-					<h3>border<wbr>Top</h3>
-					<div class="tsd-signature tsd-kind-icon">border<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="classname" class="tsd-anchor"></a>
+					<h3>class<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L18">dom/sizing.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L768">ui/commandpalette.ts:768</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The top border width, in pixels.</p>
+							<p>The extra class name for the command item.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="horizontalsum" class="tsd-anchor"></a>
-					<h3>horizontal<wbr>Sum</h3>
-					<div class="tsd-signature tsd-kind-icon">horizontal<wbr>Sum<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="command" class="tsd-anchor"></a>
+					<h3>command</h3>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L58">dom/sizing.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L743">ui/commandpalette.ts:743</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The sum of horizontal border and padding.</p>
+							<p>The command to execute when the item is triggered.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="paddingbottom" class="tsd-anchor"></a>
-					<h3>padding<wbr>Bottom</h3>
-					<div class="tsd-signature tsd-kind-icon">padding<wbr>Bottom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="isenabled" class="tsd-anchor"></a>
+					<h3>is<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L53">dom/sizing.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L773">ui/commandpalette.ts:773</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The bottom padding width, in pixels.</p>
+							<p>Whether the command item is enabled.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="paddingleft" class="tsd-anchor"></a>
-					<h3>padding<wbr>Left</h3>
-					<div class="tsd-signature tsd-kind-icon">padding<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="istoggled" class="tsd-anchor"></a>
+					<h3>is<wbr>Toggled</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Toggled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L43">dom/sizing.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L778">ui/commandpalette.ts:778</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The left padding width, in pixels.</p>
+							<p>Whether the command item is toggled.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="paddingright" class="tsd-anchor"></a>
-					<h3>padding<wbr>Right</h3>
-					<div class="tsd-signature tsd-kind-icon">padding<wbr>Right<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="isvisible" class="tsd-anchor"></a>
+					<h3>is<wbr>Visible</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L48">dom/sizing.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L783">ui/commandpalette.ts:783</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The right padding width, in pixels.</p>
+							<p>Whether the command item is visible.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="paddingtop" class="tsd-anchor"></a>
-					<h3>padding<wbr>Top</h3>
-					<div class="tsd-signature tsd-kind-icon">padding<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="keybinding" class="tsd-anchor"></a>
+					<h3>key<wbr>Binding</h3>
+					<div class="tsd-signature tsd-kind-icon">key<wbr>Binding<span class="tsd-signature-symbol">:</span> <a href="_ui_keymap_.keymap.ibinding.html" class="tsd-signature-type">IBinding</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L38">dom/sizing.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L788">ui/commandpalette.ts:788</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The top padding width, in pixels.</p>
+							<p>The key binding for the command item.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="verticalsum" class="tsd-anchor"></a>
-					<h3>vertical<wbr>Sum</h3>
-					<div class="tsd-signature tsd-kind-icon">vertical<wbr>Sum<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="label" class="tsd-anchor"></a>
+					<h3>label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/dom/sizing.ts#L63">dom/sizing.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandpalette.ts#L758">ui/commandpalette.ts:758</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The sum of vertical border and padding.</p>
+							<p>The display label for the command item.</p>
 						</div>
 					</div>
 				</section>
@@ -266,7 +271,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_dom_sizing_.html">"dom/sizing"</a>
+						<a href="../modules/_ui_commandpalette_.html">"ui/commandpalette"</a>
 					</li>
 				</ul>
 			</nav>
@@ -274,52 +279,48 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_dom_sizing_.iboxsizing.html" class="tsd-kind-icon">IBox<wbr>Sizing</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_commandpalette_.commandpalette.html" class="tsd-kind-icon">Command<wbr>Palette</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#borderbottom" class="tsd-kind-icon">border<wbr>Bottom</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#borderleft" class="tsd-kind-icon">border<wbr>Left</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#borderright" class="tsd-kind-icon">border<wbr>Right</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#bordertop" class="tsd-kind-icon">border<wbr>Top</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#horizontalsum" class="tsd-kind-icon">horizontal<wbr>Sum</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#paddingbottom" class="tsd-kind-icon">padding<wbr>Bottom</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#paddingleft" class="tsd-kind-icon">padding<wbr>Left</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#paddingright" class="tsd-kind-icon">padding<wbr>Right</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#paddingtop" class="tsd-kind-icon">padding<wbr>Top</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_dom_sizing_.iboxsizing.html#verticalsum" class="tsd-kind-icon">vertical<wbr>Sum</a>
+							<li class="current tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_commandpalette_.commandpalette.iitem.html" class="tsd-kind-icon">IItem</a>
+								<ul>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#args" class="tsd-kind-icon">args</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#caption" class="tsd-kind-icon">caption</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#category" class="tsd-kind-icon">category</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#command" class="tsd-kind-icon">command</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#keybinding" class="tsd-kind-icon">key<wbr>Binding</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandpalette_.commandpalette.iitem.html#label" class="tsd-kind-icon">label</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_dom_sizing_.isizelimits.html" class="tsd-kind-icon">ISize<wbr>Limits</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_dom_sizing_.html#boxsizing" class="tsd-kind-icon">box<wbr>Sizing</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_dom_sizing_.html#sizelimits" class="tsd-kind-icon">size<wbr>Limits</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

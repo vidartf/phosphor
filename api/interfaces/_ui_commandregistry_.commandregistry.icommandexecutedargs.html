@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IKeystrokeParts | phosphor</title>
+	<title>ICommandExecutedArgs | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ui_keymap_.html">&quot;ui/keymap&quot;</a>
+					<a href="../modules/_ui_commandregistry_.html">&quot;ui/commandregistry&quot;</a>
 				</li>
 				<li>
-					<a href="_ui_keymap_.ikeystrokeparts.html">IKeystrokeParts</a>
+					<a href="../classes/_ui_commandregistry_.commandregistry.html">CommandRegistry</a>
+				</li>
+				<li>
+					<a href="_ui_commandregistry_.commandregistry.icommandexecutedargs.html">ICommandExecutedArgs</a>
 				</li>
 			</ul>
-			<h1>Interface IKeystrokeParts</h1>
+			<h1>Interface ICommandExecutedArgs</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +74,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An object which holds the results of parsing a keystroke.</p>
+						<p>An arguments object for the <code>commandExecuted</code> signal.</p>
 					</div>
 				</div>
 			</section>
@@ -79,7 +82,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IKeystrokeParts</span>
+						<span class="target">ICommandExecutedArgs</span>
 					</li>
 				</ul>
 			</section>
@@ -90,11 +93,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.ikeystrokeparts.html#alt" class="tsd-kind-icon">alt</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.ikeystrokeparts.html#cmd" class="tsd-kind-icon">cmd</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.ikeystrokeparts.html#ctrl" class="tsd-kind-icon">ctrl</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.ikeystrokeparts.html#key" class="tsd-kind-icon">key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_keymap_.ikeystrokeparts.html#shift" class="tsd-kind-icon">shift</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandexecutedargs.html#args" class="tsd-kind-icon">args</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandexecutedargs.html#id" class="tsd-kind-icon">id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,77 +103,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="alt" class="tsd-anchor"></a>
-					<h3>alt</h3>
-					<div class="tsd-signature tsd-kind-icon">alt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="args" class="tsd-anchor"></a>
+					<h3>args</h3>
+					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <a href="_algorithm_json_.jsonobject.html" class="tsd-signature-type">JSONObject</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L73">ui/keymap.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L347">ui/commandregistry.ts:347</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Whether <code>&#39;Alt&#39;</code> appears in the keystroke.</p>
+							<p>The arguments object passed to the command.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="cmd" class="tsd-anchor"></a>
-					<h3>cmd</h3>
-					<div class="tsd-signature tsd-kind-icon">cmd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L63">ui/keymap.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L342">ui/commandregistry.ts:342</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Whether <code>&#39;Cmd&#39;</code> appears in the keystroke.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ctrl" class="tsd-anchor"></a>
-					<h3>ctrl</h3>
-					<div class="tsd-signature tsd-kind-icon">ctrl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L68">ui/keymap.ts:68</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether <code>&#39;Ctrl&#39;</code> appears in the keystroke.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="key" class="tsd-anchor"></a>
-					<h3>key</h3>
-					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L83">ui/keymap.ts:83</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The primary key for the keystroke.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="shift" class="tsd-anchor"></a>
-					<h3>shift</h3>
-					<div class="tsd-signature tsd-kind-icon">shift<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/keymap.ts#L78">ui/keymap.ts:78</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether <code>&#39;Shift&#39;</code> appears in the keystroke.</p>
+							<p>The id of the associated command.</p>
 						</div>
 					</div>
 				</section>
@@ -186,57 +141,104 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ui_keymap_.html">"ui/keymap"</a>
+						<a href="../modules/_ui_commandregistry_.html">"ui/commandregistry"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_keymap_.keybinding.html" class="tsd-kind-icon">Key<wbr>Binding</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_keymap_.keymapmanager.html" class="tsd-kind-icon">Keymap<wbr>Manager</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_ui_keymap_.ikeystrokeparts.html" class="tsd-kind-icon">IKeystroke<wbr>Parts</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_commandregistry_.commandregistry.html" class="tsd-kind-icon">Command<wbr>Registry</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_keymap_.ikeystrokeparts.html#alt" class="tsd-kind-icon">alt</a>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_commandregistry_.commandregistry.icommandchangedargs.html" class="tsd-kind-icon">ICommand<wbr>Changed<wbr>Args</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_keymap_.ikeystrokeparts.html#cmd" class="tsd-kind-icon">cmd</a>
+							<li class="current tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_commandregistry_.commandregistry.icommandexecutedargs.html" class="tsd-kind-icon">ICommand<wbr>Executed<wbr>Args</a>
+								<ul>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandexecutedargs.html#args" class="tsd-kind-icon">args</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandexecutedargs.html#id" class="tsd-kind-icon">id</a>
+									</li>
+								</ul>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_keymap_.ikeystrokeparts.html#ctrl" class="tsd-kind-icon">ctrl</a>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_commandregistry_.commandregistry.icommandoptions.html" class="tsd-kind-icon">ICommand<wbr>Options</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_keymap_.ikeystrokeparts.html#key" class="tsd-kind-icon">key</a>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#boolfunc" class="tsd-kind-icon">Bool<wbr>Func</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_keymap_.ikeystrokeparts.html#shift" class="tsd-kind-icon">shift</a>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#execfunc" class="tsd-kind-icon">Exec<wbr>Func</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#numberfunc" class="tsd-kind-icon">Number<wbr>Func</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#stringfunc" class="tsd-kind-icon">String<wbr>Func</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#_commands" class="tsd-kind-icon">_commands</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#commandchanged" class="tsd-kind-icon">command<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#commandexecuted" class="tsd-kind-icon">command<wbr>Executed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#addcommand" class="tsd-kind-icon">add<wbr>Command</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#caption" class="tsd-kind-icon">caption</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#execute" class="tsd-kind-icon">execute</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#hascommand" class="tsd-kind-icon">has<wbr>Command</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#icon" class="tsd-kind-icon">icon</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#listcommands" class="tsd-kind-icon">list<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#mnemonic" class="tsd-kind-icon">mnemonic</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#notifycommandchanged" class="tsd-kind-icon">notify<wbr>Command<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#usage" class="tsd-kind-icon">usage</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#keymap" class="tsd-kind-icon">keymap</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#formatkeystroke" class="tsd-kind-icon">format<wbr>Keystroke</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#keystrokeforkeydownevent" class="tsd-kind-icon">keystroke<wbr>For<wbr>Keydown<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#normalizekeystroke" class="tsd-kind-icon">normalize<wbr>Keystroke</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_ui_keymap_.html#parsekeystroke" class="tsd-kind-icon">parse<wbr>Keystroke</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

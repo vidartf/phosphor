@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICommand | phosphor</title>
+	<title>ICommandOptions | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ui_commands_.html">&quot;ui/commands&quot;</a>
+					<a href="../modules/_ui_commandregistry_.html">&quot;ui/commandregistry&quot;</a>
 				</li>
 				<li>
-					<a href="_ui_commands_.icommand.html">ICommand</a>
+					<a href="../classes/_ui_commandregistry_.commandregistry.html">CommandRegistry</a>
+				</li>
+				<li>
+					<a href="_ui_commandregistry_.commandregistry.icommandoptions.html">ICommandOptions</a>
 				</li>
 			</ul>
-			<h1>Interface ICommand</h1>
+			<h1>Interface ICommandOptions</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +74,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An object which represents code to be executed.</p>
+						<p>An options object for creating a command.</p>
 					</div>
 					<h4 id="notes">Notes</h4>
 					<p>A command is an abstract representation of code to be executed along
@@ -88,7 +91,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ICommand</span>
+						<span class="target">ICommandOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -99,16 +102,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#caption" class="tsd-kind-icon">caption</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#execute" class="tsd-kind-icon">execute</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#icon" class="tsd-kind-icon">icon</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#label" class="tsd-kind-icon">label</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#mnemonic" class="tsd-kind-icon">mnemonic</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commands_.icommand.html#usage" class="tsd-kind-icon">usage</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#caption" class="tsd-kind-icon">caption</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#execute" class="tsd-kind-icon">execute</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#icon" class="tsd-kind-icon">icon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#mnemonic" class="tsd-kind-icon">mnemonic</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_commandregistry_.commandregistry.icommandoptions.html#usage" class="tsd-kind-icon">usage</a></li>
 							</ul>
 						</section>
 					</div>
@@ -119,10 +122,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="caption" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> caption</h3>
-					<div class="tsd-signature tsd-kind-icon">caption<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_ui_commands_.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">caption<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_ui_commandregistry_.commandregistry.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L142">ui/commands.ts:142</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L467">ui/commandregistry.ts:467</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -141,10 +144,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="classname" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> class<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_ui_commands_.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_ui_commandregistry_.commandregistry.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L174">ui/commands.ts:174</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L499">ui/commandregistry.ts:499</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,10 +166,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="execute" class="tsd-anchor"></a>
 					<h3>execute</h3>
-					<div class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">:</span> <a href="../modules/_ui_commands_.html#execfunc" class="tsd-signature-type">ExecFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_commandregistry_.commandregistry.html#execfunc" class="tsd-signature-type">ExecFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L89">ui/commands.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L414">ui/commandregistry.ts:414</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -181,10 +184,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="icon" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> icon</h3>
-					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_ui_commands_.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_ui_commandregistry_.commandregistry.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L127">ui/commands.ts:127</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L452">ui/commandregistry.ts:452</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -203,10 +206,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="isenabled" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Enabled</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Enabled<span class="tsd-signature-symbol">:</span> <a href="../modules/_ui_commands_.html#boolfunc" class="tsd-signature-type">BoolFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Enabled<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_commandregistry_.commandregistry.html#boolfunc" class="tsd-signature-type">BoolFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L185">ui/commands.ts:185</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L510">ui/commandregistry.ts:510</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -222,10 +225,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="istoggled" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Toggled</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Toggled<span class="tsd-signature-symbol">:</span> <a href="../modules/_ui_commands_.html#boolfunc" class="tsd-signature-type">BoolFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Toggled<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_commandregistry_.commandregistry.html#boolfunc" class="tsd-signature-type">BoolFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L197">ui/commands.ts:197</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L522">ui/commandregistry.ts:522</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -242,10 +245,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="isvisible" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Visible</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Visible<span class="tsd-signature-symbol">:</span> <a href="../modules/_ui_commands_.html#boolfunc" class="tsd-signature-type">BoolFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Visible<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_commandregistry_.commandregistry.html#boolfunc" class="tsd-signature-type">BoolFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L208">ui/commands.ts:208</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L533">ui/commandregistry.ts:533</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -261,10 +264,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="label" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label</h3>
-					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_ui_commands_.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_ui_commandregistry_.commandregistry.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L100">ui/commands.ts:100</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L425">ui/commandregistry.ts:425</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -280,10 +283,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="mnemonic" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mnemonic</h3>
-					<div class="tsd-signature tsd-kind-icon">mnemonic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_ui_commands_.html#numberfunc" class="tsd-signature-type">NumberFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">mnemonic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_ui_commandregistry_.commandregistry.html#numberfunc" class="tsd-signature-type">NumberFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L111">ui/commands.ts:111</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L436">ui/commandregistry.ts:436</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -299,10 +302,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="usage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> usage</h3>
-					<div class="tsd-signature tsd-kind-icon">usage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_ui_commands_.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
+					<div class="tsd-signature tsd-kind-icon">usage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_ui_commandregistry_.commandregistry.html#stringfunc" class="tsd-signature-type">StringFunc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5e455f/src/ui/commands.ts#L158">ui/commands.ts:158</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/d5f78f5/src/ui/commandregistry.ts#L483">ui/commandregistry.ts:483</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -328,69 +331,128 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ui_commands_.html">"ui/commands"</a>
+						<a href="../modules/_ui_commandregistry_.html">"ui/commandregistry"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_commands_.commandregistry.html" class="tsd-kind-icon">Command<wbr>Registry</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_ui_commands_.icommand.html" class="tsd-kind-icon">ICommand</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ui_commandregistry_.commandregistry.html" class="tsd-kind-icon">Command<wbr>Registry</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#caption" class="tsd-kind-icon">caption</a>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_commandregistry_.commandregistry.icommandchangedargs.html" class="tsd-kind-icon">ICommand<wbr>Changed<wbr>Args</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_commandregistry_.commandregistry.icommandexecutedargs.html" class="tsd-kind-icon">ICommand<wbr>Executed<wbr>Args</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#execute" class="tsd-kind-icon">execute</a>
+							<li class="current tsd-kind-interface tsd-parent-kind-class">
+								<a href="_ui_commandregistry_.commandregistry.icommandoptions.html" class="tsd-kind-icon">ICommand<wbr>Options</a>
+								<ul>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#caption" class="tsd-kind-icon">caption</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#execute" class="tsd-kind-icon">execute</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#icon" class="tsd-kind-icon">icon</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#label" class="tsd-kind-icon">label</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#mnemonic" class="tsd-kind-icon">mnemonic</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_commandregistry_.commandregistry.icommandoptions.html#usage" class="tsd-kind-icon">usage</a>
+									</li>
+								</ul>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#icon" class="tsd-kind-icon">icon</a>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#boolfunc" class="tsd-kind-icon">Bool<wbr>Func</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#execfunc" class="tsd-kind-icon">Exec<wbr>Func</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#numberfunc" class="tsd-kind-icon">Number<wbr>Func</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#stringfunc" class="tsd-kind-icon">String<wbr>Func</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#label" class="tsd-kind-icon">label</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#mnemonic" class="tsd-kind-icon">mnemonic</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#_commands" class="tsd-kind-icon">_commands</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_ui_commands_.icommand.html#usage" class="tsd-kind-icon">usage</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#commandchanged" class="tsd-kind-icon">command<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#commandexecuted" class="tsd-kind-icon">command<wbr>Executed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#addcommand" class="tsd-kind-icon">add<wbr>Command</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#caption" class="tsd-kind-icon">caption</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#execute" class="tsd-kind-icon">execute</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#hascommand" class="tsd-kind-icon">has<wbr>Command</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#icon" class="tsd-kind-icon">icon</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#isenabled" class="tsd-kind-icon">is<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#istoggled" class="tsd-kind-icon">is<wbr>Toggled</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#listcommands" class="tsd-kind-icon">list<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#mnemonic" class="tsd-kind-icon">mnemonic</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#notifycommandchanged" class="tsd-kind-icon">notify<wbr>Command<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="../classes/_ui_commandregistry_.commandregistry.html#usage" class="tsd-kind-icon">usage</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_ui_commands_.html#boolfunc" class="tsd-kind-icon">Bool<wbr>Func</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_ui_commands_.html#execfunc" class="tsd-kind-icon">Exec<wbr>Func</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_ui_commands_.html#numberfunc" class="tsd-kind-icon">Number<wbr>Func</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_ui_commands_.html#stringfunc" class="tsd-kind-icon">String<wbr>Func</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_ui_commands_.html#commands" class="tsd-kind-icon">commands</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
