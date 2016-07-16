@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IItemOptions | phosphor</title>
+	<title>IOverlayGeometry | phosphor</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,16 +55,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ui_menu_.html">&quot;ui/menu&quot;</a>
+					<a href="../modules/_ui_dockpanel_.html">&quot;ui/dockpanel&quot;</a>
 				</li>
 				<li>
-					<a href="../classes/_ui_menu_.menu.html">Menu</a>
+					<a href="../classes/_ui_dockpanel_.dockpanel.html">DockPanel</a>
 				</li>
 				<li>
-					<a href="_ui_menu_.menu.iitemoptions.html">IItemOptions</a>
+					<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html">IOverlayGeometry</a>
 				</li>
 			</ul>
-			<h1>Interface IItemOptions</h1>
+			<h1>Interface IOverlayGeometry</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An options object for creating a menu item.</p>
+						<p>An object which holds the geometry for overlay positioning.</p>
 					</div>
 				</div>
 			</section>
@@ -82,7 +82,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IItemOptions</span>
+						<span class="target">IOverlayGeometry</span>
 					</li>
 				</ul>
 			</section>
@@ -93,10 +93,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitemoptions.html#args" class="tsd-kind-icon">args</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitemoptions.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitemoptions.html#menu" class="tsd-kind-icon">menu</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_menu_.menu.iitemoptions.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#bottom" class="tsd-kind-icon">bottom</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#left" class="tsd-kind-icon">left</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#mousex" class="tsd-kind-icon">mouseX</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#mousey" class="tsd-kind-icon">mouseY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#parentrect" class="tsd-kind-icon">parent<wbr>Rect</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#right" class="tsd-kind-icon">right</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#top" class="tsd-kind-icon">top</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#width" class="tsd-kind-icon">width</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#zone" class="tsd-kind-icon">zone</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,67 +111,153 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="args" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> args</h3>
-					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <a href="_algorithm_json_.jsonobject.html" class="tsd-signature-type">JSONObject</a></div>
+					<a name="bottom" class="tsd-anchor"></a>
+					<h3>bottom</h3>
+					<div class="tsd-signature tsd-kind-icon">bottom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/menu.ts#L1194">ui/menu.ts:1194</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1321">ui/dockpanel.ts:1321</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The arguments for the command.</p>
+							<p>The distance between the overlay and parent bottom edges.</p>
 						</div>
-						<p>The default value is <code>null</code>.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="command" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="height" class="tsd-anchor"></a>
+					<h3>height</h3>
+					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/menu.ts#L1187">ui/menu.ts:1187</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1331">ui/dockpanel.ts:1331</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The command to execute when the item is triggered.</p>
+							<p>The height of the overlay.</p>
 						</div>
-						<p>The default value is an empty string.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="menu" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> menu</h3>
-					<div class="tsd-signature tsd-kind-icon">menu<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_menu_.menu.html" class="tsd-signature-type">Menu</a></div>
+					<a name="left" class="tsd-anchor"></a>
+					<h3>left</h3>
+					<div class="tsd-signature tsd-kind-icon">left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/menu.ts#L1201">ui/menu.ts:1201</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1311">ui/dockpanel.ts:1311</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The menu for a <code>&#39;submenu&#39;</code> type item.</p>
+							<p>The distance between the overlay and parent left edges.</p>
 						</div>
-						<p>The default value is <code>null</code>.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_menu_.menu.html#itemtype" class="tsd-signature-type">ItemType</a></div>
+					<a name="mousex" class="tsd-anchor"></a>
+					<h3>mouseX</h3>
+					<div class="tsd-signature tsd-kind-icon">mouseX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/menu.ts#L1180">ui/menu.ts:1180</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1291">ui/dockpanel.ts:1291</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The type of the menu item.</p>
+							<p>The client X position of the mouse.</p>
 						</div>
-						<p>The default value is <code>&#39;command&#39;</code>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="mousey" class="tsd-anchor"></a>
+					<h3>mouseY</h3>
+					<div class="tsd-signature tsd-kind-icon">mouseY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1296">ui/dockpanel.ts:1296</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The client Y position of the mouse.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="parentrect" class="tsd-anchor"></a>
+					<h3>parent<wbr>Rect</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<wbr>Rect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ClientRect</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1301">ui/dockpanel.ts:1301</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The client rect of the overlay parent node.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="right" class="tsd-anchor"></a>
+					<h3>right</h3>
+					<div class="tsd-signature tsd-kind-icon">right<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1316">ui/dockpanel.ts:1316</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The distance between the overlay and parent right edges.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="top" class="tsd-anchor"></a>
+					<h3>top</h3>
+					<div class="tsd-signature tsd-kind-icon">top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1306">ui/dockpanel.ts:1306</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The distance between the overlay and parent top edges.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="width" class="tsd-anchor"></a>
+					<h3>width</h3>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1326">ui/dockpanel.ts:1326</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The width of the overlay.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="zone" class="tsd-anchor"></a>
+					<h3>zone</h3>
+					<div class="tsd-signature tsd-kind-icon">zone<span class="tsd-signature-symbol">:</span> <a href="../classes/_ui_dockpanel_.dockpanel.html#zone" class="tsd-signature-type">Zone</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1286">ui/dockpanel.ts:1286</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The zone associated with the geometry.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -177,7 +269,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ui_menu_.html">"ui/menu"</a>
+						<a href="../modules/_ui_dockpanel_.html">"ui/dockpanel"</a>
 					</li>
 				</ul>
 			</nav>
@@ -186,22 +278,40 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_ui_menu_.menu.html" class="tsd-kind-icon">Menu</a>
+						<a href="../classes/_ui_dockpanel_.dockpanel.html" class="tsd-kind-icon">Dock<wbr>Panel</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-class">
-								<a href="_ui_menu_.menu.iitemoptions.html" class="tsd-kind-icon">IItem<wbr>Options</a>
+								<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html" class="tsd-kind-icon">IOverlay<wbr>Geometry</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_menu_.menu.iitemoptions.html#args" class="tsd-kind-icon">args</a>
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#bottom" class="tsd-kind-icon">bottom</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_menu_.menu.iitemoptions.html#command" class="tsd-kind-icon">command</a>
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#height" class="tsd-kind-icon">height</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_menu_.menu.iitemoptions.html#menu" class="tsd-kind-icon">menu</a>
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#left" class="tsd-kind-icon">left</a>
 									</li>
 									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="_ui_menu_.menu.iitemoptions.html#type" class="tsd-kind-icon">type</a>
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#mousex" class="tsd-kind-icon">mouseX</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#mousey" class="tsd-kind-icon">mouseY</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#parentrect" class="tsd-kind-icon">parent<wbr>Rect</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#right" class="tsd-kind-icon">right</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#top" class="tsd-kind-icon">top</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#width" class="tsd-kind-icon">width</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface">
+										<a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html#zone" class="tsd-kind-icon">zone</a>
 									</li>
 								</ul>
 							</li>

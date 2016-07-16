@@ -120,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/90400e8/src/ui/dockpanel.ts#L1279">ui/dockpanel.ts:1279</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1345">ui/dockpanel.ts:1345</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -144,7 +144,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/90400e8/src/ui/dockpanel.ts#L1309">ui/dockpanel.ts:1309</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1367">ui/dockpanel.ts:1367</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -162,50 +162,26 @@
 					<a name="show" class="tsd-anchor"></a>
 					<h3>show</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span>zone<span class="tsd-signature-symbol">: </span><a href="../classes/_ui_dockpanel_.dockpanel.html#zone" class="tsd-signature-type">Zone</a>, left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, top<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span>geo<span class="tsd-signature-symbol">: </span><a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html" class="tsd-signature-type">IOverlayGeometry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/90400e8/src/ui/dockpanel.ts#L1301">ui/dockpanel.ts:1301</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/5e30700/src/ui/dockpanel.ts#L1359">ui/dockpanel.ts:1359</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Show the overlay using the given zone and offset geometry.</p>
+									<p>Show the overlay using the given overlay geometry.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>zone: <a href="../classes/_ui_dockpanel_.dockpanel.html#zone" class="tsd-signature-type">Zone</a></h5>
+									<h5>geo: <a href="_ui_dockpanel_.dockpanel.ioverlaygeometry.html" class="tsd-signature-type">IOverlayGeometry</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The dock zone for the overlay.</p>
-									</div>
-								</li>
-								<li>
-									<h5>left: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The offset left position for the overlay.</p>
-									</div>
-								</li>
-								<li>
-									<h5>top: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The offset top position for the overlay.</p>
-									</div>
-								</li>
-								<li>
-									<h5>width: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The offset width for the overlay.</p>
-									</div>
-								</li>
-								<li>
-									<h5>height: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The offset height for the overlay.</p>
+										<p>The desired geometry for the overlay.</p>
 										<h4 id="notes">Notes</h4>
 										<p>The given geometry values assume the node will use absolute
 										positioning.</p>
