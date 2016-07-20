@@ -91,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/44d6bbb/src/dom/query.ts#L38">dom/query.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/63e0bab/src/dom/query.ts#L38">dom/query.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -143,18 +143,18 @@ hitTest(div, <span class="hljs-number">150</span>, <span class="hljs-number">150
 					<a name="scrollifneeded" class="tsd-anchor"></a>
 					<h3>scroll<wbr>IfNeeded</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">scroll<wbr>IfNeeded<span class="tsd-signature-symbol">(</span>area<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, threshold<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>IfNeeded<span class="tsd-signature-symbol">(</span>area<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/44d6bbb/src/dom/query.ts#L89">dom/query.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/63e0bab/src/dom/query.ts#L91">dom/query.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Scroll an element into view if needed.</p>
+									<p>Vertically scroll an element into view if needed.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -169,13 +169,10 @@ hitTest(div, <span class="hljs-number">150</span>, <span class="hljs-number">150
 									<h5>elem: <span class="tsd-signature-type">HTMLElement</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The element of interest.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> threshold: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The overflow threshold, in pixels, required
-										before adjusting the scroll position. The default is zero.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This follows the &quot;nearest&quot; behavior of the native <code>scrollIntoView</code>
+											method, which is not supported by all browsers.
+										<a href="https://drafts.csswg.org/cssom-view/#element-scrolling-members">https://drafts.csswg.org/cssom-view/#element-scrolling-members</a></p>
 										<h4 id="example">Example</h4>
 										<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { scrollIfNeeded } from <span class="hljs-string">'phosphor/lib/dom/query'</span>;
 
