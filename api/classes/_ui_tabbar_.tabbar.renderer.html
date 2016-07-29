@@ -97,110 +97,229 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_tabbar_.tabbar.renderer.html#_tabid" class="tsd-kind-icon">_tabID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ui_tabbar_.tabbar.renderer.html#_tabkeys" class="tsd-kind-icon">_tab<wbr>Keys</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#closeiconselector" class="tsd-kind-icon">close<wbr>Icon<wbr>Selector</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#closeiconnode" class="tsd-kind-icon">close<wbr>Icon<wbr>Node</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#createtabnode" class="tsd-kind-icon">create<wbr>Tab<wbr>Node</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#updatetabnode" class="tsd-kind-icon">update<wbr>Tab<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#createiconclass" class="tsd-kind-icon">create<wbr>Icon<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#createtabclass" class="tsd-kind-icon">create<wbr>Tab<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#createtabkey" class="tsd-kind-icon">create<wbr>Tab<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#createtabstyle" class="tsd-kind-icon">create<wbr>Tab<wbr>Style</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ui_tabbar_.tabbar.renderer.html#rendertab" class="tsd-kind-icon">render<wbr>Tab</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_tabid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tabID</h3>
+					<div class="tsd-signature tsd-kind-icon">_tabID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/ui/tabbar.ts#L1483">ui/tabbar.ts:1483</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_tabkeys" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tab<wbr>Keys</h3>
+					<div class="tsd-signature tsd-kind-icon">_tab<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WeakMap</span><span class="tsd-signature-symbol">&lt;</span><a href="_ui_title_.title.html" class="tsd-signature-type">Title</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new WeakMap&lt;Title, string&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/ui/tabbar.ts#L1484">ui/tabbar.ts:1484</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="closeiconselector" class="tsd-anchor"></a>
+					<h3>close<wbr>Icon<wbr>Selector</h3>
+					<div class="tsd-signature tsd-kind-icon">close<wbr>Icon<wbr>Selector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&#x60;.${CLOSE_ICON_CLASS}&#x60;</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html#closeiconselector">closeIconSelector</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/ui/tabbar.ts#L1389">ui/tabbar.ts:1389</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A selector which matches the close icon node in a tab.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="closeiconnode" class="tsd-anchor"></a>
-					<h3>close<wbr>Icon<wbr>Node</h3>
+					<a name="createiconclass" class="tsd-anchor"></a>
+					<h3>create<wbr>Icon<wbr>Class</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">close<wbr>Icon<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLLIElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Icon<wbr>Class<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html#closeiconnode">closeIconNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/7389bb1/src/ui/tabbar.ts#L1221">ui/tabbar.ts:1221</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/ui/tabbar.ts#L1474">ui/tabbar.ts:1474</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Look up the close icon descendant node for a tab node.</p>
+									<p>Create the class name for the tab icon.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <span class="tsd-signature-type">HTMLLIElement</span></h5>
+									<h5>data: <a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>A node created by a call to <code>createTabNode</code>.</p>
+										<p>The data to use for the tab.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
-							<p>The close icon node, or <code>null</code> if none exists.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The full class name for the tab icon.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="createtabnode" class="tsd-anchor"></a>
-					<h3>create<wbr>Tab<wbr>Node</h3>
+					<a name="createtabclass" class="tsd-anchor"></a>
+					<h3>create<wbr>Tab<wbr>Class</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Tab<wbr>Node<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLLIElement</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Tab<wbr>Class<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html#createtabnode">createTabNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/7389bb1/src/ui/tabbar.ts#L1180">ui/tabbar.ts:1180</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/ui/tabbar.ts#L1452">ui/tabbar.ts:1452</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a node for a tab.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLLIElement</span></h4>
-							<p>A new node for a tab.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updatetabnode" class="tsd-anchor"></a>
-					<h3>update<wbr>Tab<wbr>Node</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Tab<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLLIElement</span>, title<span class="tsd-signature-symbol">: </span><a href="_ui_title_.title.html" class="tsd-signature-type">Title</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html#updatetabnode">updateTabNode</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/7389bb1/src/ui/tabbar.ts#L1202">ui/tabbar.ts:1202</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update a tab node to reflect the state of a title.</p>
+									<p>Create the class name for the tab.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <span class="tsd-signature-type">HTMLLIElement</span></h5>
+									<h5>data: <a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>A node created by a call to <code>createTabNode</code>.</p>
-									</div>
-								</li>
-								<li>
-									<h5>title: <a href="_ui_title_.title.html" class="tsd-signature-type">Title</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The title object holding the data for the tab.</p>
+										<p>The data to use for the tab.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The full class name for the tab.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createtabkey" class="tsd-anchor"></a>
+					<h3>create<wbr>Tab<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Tab<wbr>Key<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/ui/tabbar.ts#L1425">ui/tabbar.ts:1425</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a unique render key for the tab.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data to use for the tab.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The unique render key for the tab.</p>
+							<h4 id="notes">Notes</h4>
+							<p>This method caches the key against the tab title the first time
+								the key is generated. This enables efficient rendering of moved
+							tabs and avoids subtle hover style artifacts.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createtabstyle" class="tsd-anchor"></a>
+					<h3>create<wbr>Tab<wbr>Style</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Tab<wbr>Style<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/ui/tabbar.ts#L1441">ui/tabbar.ts:1441</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create the inline style object for a tab.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data to use for the tab.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>The inline style data for the tab.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="rendertab" class="tsd-anchor"></a>
+					<h3>render<wbr>Tab</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">render<wbr>Tab<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ui_vdom_.vnode.html" class="tsd-signature-type">VNode</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html">IRenderer</a>.<a href="../interfaces/_ui_tabbar_.tabbar.irenderer.html#rendertab">renderTab</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/ui/tabbar.ts#L1398">ui/tabbar.ts:1398</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Render the node for the a tab.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="../interfaces/_ui_tabbar_.tabbar.irenderdata.html" class="tsd-signature-type">IRenderData</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data to use for rendering the tab.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ui_vdom_.vnode.html" class="tsd-signature-type">VNode</a></h4>
+							<p>A virtual DOM node representing the tab.</p>
 						</li>
 					</ul>
 				</section>
@@ -227,14 +346,29 @@
 							<li class="current tsd-kind-class tsd-parent-kind-class">
 								<a href="_ui_tabbar_.tabbar.renderer.html" class="tsd-kind-icon">Renderer</a>
 								<ul>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_tabbar_.tabbar.renderer.html#closeiconnode" class="tsd-kind-icon">close<wbr>Icon<wbr>Node</a>
+									<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+										<a href="_ui_tabbar_.tabbar.renderer.html#_tabid" class="tsd-kind-icon">_tabID</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+										<a href="_ui_tabbar_.tabbar.renderer.html#_tabkeys" class="tsd-kind-icon">_tab<wbr>Keys</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-class">
+										<a href="_ui_tabbar_.tabbar.renderer.html#closeiconselector" class="tsd-kind-icon">close<wbr>Icon<wbr>Selector</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_tabbar_.tabbar.renderer.html#createtabnode" class="tsd-kind-icon">create<wbr>Tab<wbr>Node</a>
+										<a href="_ui_tabbar_.tabbar.renderer.html#createiconclass" class="tsd-kind-icon">create<wbr>Icon<wbr>Class</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="_ui_tabbar_.tabbar.renderer.html#updatetabnode" class="tsd-kind-icon">update<wbr>Tab<wbr>Node</a>
+										<a href="_ui_tabbar_.tabbar.renderer.html#createtabclass" class="tsd-kind-icon">create<wbr>Tab<wbr>Class</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class">
+										<a href="_ui_tabbar_.tabbar.renderer.html#createtabkey" class="tsd-kind-icon">create<wbr>Tab<wbr>Key</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class">
+										<a href="_ui_tabbar_.tabbar.renderer.html#createtabstyle" class="tsd-kind-icon">create<wbr>Tab<wbr>Style</a>
+									</li>
+									<li class=" tsd-kind-method tsd-parent-kind-class">
+										<a href="_ui_tabbar_.tabbar.renderer.html#rendertab" class="tsd-kind-icon">render<wbr>Tab</a>
 									</li>
 								</ul>
 							</li>

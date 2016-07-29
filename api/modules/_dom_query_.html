@@ -73,7 +73,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_dom_query_.html#hittest" class="tsd-kind-icon">hit<wbr>Test</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_dom_query_.html#scrollifneeded" class="tsd-kind-icon">scroll<wbr>IfNeeded</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_dom_query_.html#scrollintoviewifneeded" class="tsd-kind-icon">scroll<wbr>Into<wbr>View<wbr>IfNeeded</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/7389bb1/src/dom/query.ts#L38">dom/query.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/dom/query.ts#L38">dom/query.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -140,16 +140,16 @@ hitTest(div, <span class="hljs-number">150</span>, <span class="hljs-number">150
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="scrollifneeded" class="tsd-anchor"></a>
-					<h3>scroll<wbr>IfNeeded</h3>
+					<a name="scrollintoviewifneeded" class="tsd-anchor"></a>
+					<h3>scroll<wbr>Into<wbr>View<wbr>IfNeeded</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">scroll<wbr>IfNeeded<span class="tsd-signature-symbol">(</span>area<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>Into<wbr>View<wbr>IfNeeded<span class="tsd-signature-symbol">(</span>area<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/7389bb1/src/dom/query.ts#L91">dom/query.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor/blob/779b433/src/dom/query.ts#L95">dom/query.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -173,8 +173,11 @@ hitTest(div, <span class="hljs-number">150</span>, <span class="hljs-number">150
 										<p>This follows the &quot;nearest&quot; behavior of the native <code>scrollIntoView</code>
 											method, which is not supported by all browsers.
 										<a href="https://drafts.csswg.org/cssom-view/#element-scrolling-members">https://drafts.csswg.org/cssom-view/#element-scrolling-members</a></p>
+										<p>If the element fully covers the visible area or is fully contained
+											within the visible area, no scrolling will take place. Otherwise,
+										the nearest edges of the area and element are aligned.</p>
 										<h4 id="example">Example</h4>
-										<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { scrollIfNeeded } from <span class="hljs-string">'phosphor/lib/dom/query'</span>;
+										<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { scrollIntoViewIfNeeded } from <span class="hljs-string">'phosphor/lib/dom/query'</span>;
 
 <span class="hljs-keyword">let</span> area = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
 <span class="hljs-keyword">let</span> elem = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
@@ -198,7 +201,7 @@ area.appendChild(elem);
 <span class="hljs-built_in">document</span>.body.appendChild(area);
 
 <span class="hljs-comment">// Scroll to the element of interest.</span>
-scrollIfNeeded(area, elem);
+scrollIntoViewIfNeeded(area, elem);
 </code></pre>
 									</div>
 								</li>
@@ -226,7 +229,7 @@ scrollIfNeeded(area, elem);
 						<a href="_dom_query_.html#hittest" class="tsd-kind-icon">hit<wbr>Test</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_dom_query_.html#scrollifneeded" class="tsd-kind-icon">scroll<wbr>IfNeeded</a>
+						<a href="_dom_query_.html#scrollintoviewifneeded" class="tsd-kind-icon">scroll<wbr>Into<wbr>View<wbr>IfNeeded</a>
 					</li>
 				</ul>
 			</nav>
