@@ -191,7 +191,6 @@ describe('@phosphor/datastore', () => {
       it('should should emit upon changes to the datastore', () => {
         let called = false;
         let id = '';
-        let datastore = Datastore.create({ id: 1, schemas});
         datastore.changed.connect((_, change) => {
           called = true;
           expect(change.type).to.equal('transaction');
@@ -300,8 +299,6 @@ describe('@phosphor/datastore', () => {
         expect(() => { datastore.get(schema3 as any); }).to.throw(/No table found/);
       });
 
-      it('should handle repeating schemas', () => {
-      });
     });
 
     describe('beginTransaction()', () => {
